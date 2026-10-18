@@ -1115,6 +1115,7 @@ html:has(dialog[open]){overflow:hidden;}
 
 /* Progressive enhancement: the document stays readable before the engine starts. */
 html:not(.js) .stage,html.reading .stage{position:relative;overflow:visible;}
+html:not(.js) .titlecard,html.reading .titlecard{display:none;}
 html:not(.js) .layer,html.reading .layer{position:relative;min-height:100vh;min-height:100svh;opacity:1 !important;transform:none !important;visibility:visible !important;overflow:clip;}
 html:not(.js) .sticky,html.reading .sticky{position:relative;height:auto;min-height:100vh;min-height:100svh;overflow:visible;padding:110px var(--pad) calc(70px + env(safe-area-inset-bottom));}
 html:not(.js) .track,html.reading .track,html:not(.js) .rail,html.reading .rail,html:not(.js) .experience-bar{display:none;}
