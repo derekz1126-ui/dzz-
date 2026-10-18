@@ -1,4 +1,4 @@
-﻿/* FULWIN · one stage, one scroll timeline. No requests or saved visitor data. */
+/* FULWIN · one stage, one scroll timeline. No requests or saved visitor data. */
 (() => {
   'use strict';
   const root = document.documentElement;
@@ -26,7 +26,7 @@
   const maxScroll = () => Math.max(1,root.scrollHeight-innerHeight);
   let reading = media.matches, manualReading = false, playing = false;
   let progress = 0, active = -1, activeAct=-1, frameId = 0, lastTime = 0, restoreFocus, pendingFocus=-1, playPosition=0;
-  let oldHeight = innerHeight, resizeTimer;
+  let oldWidth = innerWidth, oldHeight = innerHeight, resizeTimer;
   track.style.height = layout.trackVh+'vh';
 
   function chapterOf(p) {
@@ -217,12 +217,15 @@
   addEventListener('touchmove',()=>setPlaying(false),{passive:true});
   addEventListener('scroll',wake,{passive:true});
   addEventListener('resize',()=>{
-    if(!reading&&innerHeight!==oldHeight)scrollTo({top:progress*maxScroll(),behavior:'instant'});
-    oldHeight=innerHeight;
+    const widthChanged=innerWidth!==oldWidth;
+    /* 手机地址栏伸缩只改变高度：不重排整页，也不反复切换阅读模式 */
+    if(!reading&&(widthChanged||Math.abs(innerHeight-oldHeight)>140))scrollTo({top:progress*maxScroll(),behavior:'instant'});
+    oldWidth=innerWidth;oldHeight=innerHeight;
     clearTimeout(resizeTimer);
     resizeTimer=setTimeout(()=>{
-      syncMode();
-      paint();wake();
+      const nextReading=manualReading||media.matches||innerHeight<540||(innerWidth<700&&innerHeight<700);
+      if(widthChanged||nextReading!==reading)syncMode();
+      else{paint();wake();}
     },120);
   });
   document.addEventListener('visibilitychange',()=>{
