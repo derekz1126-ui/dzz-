@@ -1,0 +1,3852 @@
+{
+  "date": "2026-10-18",
+  "mode": "local offline file://",
+  "prior_version_browser_checks": {
+    "behavior": {
+      "results": [
+        {
+          "name": "演示能够开始、暂停，手动滚轮停止演示",
+          "pass": true
+        },
+        {
+          "name": "序章停滚冻结，前后滚动返回相同画面",
+          "pass": true
+        },
+        {
+          "name": "章节点击及键盘操作更新可见内容与当前位置",
+          "pass": true
+        },
+        {
+          "name": "完整说明支持关闭并恢复原触发按钮焦点",
+          "pass": true
+        },
+        {
+          "name": "环境音默认关闭，用户开启后可关闭",
+          "pass": true
+        },
+        {
+          "name": "跳过序章后焦点落到正文，窗口变化保持叙事位置",
+          "pass": true
+        },
+        {
+          "name": "末尾停止演示且重新体验回到开场",
+          "pass": true
+        },
+        {
+          "name": "长按空格不重复切换，触摸拖动会暂停演示",
+          "pass": true
+        },
+        {
+          "name": "移动端各产品的标题和概念标注均在视口内",
+          "pass": true
+        },
+        {
+          "name": "减少动态模式保留全部内容并可跳转章节",
+          "pass": true
+        },
+        {
+          "name": "禁用 JavaScript 后内容采用正常文档流",
+          "pass": true
+        },
+        {
+          "name": "320 窄屏和手机横屏自动启用可完整阅读的布局",
+          "pass": true
+        },
+        {
+          "name": "页面无异常且没有外部网络请求",
+          "pass": true
+        }
+      ],
+      "errors": [],
+      "external": []
+    },
+    "extended": [
+      {
+        "browser": "Chrome",
+        "label": "响应式关键画面及完整说明焦点",
+        "pass": true,
+        "widths": [
+          320,
+          390,
+          768,
+          1024,
+          1440,
+          1920
+        ],
+        "landscape": true
+      },
+      {
+        "browser": "Chrome",
+        "label": "运行中减少动态切换保留阅读内容",
+        "pass": true
+      },
+      {
+        "browser": "Chrome",
+        "label": "静态说明可直接阅读和打印",
+        "pass": true
+      },
+      {
+        "browser": "Chrome",
+        "label": "Canvas 或声音不可用时仍能继续体验",
+        "pass": true
+      },
+      {
+        "browser": "Chrome",
+        "label": "停止滚动后不再运行空闲动画循环",
+        "pass": true,
+        "meanCanvasDrawMs": 0.91
+      },
+      {
+        "browser": "Chrome",
+        "label": "离线资源无缺失、无页面异常、无外部请求",
+        "pass": true
+      },
+      {
+        "browser": "Edge",
+        "label": "浏览器启动",
+        "pass": null,
+        "limitation": "先前两次尝试均在当前沙盒中启动退出，未完成该浏览器验证"
+      }
+    ],
+    "music": {
+      "results": [
+        {
+          "name": "本地音乐默认暂停，不自动播放",
+          "pass": true
+        },
+        {
+          "name": "点击后真实 MP3 解码并播放，采用循环和适中音量",
+          "pass": true
+        },
+        {
+          "name": "关闭后暂停，再次开启从原位置继续",
+          "pass": true
+        },
+        {
+          "name": "说明弹窗暂停音乐，关闭后按原开启状态继续",
+          "pass": true
+        },
+        {
+          "name": "快速反复切换后，实际播放与开关最终状态一致",
+          "pass": true
+        },
+        {
+          "name": "浏览器拒绝播放时回到关闭状态，页面继续可用",
+          "pass": true
+        },
+        {
+          "name": "没有页面异常或外部网络请求",
+          "pass": true
+        }
+      ],
+      "errors": [],
+      "external": []
+    },
+    "visual_frames": 36
+  },
+  "privacy": "Local files only; no upload or deployment.",
+  "previous_updates": [
+    {
+      "version": "v10",
+      "nature_plates": 6,
+      "plates_in_prologue": 3,
+      "plates_in_panels": 2,
+      "plates_in_reading_page": 1,
+      "reference_cars": "All three original files preserved and still referenced",
+      "concept_boards": 3,
+      "local_resources": "all exist; six new webp plates verified decoding in-browser",
+      "browser_visual_qa": "PASS — v8 实屏复核：13 档桌面 + 3 档手机；序章序列实测 96/96 帧预载、帧位随滚动同步；控制台 0 错误",
+      "console_errors": 0,
+      "plates_checked": 6,
+      "panel_windows": [
+        [
+          "whole",
+          0.0,
+          0.06,
+          0.15,
+          0.06
+        ],
+        [
+          "wind",
+          0.22,
+          0.07,
+          0.37,
+          0.06
+        ],
+        [
+          "cloud",
+          0.44,
+          0.07,
+          0.6,
+          0.06
+        ],
+        [
+          "union",
+          0.67,
+          0.09,
+          2.0,
+          0.0
+        ]
+      ],
+      "prologue_sequence": "96 帧 WebP（1280×720，1.6 MB），滚动逐帧 scrub",
+      "concept_plates": "3 张侧视设计稿卡片 + 3 张结尾紧裁 + 1 张压暗地库版",
+      "real_car_photos_in_page": "0（shot-a9l/t11/t7 与 hurricane-a9l 已不再出现在页面）",
+      "motion": "常驻动效：序章呼吸、面板风/云漂移、车稿浮动 + 扫光、三车起伏、组合字微转",
+      "perf_gpu": "123–128 fps，慢帧 0.7–0.8%（Chrome 155 + GPU 光栅化实测）",
+      "perf_software": "约 38 fps；内置帧率自适应，连续掉帧自动挂 perf-low 关掉最贵动效"
+    },
+    {
+      "version": "v14",
+      "assets": {
+        "version": "v14",
+        "html_pages": 2,
+        "resources_checked": 24,
+        "verified_raster_images": 25,
+        "sequence_frames": 144,
+        "reference_cars_preserved_and_linked": [
+          "A9L",
+          "T11",
+          "T7"
+        ],
+        "concept_originals_unchanged": 3,
+        "missing_resources": 0,
+        "remote_requests_in_code": 0,
+        "mode": "Local file, image and source inspection only; browser QA not performed this round."
+      },
+      "sequence_policy": [
+        {
+          "name": "Exact end and start frames are reachable",
+          "pass": true
+        },
+        {
+          "name": "Returning to the visible frame cancels stale intent",
+          "pass": true
+        },
+        {
+          "name": "Fast A-B-A requests serialize and show only the latest frame",
+          "pass": true
+        },
+        {
+          "name": "A newer target supersedes an in-flight decode without a flash",
+          "pass": true
+        },
+        {
+          "name": "Decode failure keeps the current frame and permits retry",
+          "pass": true
+        },
+        {
+          "name": "Missing decode API waits for load and handles errors",
+          "pass": true
+        },
+        {
+          "name": "Invalid progress does not request an invalid filename",
+          "pass": true
+        }
+      ],
+      "flow_field": {
+        "type": "Native Canvas field render, not browser/page QA",
+        "deterministic_reverse": true,
+        "resize_repaints": true,
+        "samples": [
+          0.03,
+          0.14,
+          0.24,
+          0.34,
+          0.44,
+          0.54,
+          0.64
+        ],
+        "render_and_png_encode_ms": [
+          111.7,
+          124.9,
+          176.5,
+          419.9,
+          641.3,
+          720.5,
+          440.3
+        ]
+      },
+      "baked_sequence": {
+        "frames": 144,
+        "resolution": [
+          1920,
+          1080
+        ],
+        "max_adjacent_mean_delta_before_storm": 4.852,
+        "frame_97_to_98_delta": 1.454,
+        "unchanged_storm_frames": 46,
+        "bytes": 4540836,
+        "note": "Local generated frame inspection, not browser QA."
+      },
+      "gallery": "Six concept/reference mappings, captions, focus, failure fallback: PASS",
+      "music": "Local music state-policy test: PASS; no fresh playback/browser test",
+      "browser_visual_qa": "Not performed this round. Local file browser access is blocked by URL policy. No workaround used.",
+      "complete": [
+        "Continuous 2D wind-to-cloud field baked into 144-frame sequence",
+        "Latest-intent sequence switching",
+        "Three original real cars restored alongside concepts",
+        "Stacked brand signatures"
+      ],
+      "not_complete": [
+        "True volumetric storm replacing all photo plates",
+        "Three production-quality 3D cars",
+        "Cinema-grade environments",
+        "Fresh browser performance and visual QA"
+      ]
+    },
+    {
+      "version": "v15",
+      "assets": {
+        "version": "v14",
+        "html_pages": 2,
+        "resources_checked": 24,
+        "verified_raster_images": 25,
+        "sequence_frames": 144,
+        "reference_cars_preserved_and_linked": [
+          "A9L",
+          "T11",
+          "T7"
+        ],
+        "concept_originals_unchanged": 3,
+        "missing_resources": 0,
+        "remote_requests_in_code": 0,
+        "mode": "Local file, image and source inspection only; browser QA not performed this round."
+      },
+      "sequence_policy": [
+        {
+          "name": "Exact end and start frames are reachable",
+          "pass": true
+        },
+        {
+          "name": "Returning to the visible frame cancels stale intent",
+          "pass": true
+        },
+        {
+          "name": "Fast A-B-A requests serialize and show only the latest frame",
+          "pass": true
+        },
+        {
+          "name": "A newer target supersedes an in-flight decode without a flash",
+          "pass": true
+        },
+        {
+          "name": "Decode failure keeps the current frame and permits retry",
+          "pass": true
+        },
+        {
+          "name": "Missing decode API waits for load and handles errors",
+          "pass": true
+        },
+        {
+          "name": "Invalid progress does not request an invalid filename",
+          "pass": true
+        }
+      ],
+      "flow_field": {
+        "type": "Native Canvas field render, not browser/page QA",
+        "deterministic_reverse": true,
+        "resize_repaints": true,
+        "samples": [
+          0.03,
+          0.14,
+          0.24,
+          0.34,
+          0.44,
+          0.54,
+          0.64
+        ],
+        "render_and_png_encode_ms": [
+          111.7,
+          124.9,
+          176.5,
+          419.9,
+          641.3,
+          720.5,
+          440.3
+        ]
+      },
+      "baked_sequence": {
+        "frames": 144,
+        "resolution": [
+          1920,
+          1080
+        ],
+        "max_adjacent_mean_delta_before_storm": 4.852,
+        "frame_97_to_98_delta": 1.454,
+        "unchanged_storm_frames": 46,
+        "bytes": 4540836,
+        "note": "Local generated frame inspection, not browser QA."
+      },
+      "gallery": "Six concept/reference mappings, captions, focus, failure fallback: PASS",
+      "music": "Local music state-policy test: PASS; no fresh playback/browser test",
+      "browser_visual_qa": "Not performed: file:// access denied by browser URL policy. No server, alternate browser or protocol workaround used.",
+      "complete": [
+        "64-item initial reconstruction audit with source/rights notes; refreshed count in ASSETS.md",
+        "Continuous 2D wind-to-cloud field, pre-baked 144 frames and robust sequence switching",
+        "Three original real cars and three unmodified reference boards preserved",
+        "Three independently proportioned editable geometry studies plus static GLB exports",
+        "GLB round-trip and independent Cycles render; 88k / 96k / 88k triangles, zero image textures",
+        "Editable camera / light / lamp timing studies and rendered final-frame evidence",
+        "Procedural volume, cafe and garage prototype sources with local renders",
+        "Standalone on-demand WebGL study viewer implemented; parser and mocked lifecycle verified"
+      ],
+      "not_complete": [
+        "Cinema-grade automotive surface refinement and high-fidelity reference matching",
+        "Opening doors with complete interior structure, production-quality cabin / wheel / lamp detail",
+        "Final 3D atmosphere: prototype remains too fog-like; no full approved volumetric sequence",
+        "Final cinema-grade environment lighting and shot choreography",
+        "Replacement of main concept-board visuals by approved final 3D imagery",
+        "Real-browser WebGL shader, visual, cross-browser, FPS and memory QA"
+      ],
+      "models": {
+        "models": [
+          {
+            "name": "hurricane",
+            "triangles": 88060,
+            "meshes": 150,
+            "geometry_bounds_and_normals": true,
+            "local_wrapper_identical": true
+          },
+          {
+            "name": "nimbus",
+            "triangles": 95716,
+            "meshes": 196,
+            "geometry_bounds_and_normals": true,
+            "local_wrapper_identical": true
+          },
+          {
+            "name": "thunder",
+            "triangles": 88276,
+            "meshes": 153,
+            "geometry_bounds_and_normals": true,
+            "local_wrapper_identical": true
+          }
+        ],
+        "invalid_glb_rejected": true,
+        "latest_model_intent": true,
+        "idle_render_loop_stops": true,
+        "hidden_page_stops_orbit": true,
+        "reduced_motion": true,
+        "buffers_released": true,
+        "no_webgl_fallback": true,
+        "note": "Real GLB parser + mocked WebGL lifecycle tests. Does not validate shader compilation, browser visuals or FPS."
+      },
+      "blender_model_validations": [
+        {
+          "model": "hurricane",
+          "glb_roundtrip": true,
+          "mesh_objects": 150,
+          "triangles": 88060,
+          "image_textures": 0,
+          "bounds_dimensions_including_mirrors_m": [
+            5.27,
+            2.33,
+            1.4495
+          ],
+          "wheel_nodes": 4,
+          "door_motion_nodes": 4,
+          "render_seconds": 2.59,
+          "stage": "Proportion study only; surfaces and opening doors not complete."
+        },
+        {
+          "model": "nimbus",
+          "glb_roundtrip": true,
+          "mesh_objects": 196,
+          "triangles": 95716,
+          "image_textures": 0,
+          "bounds_dimensions_including_mirrors_m": [
+            5.29,
+            2.32,
+            1.8971
+          ],
+          "wheel_nodes": 4,
+          "door_motion_nodes": 4,
+          "render_seconds": 2.47,
+          "stage": "Proportion study only; surfaces and opening doors not complete."
+        },
+        {
+          "model": "thunder",
+          "glb_roundtrip": true,
+          "mesh_objects": 153,
+          "triangles": 88276,
+          "image_textures": 0,
+          "bounds_dimensions_including_mirrors_m": [
+            4.94,
+            2.3,
+            1.7093
+          ],
+          "wheel_nodes": 4,
+          "door_motion_nodes": 4,
+          "render_seconds": 2.58,
+          "stage": "Proportion study only; surfaces and opening doors not complete."
+        }
+      ],
+      "animations": [
+        {
+          "model": "hurricane",
+          "frames": 144,
+          "fps": 24,
+          "camera_poses": 7,
+          "light_sweep": true,
+          "front_rear_emission_envelopes": true,
+          "frozen_final_interval": 0.12,
+          "render_seconds": 15.51,
+          "status": "Editable presentation prototype, not final choreography"
+        },
+        {
+          "model": "nimbus",
+          "frames": 192,
+          "fps": 24,
+          "camera_poses": 7,
+          "light_sweep": true,
+          "front_rear_emission_envelopes": true,
+          "frozen_final_interval": 0.12,
+          "render_seconds": 15.9,
+          "status": "Editable presentation prototype, not final choreography"
+        },
+        {
+          "model": "thunder",
+          "frames": 120,
+          "fps": 24,
+          "camera_poses": 7,
+          "light_sweep": true,
+          "front_rear_emission_envelopes": true,
+          "frozen_final_interval": 0.12,
+          "render_seconds": 15.24,
+          "status": "Editable presentation prototype, not final choreography"
+        }
+      ],
+      "editable_sources": [
+        "FULWIN-sources/cars/hurricane/hurricane-study.blend",
+        "FULWIN-sources/cars/nimbus/nimbus-study.blend",
+        "FULWIN-sources/cars/thunder/thunder-study.blend",
+        "FULWIN-sources/environments/cafe-study.blend",
+        "FULWIN-sources/environments/garage-study.blend",
+        "FULWIN-sources/nature/fulwin-atmosphere.blend"
+      ],
+      "environments": [
+        {
+          "stage": "Architecture / lighting study, not approved final imagery. Car is a proportion study.",
+          "inferred": "Architecture, materials, furniture and all unseen cabin detail are generated concept interpretations.",
+          "renders": [
+            {
+              "view": "cafe-exterior",
+              "seconds": 6.53
+            }
+          ]
+        },
+        {
+          "stage": "Architecture / lighting study, not approved final imagery. Car is a proportion study.",
+          "inferred": "Architecture, materials, furniture and all unseen cabin detail are generated concept interpretations.",
+          "renders": [
+            {
+              "view": "garage-exterior",
+              "seconds": 6.18
+            },
+            {
+              "view": "garage-interior",
+              "seconds": 8.87
+            }
+          ]
+        }
+      ],
+      "volume_prototype": {
+        "backend": "GPU",
+        "samples": 32,
+        "resolution": [
+          960,
+          540
+        ],
+        "frames": [
+          {
+            "frame": 18,
+            "seconds": 3.27
+          },
+          {
+            "frame": 55,
+            "seconds": 4.07
+          },
+          {
+            "frame": 85,
+            "seconds": 4.8
+          },
+          {
+            "frame": 102,
+            "seconds": 5.16
+          }
+        ]
+      }
+    },
+    {
+      "version": "v16",
+      "direction": "2D / 2.5D cinematic scroll; 3D modelling cancelled by user",
+      "cinema": {
+        "version": "v16",
+        "scenes": [
+          {
+            "kind": "hurricane",
+            "deterministic_reverse": true,
+            "continuous_1000_steps": true,
+            "final_side_fully_visible": true,
+            "no_idle_writes": true
+          },
+          {
+            "kind": "nimbus",
+            "deterministic_reverse": true,
+            "continuous_1000_steps": true,
+            "final_side_fully_visible": true,
+            "no_idle_writes": true
+          },
+          {
+            "kind": "thunder",
+            "deterministic_reverse": true,
+            "continuous_1000_steps": true,
+            "final_side_fully_visible": true,
+            "no_idle_writes": true
+          }
+        ],
+        "dark_entry_lamps_only": true,
+        "nimbus_fog_clears": true,
+        "thunder_sequential_lamps": true,
+        "no_clock_driven_car_animation": true,
+        "original_scene_order_preserved": true,
+        "scope": "Pure scroll-state + integration checks, not browser visual/FPS QA."
+      },
+      "sequence_policy": [
+        {
+          "name": "Exact end and start frames are reachable",
+          "pass": true
+        },
+        {
+          "name": "Returning to the visible frame cancels stale intent",
+          "pass": true
+        },
+        {
+          "name": "Fast A-B-A requests serialize and show only the latest frame",
+          "pass": true
+        },
+        {
+          "name": "A newer target supersedes an in-flight decode without a flash",
+          "pass": true
+        },
+        {
+          "name": "Decode failure keeps the current frame and permits retry",
+          "pass": true
+        },
+        {
+          "name": "Missing decode API waits for load and handles errors",
+          "pass": true
+        },
+        {
+          "name": "Invalid progress does not request an invalid filename",
+          "pass": true
+        }
+      ],
+      "source_assets": [
+        {
+          "family": "hurricane",
+          "view": "front",
+          "source": "concept-hurricane.png",
+          "source_crop": [
+            490,
+            70,
+            959,
+            350
+          ],
+          "size": [
+            469,
+            280
+          ],
+          "asset": "car-hurricane-front.webp",
+          "method": "Original pixels, local silhouette mask. No generative image or detail synthesis."
+        },
+        {
+          "family": "hurricane",
+          "view": "side",
+          "source": "concept-hurricane.png",
+          "source_crop": [
+            160,
+            389,
+            1280,
+            679
+          ],
+          "size": [
+            1120,
+            290
+          ],
+          "asset": "car-hurricane-side.webp",
+          "method": "Original pixels, local silhouette mask. No generative image or detail synthesis."
+        },
+        {
+          "family": "nimbus",
+          "view": "front",
+          "source": "concept-nimbus.png",
+          "source_crop": [
+            499,
+            39,
+            960,
+            354
+          ],
+          "size": [
+            461,
+            315
+          ],
+          "asset": "car-nimbus-front.webp",
+          "method": "Original pixels, local silhouette mask. No generative image or detail synthesis."
+        },
+        {
+          "family": "nimbus",
+          "view": "side",
+          "source": "concept-nimbus.png",
+          "source_crop": [
+            207,
+            387,
+            1247,
+            698
+          ],
+          "size": [
+            1040,
+            311
+          ],
+          "asset": "car-nimbus-side.webp",
+          "method": "Original pixels, local silhouette mask. No generative image or detail synthesis."
+        },
+        {
+          "family": "thunder",
+          "view": "front",
+          "source": "concept-thunder.png",
+          "source_crop": [
+            481,
+            62,
+            948,
+            354
+          ],
+          "size": [
+            467,
+            292
+          ],
+          "asset": "car-thunder-front.webp",
+          "method": "Original pixels, local silhouette mask. No generative image or detail synthesis."
+        },
+        {
+          "family": "thunder",
+          "view": "side",
+          "source": "concept-thunder.png",
+          "source_crop": [
+            189,
+            386,
+            1232,
+            692
+          ],
+          "size": [
+            1043,
+            306
+          ],
+          "asset": "car-thunder-side.webp",
+          "method": "Original pixels, local silhouette mask. No generative image or detail synthesis."
+        }
+      ],
+      "reference_cars": [
+        "A9L",
+        "T11",
+        "T7"
+      ],
+      "concept_originals_unchanged": 3,
+      "bgm": "Local Qian Nian Zhi Hou; default off",
+      "storyboards": "Native source-layer compositing previews; not browser screenshots",
+      "browser_visual_qa": "Not performed: file:// access blocked by browser URL policy; no workaround used.",
+      "known_limits": [
+        "Front source crops only 461–469 pixels wide; no high-resolution synthesis claimed",
+        "Front/profile transition is a soft mask between two original views, not a continuous camera orbit",
+        "Real browser visual, responsive, frame-rate and memory QA not repeated this round"
+      ],
+      "archived": "Cancelled 3D source, renders and viewer are preserved under work/archive-v15; excluded from current delivery",
+      "privacy": "Local asset processing only; no user images or music uploaded. External example URLs not used as site assets."
+    },
+    {
+      "version": "v17",
+      "verified_at": "2026-10-18T06:59:01.605520+00:00",
+      "scope": "SVG emblem and native ACT01 merged into full site; preserved older cloud/storm and car presentation",
+      "policies": [
+        {
+          "file": "work/wind-policy.cjs",
+          "pass": true,
+          "output": "PASS: black start; deterministic A-B-A; idle cache; invalid values; clamps; resize; seed; four phases; no clock; 4K mist chroma=5"
+        },
+        {
+          "file": "work/wind-scroll-policy.cjs",
+          "pass": true,
+          "output": "PASS: normalized scroll; reverse; idle; event coalescing; scrub sync; resize; DPR cap; reduced motion; no-Canvas fallback"
+        },
+        {
+          "file": "work/sequence-policy.cjs",
+          "pass": true,
+          "output": "[\n  {\n    \"name\": \"Exact end and start frames are reachable\",\n    \"pass\": true\n  },\n  {\n    \"name\": \"Returning to the visible frame cancels stale intent\",\n    \"pass\": true\n  },\n  {\n    \"name\": \"Fast A-B-A requests serialize and show only the latest frame\",\n    \"pass\": true\n  },\n  {\n    \"name\": \"A newer target supersedes an in-flight decode without a flash\",\n    \"pass\": true\n  },\n  {\n    \"name\": \"Decode failure keeps the current frame and permits retry\",\n    \"pass\": true\n  },\n  {\n    \"name\": \"Missing decode API waits for load and handles errors\",\n    \"pass\": true\n  },\n  {\n    \"name\": \"Invalid progress does not request an invalid filename\",\n    \"pass\": true\n  }\n]"
+        },
+        {
+          "file": "work/prologue-merge-policy.cjs",
+          "pass": true,
+          "output": "PASS: native wind merge; hidden old buffers; reverse; A-B-A; decode gating and completion; static mode; resize; DPR; Canvas fallback; main timeline integration"
+        },
+        {
+          "file": "work/cinema-policy.cjs",
+          "pass": true,
+          "output": "{\"version\":\"v16\",\"scenes\":[{\"kind\":\"hurricane\",\"deterministic_reverse\":true,\"continuous_1000_steps\":true,\"final_side_fully_visible\":true,\"no_idle_writes\":true},{\"kind\":\"nimbus\",\"deterministic_reverse\":true,\"continuous_1000_steps\":true,\"final_side_fully_visible\":true,\"no_idle_writes\":true},{\"kind\":\"thunder\",\"deterministic_reverse\":true,\"continuous_1000_steps\":true,\"final_side_fully_visible\":true,\"no_idle_writes\":true}],\"dark_entry_lamps_only\":true,\"nimbus_fog_clears\":true,\"thunder_sequential_lamps\":true,\"no_clock_driven_car_animation\":true,\"original_scene_order_preserved\":true,\"scope\":\"Pure scroll-state + integration checks, not browser visual/FPS QA.\"}"
+        },
+        {
+          "file": "work/gallery-policy.cjs",
+          "pass": true,
+          "output": "Gallery mapping, pause/resume, focus cycle, error and fallback: PASS"
+        },
+        {
+          "file": "work/music-policy.cjs",
+          "pass": true,
+          "output": "Music reading/background intent policy: PASS"
+        }
+      ],
+      "original_assets_unchanged": 21,
+      "logo_provenance": "Vector redrawn from user supplied screenshot silhouette; not an official master. Official CN and English wordmarks unchanged.",
+      "native_renderer_sha256": "c5e3ac2c368c783bc150899860a7e4b7cb35963aea27fe7268e867c737d7dac3",
+      "logo_sha256": "01784589074f9ba191c4c21fcec6dafbd625b15a3c5ab596d5fb90e4e3a02ac5",
+      "browser_visual_qa": "Not performed: prior local URL tool policy denial; no bypass",
+      "review": "Author source review and regression suite; independent review agent failed due to account usage limit.",
+      "next": "ACT02 new soft volumetric clouds per user brief; no new cloud assets claimed here."
+    },
+    {
+      "version": "v18",
+      "verified_at": "2026-10-18T07:56:40.913975+00:00",
+      "scope": "SVG + native ACT01 + new soft volumetric ACT02 integrated; original three cars and music preserved",
+      "local_only": true,
+      "policies": [
+        {
+          "file": "work/wind-policy.cjs",
+          "pass": true,
+          "output": "PASS: black start; deterministic A-B-A; idle cache; invalid values; clamps; resize; seed; four phases; no clock; 4K mist chroma=5"
+        },
+        {
+          "file": "work/wind-scroll-policy.cjs",
+          "pass": true,
+          "output": "PASS: normalized scroll; reverse; idle; event coalescing; scrub sync; resize; DPR cap; reduced motion; no-Canvas fallback"
+        },
+        {
+          "file": "work/sequence-policy.cjs",
+          "pass": true,
+          "output": "[\n  {\n    \"name\": \"Exact end and start frames are reachable\",\n    \"pass\": true\n  },\n  {\n    \"name\": \"Returning to the visible frame cancels stale intent\",\n    \"pass\": true\n  },\n  {\n    \"name\": \"Fast A-B-A requests serialize and show only the latest frame\",\n    \"pass\": true\n  },\n  {\n    \"name\": \"A newer target supersedes an in-flight decode without a flash\",\n    \"pass\": true\n  },\n  {\n    \"name\": \"Decode failure keeps the current frame and permits retry\",\n    \"pass\": true\n  },\n  {\n    \"name\": \"Missing decode API waits for load and handles errors\",\n    \"pass\": true\n  },\n  {\n    \"name\": \"Invalid progress does not request an invalid filename\",\n    \"pass\": true\n  }\n]"
+        },
+        {
+          "file": "work/prologue-merge-policy.cjs",
+          "pass": true,
+          "output": "PASS: native wind merge; hidden old buffers; reverse; A-B-A; decode gating and completion; static mode; resize; DPR; Canvas fallback; main timeline integration"
+        },
+        {
+          "file": "work/cloud-player-policy.cjs",
+          "pass": true,
+          "output": "PASS: cloud 360 frames; exact endpoints; one decode; latest seek; error retry; portrait source invalidation; no stale orientation; no preload residency"
+        },
+        {
+          "file": "work/cloud-bridge-policy.cjs",
+          "pass": true,
+          "output": "PASS: ACT01 -> new ACT02 -> retained storm; no lightning in ACT02; decode gating; reverse; A-B-A; reduced-motion cloud still; no stale re-entry"
+        },
+        {
+          "file": "work/cloud-preview-policy.cjs",
+          "pass": true,
+          "output": "PASS: ACT02 four phase boundaries; exact wind terminal handoff; continuous thin-mist blend; reverse; delayed decode; orientation; no independent clock"
+        },
+        {
+          "file": "work/cinema-policy.cjs",
+          "pass": true,
+          "output": "{\"version\":\"v16\",\"scenes\":[{\"kind\":\"hurricane\",\"deterministic_reverse\":true,\"continuous_1000_steps\":true,\"final_side_fully_visible\":true,\"no_idle_writes\":true},{\"kind\":\"nimbus\",\"deterministic_reverse\":true,\"continuous_1000_steps\":true,\"final_side_fully_visible\":true,\"no_idle_writes\":true},{\"kind\":\"thunder\",\"deterministic_reverse\":true,\"continuous_1000_steps\":true,\"final_side_fully_visible\":true,\"no_idle_writes\":true}],\"dark_entry_lamps_only\":true,\"nimbus_fog_clears\":true,\"thunder_sequential_lamps\":true,\"no_clock_driven_car_animation\":true,\"original_scene_order_preserved\":true,\"scope\":\"Pure scroll-state + integration checks, not browser visual/FPS QA.\"}"
+        },
+        {
+          "file": "work/gallery-policy.cjs",
+          "pass": true,
+          "output": "Gallery mapping, pause/resume, focus cycle, error and fallback: PASS"
+        },
+        {
+          "file": "work/music-policy.cjs",
+          "pass": true,
+          "output": "Music reading/background intent policy: PASS"
+        }
+      ],
+      "scene_graph_check": {
+        "scene_source_sha256": "6cd778dc0a78309182e4853fc6b9cb4d9ec5ea9701a0eb540d64817ef452b04c",
+        "state_A_B_A_exact": true,
+        "volume_objects": 16,
+        "groups": [
+          "foreground",
+          "middle",
+          "far",
+          "base"
+        ],
+        "raster_inputs": 0,
+        "lightning_lights": 0,
+        "states": [
+          {
+            "progress": 0,
+            "camera": [
+              0.0,
+              -26.0,
+              9.0
+            ],
+            "camera_euler": [
+              1.4988617897033691,
+              -0.0,
+              0.0
+            ],
+            "lens": 31.0,
+            "world_strength": 0.0,
+            "clouds": [
+              {
+                "name": "Far_Cloud_Sea_00",
+                "location": [
+                  -31.0,
+                  42.0,
+                  2.799999952316284
+                ],
+                "scale": [
+                  18.0,
+                  14.0,
+                  8.0
+                ],
+                "group": "far",
+                "density": 0.0,
+                "noise_w": 0.7300000190734863
+              },
+              {
+                "name": "Far_Cloud_Sea_01",
+                "location": [
+                  -8.0,
+                  53.0,
+                  2.5999999046325684
+                ],
+                "scale": [
+                  16.0,
+                  14.0,
+                  10.0
+                ],
+                "group": "far",
+                "density": 0.0,
+                "noise_w": 0.7300000190734863
+              },
+              {
+                "name": "Far_Cloud_Sea_02",
+                "location": [
+                  18.0,
+                  43.0,
+                  2.700000047683716
+                ],
+                "scale": [
+                  17.0,
+                  14.0,
+                  7.0
+                ],
+                "group": "far",
+                "density": 0.0,
+                "noise_w": 0.7300000190734863
+              },
+              {
+                "name": "Far_Cloud_Sea_03",
+                "location": [
+                  44.0,
+                  57.0,
+                  3.0
+                ],
+                "scale": [
+                  18.0,
+                  15.0,
+                  11.0
+                ],
+                "group": "far",
+                "density": 0.0,
+                "noise_w": 0.7300000190734863
+              },
+              {
+                "name": "Far_Cloud_Sea_04",
+                "location": [
+                  -55.0,
+                  95.0,
+                  3.700000047683716
+                ],
+                "scale": [
+                  27.0,
+                  20.0,
+                  10.0
+                ],
+                "group": "far",
+                "density": 0.0,
+                "noise_w": 0.7300000190734863
+              },
+              {
+                "name": "Far_Cloud_Sea_05",
+                "location": [
+                  -17.0,
+                  108.0,
+                  3.0
+                ],
+                "scale": [
+                  26.0,
+                  20.0,
+                  12.0
+                ],
+                "group": "far",
+                "density": 0.0,
+                "noise_w": 0.7300000190734863
+              },
+              {
+                "name": "Far_Cloud_Sea_06",
+                "location": [
+                  20.0,
+                  110.0,
+                  3.5999999046325684
+                ],
+                "scale": [
+                  27.0,
+                  22.0,
+                  10.0
+                ],
+                "group": "far",
+                "density": 0.0,
+                "noise_w": 0.7300000190734863
+              },
+              {
+                "name": "Far_Cloud_Sea_07",
+                "location": [
+                  60.0,
+                  105.0,
+                  3.0999999046325684
+                ],
+                "scale": [
+                  28.0,
+                  20.0,
+                  12.0
+                ],
+                "group": "far",
+                "density": 0.0,
+                "noise_w": 0.7300000190734863
+              },
+              {
+                "name": "Middle_Cloud_Bank_00",
+                "location": [
+                  -25.0,
+                  15.0,
+                  2.4000000953674316
+                ],
+                "scale": [
+                  14.0,
+                  12.0,
+                  8.0
+                ],
+                "group": "middle",
+                "density": 0.0,
+                "noise_w": 0.7300000190734863
+              },
+              {
+                "name": "Middle_Cloud_Bank_01",
+                "location": [
+                  27.0,
+                  18.0,
+                  2.799999952316284
+                ],
+                "scale": [
+                  15.0,
+                  13.0,
+                  8.5
+                ],
+                "group": "middle",
+                "density": 0.0,
+                "noise_w": 0.7300000190734863
+              },
+              {
+                "name": "Middle_Cloud_Bank_02",
+                "location": [
+                  0.0,
+                  32.0,
+                  2.0999999046325684
+                ],
+                "scale": [
+                  18.0,
+                  12.0,
+                  6.0
+                ],
+                "group": "middle",
+                "density": 0.0,
+                "noise_w": 0.7300000190734863
+              },
+              {
+                "name": "Middle_Cloud_Bank_03",
+                "location": [
+                  -44.0,
+                  4.0,
+                  2.0
+                ],
+                "scale": [
+                  16.0,
+                  13.0,
+                  7.5
+                ],
+                "group": "middle",
+                "density": 0.0,
+                "noise_w": 0.7300000190734863
+              },
+              {
+                "name": "Middle_Cloud_Bank_04",
+                "location": [
+                  47.0,
+                  9.0,
+                  1.899999976158142
+                ],
+                "scale": [
+                  16.0,
+                  13.0,
+                  7.0
+                ],
+                "group": "middle",
+                "density": 0.0,
+                "noise_w": 0.7300000190734863
+              },
+              {
+                "name": "Foreground_Transparent_Mist_00",
+                "location": [
+                  -24.0,
+                  -9.0,
+                  4.0
+                ],
+                "scale": [
+                  20.0,
+                  14.0,
+                  2.0999999046325684
+                ],
+                "group": "foreground",
+                "density": 0.0,
+                "noise_w": 0.7300000190734863
+              },
+              {
+                "name": "Foreground_Transparent_Mist_01",
+                "location": [
+                  26.0,
+                  -7.0,
+                  3.4000000953674316
+                ],
+                "scale": [
+                  21.0,
+                  14.0,
+                  2.0
+                ],
+                "group": "foreground",
+                "density": 0.0,
+                "noise_w": 0.7300000190734863
+              },
+              {
+                "name": "Low_Continuous_Cloud_Sea",
+                "location": [
+                  0.0,
+                  55.0,
+                  -3.0
+                ],
+                "scale": [
+                  130.0,
+                  125.0,
+                  7.0
+                ],
+                "group": "base",
+                "density": 0.0,
+                "noise_w": 0.7300000190734863
+              }
+            ]
+          },
+          {
+            "progress": 0.1,
+            "camera": [
+              0.09270510077476501,
+              -25.399168014526367,
+              9.425204277038574
+            ],
+            "camera_euler": [
+              1.4919503927230835,
+              -9.210345680576992e-11,
+              0.0013754629762843251
+            ],
+            "lens": 31.0,
+            "world_strength": 0.002624453976750374,
+            "clouds": [
+              {
+                "name": "Far_Cloud_Sea_00",
+                "location": [
+                  -30.954999923706055,
+                  42.064998626708984,
+                  2.799999952316284
+                ],
+                "scale": [
+                  18.0,
+                  14.0,
+                  8.0
+                ],
+                "group": "far",
+                "density": 0.0,
+                "noise_w": 0.7540000081062317
+              },
+              {
+                "name": "Far_Cloud_Sea_01",
+                "location": [
+                  -7.954999923706055,
+                  53.064998626708984,
+                  2.5999999046325684
+                ],
+                "scale": [
+                  16.0,
+                  14.0,
+                  10.0
+                ],
+                "group": "far",
+                "density": 0.0,
+                "noise_w": 0.7540000081062317
+              },
+              {
+                "name": "Far_Cloud_Sea_02",
+                "location": [
+                  18.045000076293945,
+                  43.064998626708984,
+                  2.700000047683716
+                ],
+                "scale": [
+                  17.0,
+                  14.0,
+                  7.0
+                ],
+                "group": "far",
+                "density": 0.0,
+                "noise_w": 0.7540000081062317
+              },
+              {
+                "name": "Far_Cloud_Sea_03",
+                "location": [
+                  44.04499816894531,
+                  57.064998626708984,
+                  3.0
+                ],
+                "scale": [
+                  18.0,
+                  15.0,
+                  11.0
+                ],
+                "group": "far",
+                "density": 0.0,
+                "noise_w": 0.7540000081062317
+              },
+              {
+                "name": "Far_Cloud_Sea_04",
+                "location": [
+                  -54.95500183105469,
+                  95.06500244140625,
+                  3.700000047683716
+                ],
+                "scale": [
+                  27.0,
+                  20.0,
+                  10.0
+                ],
+                "group": "far",
+                "density": 0.0,
+                "noise_w": 0.7540000081062317
+              },
+              {
+                "name": "Far_Cloud_Sea_05",
+                "location": [
+                  -16.954999923706055,
+                  108.06500244140625,
+                  3.0
+                ],
+                "scale": [
+                  26.0,
+                  20.0,
+                  12.0
+                ],
+                "group": "far",
+                "density": 0.0,
+                "noise_w": 0.7540000081062317
+              },
+              {
+                "name": "Far_Cloud_Sea_06",
+                "location": [
+                  20.045000076293945,
+                  110.06500244140625,
+                  3.5999999046325684
+                ],
+                "scale": [
+                  27.0,
+                  22.0,
+                  10.0
+                ],
+                "group": "far",
+                "density": 0.0,
+                "noise_w": 0.7540000081062317
+              },
+              {
+                "name": "Far_Cloud_Sea_07",
+                "location": [
+                  60.04499816894531,
+                  105.06500244140625,
+                  3.0999999046325684
+                ],
+                "scale": [
+                  28.0,
+                  20.0,
+                  12.0
+                ],
+                "group": "far",
+                "density": 0.0,
+                "noise_w": 0.7540000081062317
+              },
+              {
+                "name": "Middle_Cloud_Bank_00",
+                "location": [
+                  -24.954999923706055,
+                  15.0649995803833,
+                  2.4000000953674316
+                ],
+                "scale": [
+                  14.0,
+                  12.0,
+                  8.0
+                ],
+                "group": "middle",
+                "density": 0.0,
+                "noise_w": 0.7540000081062317
+              },
+              {
+                "name": "Middle_Cloud_Bank_01",
+                "location": [
+                  27.045000076293945,
+                  18.065000534057617,
+                  2.799999952316284
+                ],
+                "scale": [
+                  15.0,
+                  13.0,
+                  8.5
+                ],
+                "group": "middle",
+                "density": 0.0,
+                "noise_w": 0.7540000081062317
+              },
+              {
+                "name": "Middle_Cloud_Bank_02",
+                "location": [
+                  0.04500000178813934,
+                  32.064998626708984,
+                  2.0999999046325684
+                ],
+                "scale": [
+                  18.0,
+                  12.0,
+                  6.0
+                ],
+                "group": "middle",
+                "density": 0.0,
+                "noise_w": 0.7540000081062317
+              },
+              {
+                "name": "Middle_Cloud_Bank_03",
+                "location": [
+                  -43.95500183105469,
+                  4.065000057220459,
+                  2.0
+                ],
+                "scale": [
+                  16.0,
+                  13.0,
+                  7.5
+                ],
+                "group": "middle",
+                "density": 0.0,
+                "noise_w": 0.7540000081062317
+              },
+              {
+                "name": "Middle_Cloud_Bank_04",
+                "location": [
+                  47.04499816894531,
+                  9.0649995803833,
+                  1.899999976158142
+                ],
+                "scale": [
+                  16.0,
+                  13.0,
+                  7.0
+                ],
+                "group": "middle",
+                "density": 0.0,
+                "noise_w": 0.7540000081062317
+              },
+              {
+                "name": "Foreground_Transparent_Mist_00",
+                "location": [
+                  -23.954999923706055,
+                  -8.9350004196167,
+                  4.0
+                ],
+                "scale": [
+                  20.0,
+                  14.0,
+                  2.0999999046325684
+                ],
+                "group": "foreground",
+                "density": 0.0017600000137463212,
+                "noise_w": 0.7540000081062317
+              },
+              {
+                "name": "Foreground_Transparent_Mist_01",
+                "location": [
+                  26.045000076293945,
+                  -6.934999942779541,
+                  3.4000000953674316
+                ],
+                "scale": [
+                  21.0,
+                  14.0,
+                  2.0
+                ],
+                "group": "foreground",
+                "density": 0.0017600000137463212,
+                "noise_w": 0.7540000081062317
+              },
+              {
+                "name": "Low_Continuous_Cloud_Sea",
+                "location": [
+                  0.04500000178813934,
+                  55.064998626708984,
+                  -3.0
+                ],
+                "scale": [
+                  130.0,
+                  125.0,
+                  7.0
+                ],
+                "group": "base",
+                "density": 0.0,
+                "noise_w": 0.7540000081062317
+              }
+            ]
+          },
+          {
+            "progress": 0.32,
+            "camera": [
+              0.2532983720302582,
+              -21.130464553833008,
+              12.446133613586426
+            ],
+            "camera_euler": [
+              1.4393551349639893,
+              -5.407191916440013e-10,
+              0.004012278746813536
+            ],
+            "lens": 31.0,
+            "world_strength": 0.09038377553224564,
+            "clouds": [
+              {
+                "name": "Far_Cloud_Sea_00",
+                "location": [
+                  -30.856000900268555,
+                  42.20800018310547,
+                  2.799999952316284
+                ],
+                "scale": [
+                  18.0,
+                  14.0,
+                  8.0
+                ],
+                "group": "far",
+                "density": 0.17625275254249573,
+                "noise_w": 0.8068000078201294
+              },
+              {
+                "name": "Far_Cloud_Sea_01",
+                "location": [
+                  -7.855999946594238,
+                  53.20800018310547,
+                  2.5999999046325684
+                ],
+                "scale": [
+                  16.0,
+                  14.0,
+                  10.0
+                ],
+                "group": "far",
+                "density": 0.17625275254249573,
+                "noise_w": 0.8068000078201294
+              },
+              {
+                "name": "Far_Cloud_Sea_02",
+                "location": [
+                  18.143999099731445,
+                  43.20800018310547,
+                  2.700000047683716
+                ],
+                "scale": [
+                  17.0,
+                  14.0,
+                  7.0
+                ],
+                "group": "far",
+                "density": 0.17625275254249573,
+                "noise_w": 0.8068000078201294
+              },
+              {
+                "name": "Far_Cloud_Sea_03",
+                "location": [
+                  44.14400100708008,
+                  57.20800018310547,
+                  3.0
+                ],
+                "scale": [
+                  18.0,
+                  15.0,
+                  11.0
+                ],
+                "group": "far",
+                "density": 0.17625275254249573,
+                "noise_w": 0.8068000078201294
+              },
+              {
+                "name": "Far_Cloud_Sea_04",
+                "location": [
+                  -54.85599899291992,
+                  95.20800018310547,
+                  3.700000047683716
+                ],
+                "scale": [
+                  27.0,
+                  20.0,
+                  10.0
+                ],
+                "group": "far",
+                "density": 0.17625275254249573,
+                "noise_w": 0.8068000078201294
+              },
+              {
+                "name": "Far_Cloud_Sea_05",
+                "location": [
+                  -16.856000900268555,
+                  108.20800018310547,
+                  3.0
+                ],
+                "scale": [
+                  26.0,
+                  20.0,
+                  12.0
+                ],
+                "group": "far",
+                "density": 0.17625275254249573,
+                "noise_w": 0.8068000078201294
+              },
+              {
+                "name": "Far_Cloud_Sea_06",
+                "location": [
+                  20.143999099731445,
+                  110.20800018310547,
+                  3.5999999046325684
+                ],
+                "scale": [
+                  27.0,
+                  22.0,
+                  10.0
+                ],
+                "group": "far",
+                "density": 0.17625275254249573,
+                "noise_w": 0.8068000078201294
+              },
+              {
+                "name": "Far_Cloud_Sea_07",
+                "location": [
+                  60.14400100708008,
+                  105.20800018310547,
+                  3.0999999046325684
+                ],
+                "scale": [
+                  28.0,
+                  20.0,
+                  12.0
+                ],
+                "group": "far",
+                "density": 0.17625275254249573,
+                "noise_w": 0.8068000078201294
+              },
+              {
+                "name": "Middle_Cloud_Bank_00",
+                "location": [
+                  -24.856000900268555,
+                  15.208000183105469,
+                  2.4000000953674316
+                ],
+                "scale": [
+                  14.0,
+                  12.0,
+                  8.0
+                ],
+                "group": "middle",
+                "density": 0.025020655244588852,
+                "noise_w": 0.8068000078201294
+              },
+              {
+                "name": "Middle_Cloud_Bank_01",
+                "location": [
+                  27.143999099731445,
+                  18.20800018310547,
+                  2.799999952316284
+                ],
+                "scale": [
+                  15.0,
+                  13.0,
+                  8.5
+                ],
+                "group": "middle",
+                "density": 0.025020655244588852,
+                "noise_w": 0.8068000078201294
+              },
+              {
+                "name": "Middle_Cloud_Bank_02",
+                "location": [
+                  0.14399999380111694,
+                  32.20800018310547,
+                  2.0999999046325684
+                ],
+                "scale": [
+                  18.0,
+                  12.0,
+                  6.0
+                ],
+                "group": "middle",
+                "density": 0.025020655244588852,
+                "noise_w": 0.8068000078201294
+              },
+              {
+                "name": "Middle_Cloud_Bank_03",
+                "location": [
+                  -43.85599899291992,
+                  4.208000183105469,
+                  2.0
+                ],
+                "scale": [
+                  16.0,
+                  13.0,
+                  7.5
+                ],
+                "group": "middle",
+                "density": 0.025020655244588852,
+                "noise_w": 0.8068000078201294
+              },
+              {
+                "name": "Middle_Cloud_Bank_04",
+                "location": [
+                  47.14400100708008,
+                  9.208000183105469,
+                  1.899999976158142
+                ],
+                "scale": [
+                  16.0,
+                  13.0,
+                  7.0
+                ],
+                "group": "middle",
+                "density": 0.025020655244588852,
+                "noise_w": 0.8068000078201294
+              },
+              {
+                "name": "Foreground_Transparent_Mist_00",
+                "location": [
+                  -23.856000900268555,
+                  -8.791999816894531,
+                  4.0
+                ],
+                "scale": [
+                  20.0,
+                  14.0,
+                  2.0999999046325684
+                ],
+                "group": "foreground",
+                "density": 0.004999999888241291,
+                "noise_w": 0.8068000078201294
+              },
+              {
+                "name": "Foreground_Transparent_Mist_01",
+                "location": [
+                  26.143999099731445,
+                  -6.791999816894531,
+                  3.4000000953674316
+                ],
+                "scale": [
+                  21.0,
+                  14.0,
+                  2.0
+                ],
+                "group": "foreground",
+                "density": 0.004999999888241291,
+                "noise_w": 0.8068000078201294
+              },
+              {
+                "name": "Low_Continuous_Cloud_Sea",
+                "location": [
+                  0.14399999380111694,
+                  55.20800018310547,
+                  -3.0
+                ],
+                "scale": [
+                  130.0,
+                  125.0,
+                  7.0
+                ],
+                "group": "base",
+                "density": 0.0,
+                "noise_w": 0.8068000078201294
+              }
+            ]
+          },
+          {
+            "progress": 0.6,
+            "camera": [
+              0.28531694412231445,
+              -14.621194839477539,
+              17.052692413330078
+            ],
+            "camera_euler": [
+              1.345908284187317,
+              -2.2861879056534917e-10,
+              0.0050390069372951984
+            ],
+            "lens": 31.0,
+            "world_strength": 0.27733752131462097,
+            "clouds": [
+              {
+                "name": "Far_Cloud_Sea_00",
+                "location": [
+                  -30.729999542236328,
+                  42.38999938964844,
+                  2.799999952316284
+                ],
+                "scale": [
+                  18.0,
+                  14.0,
+                  8.0
+                ],
+                "group": "far",
+                "density": 0.7868984341621399,
+                "noise_w": 0.8740000128746033
+              },
+              {
+                "name": "Far_Cloud_Sea_01",
+                "location": [
+                  -7.730000019073486,
+                  53.38999938964844,
+                  2.5999999046325684
+                ],
+                "scale": [
+                  16.0,
+                  14.0,
+                  10.0
+                ],
+                "group": "far",
+                "density": 0.7868984341621399,
+                "noise_w": 0.8740000128746033
+              },
+              {
+                "name": "Far_Cloud_Sea_02",
+                "location": [
+                  18.270000457763672,
+                  43.38999938964844,
+                  2.700000047683716
+                ],
+                "scale": [
+                  17.0,
+                  14.0,
+                  7.0
+                ],
+                "group": "far",
+                "density": 0.7868984341621399,
+                "noise_w": 0.8740000128746033
+              },
+              {
+                "name": "Far_Cloud_Sea_03",
+                "location": [
+                  44.27000045776367,
+                  57.38999938964844,
+                  3.0
+                ],
+                "scale": [
+                  18.0,
+                  15.0,
+                  11.0
+                ],
+                "group": "far",
+                "density": 0.7868984341621399,
+                "noise_w": 0.8740000128746033
+              },
+              {
+                "name": "Far_Cloud_Sea_04",
+                "location": [
+                  -54.72999954223633,
+                  95.38999938964844,
+                  3.700000047683716
+                ],
+                "scale": [
+                  27.0,
+                  20.0,
+                  10.0
+                ],
+                "group": "far",
+                "density": 0.7868984341621399,
+                "noise_w": 0.8740000128746033
+              },
+              {
+                "name": "Far_Cloud_Sea_05",
+                "location": [
+                  -16.729999542236328,
+                  108.38999938964844,
+                  3.0
+                ],
+                "scale": [
+                  26.0,
+                  20.0,
+                  12.0
+                ],
+                "group": "far",
+                "density": 0.7868984341621399,
+                "noise_w": 0.8740000128746033
+              },
+              {
+                "name": "Far_Cloud_Sea_06",
+                "location": [
+                  20.270000457763672,
+                  110.38999938964844,
+                  3.5999999046325684
+                ],
+                "scale": [
+                  27.0,
+                  22.0,
+                  10.0
+                ],
+                "group": "far",
+                "density": 0.7868984341621399,
+                "noise_w": 0.8740000128746033
+              },
+              {
+                "name": "Far_Cloud_Sea_07",
+                "location": [
+                  60.27000045776367,
+                  105.38999938964844,
+                  3.0999999046325684
+                ],
+                "scale": [
+                  28.0,
+                  20.0,
+                  12.0
+                ],
+                "group": "far",
+                "density": 0.7868984341621399,
+                "noise_w": 0.8740000128746033
+              },
+              {
+                "name": "Middle_Cloud_Bank_00",
+                "location": [
+                  -24.729999542236328,
+                  15.390000343322754,
+                  2.4000000953674316
+                ],
+                "scale": [
+                  14.0,
+                  12.0,
+                  8.0
+                ],
+                "group": "middle",
+                "density": 0.6802729964256287,
+                "noise_w": 0.8740000128746033
+              },
+              {
+                "name": "Middle_Cloud_Bank_01",
+                "location": [
+                  27.270000457763672,
+                  18.389999389648438,
+                  2.799999952316284
+                ],
+                "scale": [
+                  15.0,
+                  13.0,
+                  8.5
+                ],
+                "group": "middle",
+                "density": 0.6802729964256287,
+                "noise_w": 0.8740000128746033
+              },
+              {
+                "name": "Middle_Cloud_Bank_02",
+                "location": [
+                  0.27000001072883606,
+                  32.38999938964844,
+                  2.0999999046325684
+                ],
+                "scale": [
+                  18.0,
+                  12.0,
+                  6.0
+                ],
+                "group": "middle",
+                "density": 0.6802729964256287,
+                "noise_w": 0.8740000128746033
+              },
+              {
+                "name": "Middle_Cloud_Bank_03",
+                "location": [
+                  -43.72999954223633,
+                  4.389999866485596,
+                  2.0
+                ],
+                "scale": [
+                  16.0,
+                  13.0,
+                  7.5
+                ],
+                "group": "middle",
+                "density": 0.6802729964256287,
+                "noise_w": 0.8740000128746033
+              },
+              {
+                "name": "Middle_Cloud_Bank_04",
+                "location": [
+                  47.27000045776367,
+                  9.390000343322754,
+                  1.899999976158142
+                ],
+                "scale": [
+                  16.0,
+                  13.0,
+                  7.0
+                ],
+                "group": "middle",
+                "density": 0.6802729964256287,
+                "noise_w": 0.8740000128746033
+              },
+              {
+                "name": "Foreground_Transparent_Mist_00",
+                "location": [
+                  -23.729999542236328,
+                  -8.609999656677246,
+                  4.0
+                ],
+                "scale": [
+                  20.0,
+                  14.0,
+                  2.0999999046325684
+                ],
+                "group": "foreground",
+                "density": 0.004999999888241291,
+                "noise_w": 0.8740000128746033
+              },
+              {
+                "name": "Foreground_Transparent_Mist_01",
+                "location": [
+                  26.270000457763672,
+                  -6.610000133514404,
+                  3.4000000953674316
+                ],
+                "scale": [
+                  21.0,
+                  14.0,
+                  2.0
+                ],
+                "group": "foreground",
+                "density": 0.004999999888241291,
+                "noise_w": 0.8740000128746033
+              },
+              {
+                "name": "Low_Continuous_Cloud_Sea",
+                "location": [
+                  0.27000001072883606,
+                  55.38999938964844,
+                  -3.0
+                ],
+                "scale": [
+                  130.0,
+                  125.0,
+                  7.0
+                ],
+                "group": "base",
+                "density": 0.09901629388332367,
+                "noise_w": 0.8740000128746033
+              }
+            ]
+          },
+          {
+            "progress": 0.95,
+            "camera": [
+              0.04693033918738365,
+              -14.791999816894531,
+              20.708799362182617
+            ],
+            "camera_euler": [
+              1.286280632019043,
+              5.0209537916234837e-11,
+              0.000826354487799108
+            ],
+            "lens": 29.20800018310547,
+            "world_strength": 0.3799999952316284,
+            "clouds": [
+              {
+                "name": "Far_Cloud_Sea_00",
+                "location": [
+                  -30.572500228881836,
+                  42.61750030517578,
+                  2.799999952316284
+                ],
+                "scale": [
+                  18.0,
+                  14.0,
+                  8.0
+                ],
+                "group": "far",
+                "density": 1.100000023841858,
+                "noise_w": 0.9580000042915344
+              },
+              {
+                "name": "Far_Cloud_Sea_01",
+                "location": [
+                  -7.572500228881836,
+                  53.61750030517578,
+                  2.5999999046325684
+                ],
+                "scale": [
+                  16.0,
+                  14.0,
+                  10.0
+                ],
+                "group": "far",
+                "density": 1.100000023841858,
+                "noise_w": 0.9580000042915344
+              },
+              {
+                "name": "Far_Cloud_Sea_02",
+                "location": [
+                  18.427499771118164,
+                  43.61750030517578,
+                  2.700000047683716
+                ],
+                "scale": [
+                  17.0,
+                  14.0,
+                  7.0
+                ],
+                "group": "far",
+                "density": 1.100000023841858,
+                "noise_w": 0.9580000042915344
+              },
+              {
+                "name": "Far_Cloud_Sea_03",
+                "location": [
+                  44.4275016784668,
+                  57.61750030517578,
+                  3.0
+                ],
+                "scale": [
+                  18.0,
+                  15.0,
+                  11.0
+                ],
+                "group": "far",
+                "density": 1.100000023841858,
+                "noise_w": 0.9580000042915344
+              },
+              {
+                "name": "Far_Cloud_Sea_04",
+                "location": [
+                  -54.5724983215332,
+                  95.61750030517578,
+                  3.700000047683716
+                ],
+                "scale": [
+                  27.0,
+                  20.0,
+                  10.0
+                ],
+                "group": "far",
+                "density": 1.100000023841858,
+                "noise_w": 0.9580000042915344
+              },
+              {
+                "name": "Far_Cloud_Sea_05",
+                "location": [
+                  -16.572500228881836,
+                  108.61750030517578,
+                  3.0
+                ],
+                "scale": [
+                  26.0,
+                  20.0,
+                  12.0
+                ],
+                "group": "far",
+                "density": 1.100000023841858,
+                "noise_w": 0.9580000042915344
+              },
+              {
+                "name": "Far_Cloud_Sea_06",
+                "location": [
+                  20.427499771118164,
+                  110.61750030517578,
+                  3.5999999046325684
+                ],
+                "scale": [
+                  27.0,
+                  22.0,
+                  10.0
+                ],
+                "group": "far",
+                "density": 1.100000023841858,
+                "noise_w": 0.9580000042915344
+              },
+              {
+                "name": "Far_Cloud_Sea_07",
+                "location": [
+                  60.4275016784668,
+                  105.61750030517578,
+                  3.0999999046325684
+                ],
+                "scale": [
+                  28.0,
+                  20.0,
+                  12.0
+                ],
+                "group": "far",
+                "density": 1.100000023841858,
+                "noise_w": 0.9580000042915344
+              },
+              {
+                "name": "Middle_Cloud_Bank_00",
+                "location": [
+                  -24.572500228881836,
+                  15.617500305175781,
+                  2.4000000953674316
+                ],
+                "scale": [
+                  14.0,
+                  12.0,
+                  8.0
+                ],
+                "group": "middle",
+                "density": 1.0,
+                "noise_w": 0.9580000042915344
+              },
+              {
+                "name": "Middle_Cloud_Bank_01",
+                "location": [
+                  27.427499771118164,
+                  18.61750030517578,
+                  2.799999952316284
+                ],
+                "scale": [
+                  15.0,
+                  13.0,
+                  8.5
+                ],
+                "group": "middle",
+                "density": 1.0,
+                "noise_w": 0.9580000042915344
+              },
+              {
+                "name": "Middle_Cloud_Bank_02",
+                "location": [
+                  0.42750000953674316,
+                  32.61750030517578,
+                  2.0999999046325684
+                ],
+                "scale": [
+                  18.0,
+                  12.0,
+                  6.0
+                ],
+                "group": "middle",
+                "density": 1.0,
+                "noise_w": 0.9580000042915344
+              },
+              {
+                "name": "Middle_Cloud_Bank_03",
+                "location": [
+                  -43.5724983215332,
+                  4.617499828338623,
+                  2.0
+                ],
+                "scale": [
+                  16.0,
+                  13.0,
+                  7.5
+                ],
+                "group": "middle",
+                "density": 1.0,
+                "noise_w": 0.9580000042915344
+              },
+              {
+                "name": "Middle_Cloud_Bank_04",
+                "location": [
+                  47.4275016784668,
+                  9.617500305175781,
+                  1.899999976158142
+                ],
+                "scale": [
+                  16.0,
+                  13.0,
+                  7.0
+                ],
+                "group": "middle",
+                "density": 1.0,
+                "noise_w": 0.9580000042915344
+              },
+              {
+                "name": "Foreground_Transparent_Mist_00",
+                "location": [
+                  -23.572500228881836,
+                  -8.382499694824219,
+                  4.0
+                ],
+                "scale": [
+                  20.0,
+                  14.0,
+                  2.0999999046325684
+                ],
+                "group": "foreground",
+                "density": 0.0022445619106292725,
+                "noise_w": 0.9580000042915344
+              },
+              {
+                "name": "Foreground_Transparent_Mist_01",
+                "location": [
+                  26.427499771118164,
+                  -6.382500171661377,
+                  3.4000000953674316
+                ],
+                "scale": [
+                  21.0,
+                  14.0,
+                  2.0
+                ],
+                "group": "foreground",
+                "density": 0.0022445619106292725,
+                "noise_w": 0.9580000042915344
+              },
+              {
+                "name": "Low_Continuous_Cloud_Sea",
+                "location": [
+                  0.42750000953674316,
+                  55.61750030517578,
+                  -3.0
+                ],
+                "scale": [
+                  130.0,
+                  125.0,
+                  7.0
+                ],
+                "group": "base",
+                "density": 0.2199999988079071,
+                "noise_w": 0.9580000042915344
+              }
+            ]
+          },
+          {
+            "progress": 1,
+            "camera": [
+              3.6739405577555036e-17,
+              -15.0,
+              21.0
+            ],
+            "camera_euler": [
+              1.2825616598129272,
+              -6.744227642231045e-26,
+              6.445509723238363e-19
+            ],
+            "lens": 29.0,
+            "world_strength": 0.3799999952316284,
+            "clouds": [
+              {
+                "name": "Far_Cloud_Sea_00",
+                "location": [
+                  -30.549999237060547,
+                  42.650001525878906,
+                  2.799999952316284
+                ],
+                "scale": [
+                  18.0,
+                  14.0,
+                  8.0
+                ],
+                "group": "far",
+                "density": 1.100000023841858,
+                "noise_w": 0.9700000286102295
+              },
+              {
+                "name": "Far_Cloud_Sea_01",
+                "location": [
+                  -7.550000190734863,
+                  53.650001525878906,
+                  2.5999999046325684
+                ],
+                "scale": [
+                  16.0,
+                  14.0,
+                  10.0
+                ],
+                "group": "far",
+                "density": 1.100000023841858,
+                "noise_w": 0.9700000286102295
+              },
+              {
+                "name": "Far_Cloud_Sea_02",
+                "location": [
+                  18.450000762939453,
+                  43.650001525878906,
+                  2.700000047683716
+                ],
+                "scale": [
+                  17.0,
+                  14.0,
+                  7.0
+                ],
+                "group": "far",
+                "density": 1.100000023841858,
+                "noise_w": 0.9700000286102295
+              },
+              {
+                "name": "Far_Cloud_Sea_03",
+                "location": [
+                  44.45000076293945,
+                  57.650001525878906,
+                  3.0
+                ],
+                "scale": [
+                  18.0,
+                  15.0,
+                  11.0
+                ],
+                "group": "far",
+                "density": 1.100000023841858,
+                "noise_w": 0.9700000286102295
+              },
+              {
+                "name": "Far_Cloud_Sea_04",
+                "location": [
+                  -54.54999923706055,
+                  95.6500015258789,
+                  3.700000047683716
+                ],
+                "scale": [
+                  27.0,
+                  20.0,
+                  10.0
+                ],
+                "group": "far",
+                "density": 1.100000023841858,
+                "noise_w": 0.9700000286102295
+              },
+              {
+                "name": "Far_Cloud_Sea_05",
+                "location": [
+                  -16.549999237060547,
+                  108.6500015258789,
+                  3.0
+                ],
+                "scale": [
+                  26.0,
+                  20.0,
+                  12.0
+                ],
+                "group": "far",
+                "density": 1.100000023841858,
+                "noise_w": 0.9700000286102295
+              },
+              {
+                "name": "Far_Cloud_Sea_06",
+                "location": [
+                  20.450000762939453,
+                  110.6500015258789,
+                  3.5999999046325684
+                ],
+                "scale": [
+                  27.0,
+                  22.0,
+                  10.0
+                ],
+                "group": "far",
+                "density": 1.100000023841858,
+                "noise_w": 0.9700000286102295
+              },
+              {
+                "name": "Far_Cloud_Sea_07",
+                "location": [
+                  60.45000076293945,
+                  105.6500015258789,
+                  3.0999999046325684
+                ],
+                "scale": [
+                  28.0,
+                  20.0,
+                  12.0
+                ],
+                "group": "far",
+                "density": 1.100000023841858,
+                "noise_w": 0.9700000286102295
+              },
+              {
+                "name": "Middle_Cloud_Bank_00",
+                "location": [
+                  -24.549999237060547,
+                  15.649999618530273,
+                  2.4000000953674316
+                ],
+                "scale": [
+                  14.0,
+                  12.0,
+                  8.0
+                ],
+                "group": "middle",
+                "density": 1.0,
+                "noise_w": 0.9700000286102295
+              },
+              {
+                "name": "Middle_Cloud_Bank_01",
+                "location": [
+                  27.450000762939453,
+                  18.649999618530273,
+                  2.799999952316284
+                ],
+                "scale": [
+                  15.0,
+                  13.0,
+                  8.5
+                ],
+                "group": "middle",
+                "density": 1.0,
+                "noise_w": 0.9700000286102295
+              },
+              {
+                "name": "Middle_Cloud_Bank_02",
+                "location": [
+                  0.44999998807907104,
+                  32.650001525878906,
+                  2.0999999046325684
+                ],
+                "scale": [
+                  18.0,
+                  12.0,
+                  6.0
+                ],
+                "group": "middle",
+                "density": 1.0,
+                "noise_w": 0.9700000286102295
+              },
+              {
+                "name": "Middle_Cloud_Bank_03",
+                "location": [
+                  -43.54999923706055,
+                  4.650000095367432,
+                  2.0
+                ],
+                "scale": [
+                  16.0,
+                  13.0,
+                  7.5
+                ],
+                "group": "middle",
+                "density": 1.0,
+                "noise_w": 0.9700000286102295
+              },
+              {
+                "name": "Middle_Cloud_Bank_04",
+                "location": [
+                  47.45000076293945,
+                  9.649999618530273,
+                  1.899999976158142
+                ],
+                "scale": [
+                  16.0,
+                  13.0,
+                  7.0
+                ],
+                "group": "middle",
+                "density": 1.0,
+                "noise_w": 0.9700000286102295
+              },
+              {
+                "name": "Foreground_Transparent_Mist_00",
+                "location": [
+                  -23.549999237060547,
+                  -8.350000381469727,
+                  4.0
+                ],
+                "scale": [
+                  20.0,
+                  14.0,
+                  2.0999999046325684
+                ],
+                "group": "foreground",
+                "density": 0.002099999925121665,
+                "noise_w": 0.9700000286102295
+              },
+              {
+                "name": "Foreground_Transparent_Mist_01",
+                "location": [
+                  26.450000762939453,
+                  -6.349999904632568,
+                  3.4000000953674316
+                ],
+                "scale": [
+                  21.0,
+                  14.0,
+                  2.0
+                ],
+                "group": "foreground",
+                "density": 0.002099999925121665,
+                "noise_w": 0.9700000286102295
+              },
+              {
+                "name": "Low_Continuous_Cloud_Sea",
+                "location": [
+                  0.44999998807907104,
+                  55.650001525878906,
+                  -3.0
+                ],
+                "scale": [
+                  130.0,
+                  125.0,
+                  7.0
+                ],
+                "group": "base",
+                "density": 0.2199999988079071,
+                "noise_w": 0.9700000286102295
+              }
+            ]
+          }
+        ],
+        "scope": "Real Blender scene graph/state checks. Not browser FPS or a claim of photographic realism."
+      },
+      "cloud_continuity": {
+        "desktop": {
+          "frames": 360,
+          "resolution": [
+            1920,
+            1080
+          ],
+          "max_adjacent_mean_luma_delta": 3.1264584064483643,
+          "p95": 1.8507430195808399
+        },
+        "portrait": {
+          "frames": 360,
+          "resolution": [
+            720,
+            1280
+          ],
+          "max_adjacent_mean_luma_delta": 2.5037500858306885,
+          "p95": 1.5231666445732102
+        }
+      },
+      "native_keyframes": 11,
+      "native_4k_A_B_A_pixel_exact": true,
+      "rerender_evidence": "audit/cloud-native-rerender.json",
+      "originals_unchanged": 21,
+      "videos": {
+        "desktop": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "30/1",
+              "nb_frames": "360"
+            }
+          ],
+          "format": {
+            "duration": "12.000000",
+            "size": "2757926"
+          }
+        },
+        "portrait": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "width": 720,
+              "height": 1280,
+              "r_frame_rate": "30/1",
+              "nb_frames": "360"
+            }
+          ],
+          "format": {
+            "duration": "12.000000",
+            "size": "1052051"
+          }
+        }
+      },
+      "browser_visual_qa": "Not performed: prior local file URL tool restriction was not bypassed.",
+      "unfinished": [
+        "ACT03 new volumetric thunderstorm",
+        "New high-resolution car assets and remaining ten-act remake",
+        "Browser/device visual and performance acceptance"
+      ]
+    },
+    {
+      "version": "v19",
+      "verified_at": "2026-10-18T09:25:21.066321+00:00",
+      "local_only": true,
+      "scope": "ACT03 new native volumetric storm, five stages, one main flash, cloud handoff and full-site integration",
+      "policies": [
+        {
+          "file": "work/wind-policy.cjs",
+          "pass": true,
+          "output": "PASS: black start; deterministic A-B-A; idle cache; invalid values; clamps; resize; seed; four phases; no clock; 4K mist chroma=5"
+        },
+        {
+          "file": "work/wind-scroll-policy.cjs",
+          "pass": true,
+          "output": "PASS: normalized scroll; reverse; idle; event coalescing; scrub sync; resize; DPR cap; reduced motion; no-Canvas fallback"
+        },
+        {
+          "file": "work/sequence-policy.cjs",
+          "pass": true,
+          "output": "[\n  {\n    \"name\": \"Exact end and start frames are reachable\",\n    \"pass\": true\n  },\n  {\n    \"name\": \"Returning to the visible frame cancels stale intent\",\n    \"pass\": true\n  },\n  {\n    \"name\": \"Fast A-B-A requests serialize and show only the latest frame\",\n    \"pass\": true\n  },\n  {\n    \"name\": \"A newer target supersedes an in-flight decode without a flash\",\n    \"pass\": true\n  },\n  {\n    \"name\": \"Decode failure keeps the current frame and permits retry\",\n    \"pass\": true\n  },\n  {\n    \"name\": \"Missing decode API waits for load and handles errors\",\n    \"pass\": true\n  },\n  {\n    \"name\": \"Invalid progress does not request an invalid filename\",\n    \"pass\": true\n  }\n]"
+        },
+        {
+          "file": "work/prologue-merge-policy.cjs",
+          "pass": true,
+          "output": "PASS: SVG/native timeline; reverse A-B-A; DPR and resize; Canvas fallback; reading mode without flash; no clock or legacy storm"
+        },
+        {
+          "file": "work/cloud-player-policy.cjs",
+          "pass": true,
+          "output": "PASS: cloud 360 frames; exact endpoints; one decode; latest seek; error retry; portrait source invalidation; no stale orientation; no preload residency"
+        },
+        {
+          "file": "work/cloud-bridge-policy.cjs",
+          "pass": true,
+          "output": "PASS: ACT01 -> new ACT02 -> native ACT03; no lightning in ACT02; decode gating; reverse; A-B-A; reduced-motion cloud still; no stale re-entry"
+        },
+        {
+          "file": "work/cloud-preview-policy.cjs",
+          "pass": true,
+          "output": "PASS: ACT02 four phase boundaries; exact wind terminal handoff; continuous thin-mist blend; reverse; delayed decode; orientation; no independent clock"
+        },
+        {
+          "file": "work/storm-player-policy.cjs",
+          "pass": true,
+          "output": "PASS: native storm 360-frame wrapper; no preload; independent portrait at initial zero; orientation invalidation; completion event"
+        },
+        {
+          "file": "work/storm-bridge-policy.cjs",
+          "pass": true,
+          "output": "PASS: new wind/cloud/storm timeline; no old storm; cloud-first decode; reading no flash; reverse and stale re-entry; brand after storm"
+        },
+        {
+          "file": "work/storm-preview-policy.cjs",
+          "pass": true,
+          "output": "PASS: ACT03 five phases; exact cloud tail; decode gating; peak copy suppression; quiet brand lead; reverse; no clock"
+        },
+        {
+          "file": "work/storm-scroll-policy.cjs",
+          "pass": true,
+          "output": "PASS: shared controller supports ACT03 renderer and five phases without overlapping or fading final copy"
+        },
+        {
+          "file": "work/cinema-policy.cjs",
+          "pass": true,
+          "output": "{\"version\":\"v16\",\"scenes\":[{\"kind\":\"hurricane\",\"deterministic_reverse\":true,\"continuous_1000_steps\":true,\"final_side_fully_visible\":true,\"no_idle_writes\":true},{\"kind\":\"nimbus\",\"deterministic_reverse\":true,\"continuous_1000_steps\":true,\"final_side_fully_visible\":true,\"no_idle_writes\":true},{\"kind\":\"thunder\",\"deterministic_reverse\":true,\"continuous_1000_steps\":true,\"final_side_fully_visible\":true,\"no_idle_writes\":true}],\"dark_entry_lamps_only\":true,\"nimbus_fog_clears\":true,\"thunder_sequential_lamps\":true,\"no_clock_driven_car_animation\":true,\"original_scene_order_preserved\":true,\"scope\":\"Pure scroll-state + integration checks, not browser visual/FPS QA.\"}"
+        },
+        {
+          "file": "work/gallery-policy.cjs",
+          "pass": true,
+          "output": "Gallery mapping, pause/resume, focus cycle, error and fallback: PASS"
+        },
+        {
+          "file": "work/music-policy.cjs",
+          "pass": true,
+          "output": "Music reading/background intent policy: PASS"
+        }
+      ],
+      "cloud_entry_pixel_exact": {
+        "desktop": true,
+        "portrait": true
+      },
+      "native_4k_A_B_A_pixel_exact": true,
+      "lighting_ablation": {
+        "mean_rgb_gain": 55.98305294335134,
+        "region_gain_above_15_fraction": 0.4524122299382716,
+        "near_white_fraction": 0.008987630208333333
+      },
+      "native_keyframes": 13,
+      "cloud_and_wind_preserved": true,
+      "originals_unchanged": 21,
+      "continuity": {
+        "desktop": {
+          "frames": 360,
+          "resolution": [
+            1920,
+            1080
+          ],
+          "max_non_flash_delta": 1.6278472222222222,
+          "max_all_delta": 16.718819444444446,
+          "max_near_white_fraction": 0.006319444444444444
+        },
+        "portrait": {
+          "frames": 360,
+          "resolution": [
+            720,
+            1280
+          ],
+          "max_non_flash_delta": 1.62,
+          "max_all_delta": 9.468472222222223,
+          "max_near_white_fraction": 0.004791666666666666
+        }
+      },
+      "videos": {
+        "desktop": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "30/1",
+              "nb_frames": "360"
+            }
+          ],
+          "format": {
+            "duration": "12.000000",
+            "size": "3798384"
+          }
+        },
+        "portrait": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "width": 720,
+              "height": 1280,
+              "r_frame_rate": "30/1",
+              "nb_frames": "360"
+            }
+          ],
+          "format": {
+            "duration": "12.000000",
+            "size": "1330061"
+          }
+        }
+      },
+      "browser_visual_qa": "Not performed; prior local URL tool restriction not bypassed.",
+      "unfinished": [
+        "ACT04 and later complete visual remake",
+        "Browser/device visual, touch and frame-rate acceptance"
+      ]
+    },
+    {
+      "version": "v20",
+      "verified_at": "2026-10-18T09:50:16.808900+00:00",
+      "local_only": true,
+      "scope": "Cloud four shots and storm five shots, continuous scroll-driven 2.5D composition merged into main and prototype pages",
+      "root_cause": "Previous decoder discarded every completed decode when the requested frame changed during scrolling; reproduced 12 successful decodes / 0 displayed.",
+      "method": [
+        "Completed frame presentation under changing requests",
+        "Two simultaneous decodes, bounded neighbor cache: 12 frames / 6 on low-memory devices",
+        "70ms position settling, adjacent-frame interpolation, C1 continuous shot paths",
+        "Foreground depth mask, parallax and three low-opacity moving mist veils",
+        "Single main flash; reserved safe dark frame and immediate clear if no eligible frame",
+        "Event-driven animation stops after settling; reduced-motion remains static"
+      ],
+      "policies": [
+        {
+          "file": "work/wind-policy.cjs",
+          "pass": true,
+          "output": "PASS: black start; deterministic A-B-A; idle cache; invalid values; clamps; resize; seed; four phases; no clock; 4K mist chroma=5"
+        },
+        {
+          "file": "work/wind-scroll-policy.cjs",
+          "pass": true,
+          "output": "PASS: normalized scroll; reverse; idle; event coalescing; scrub sync; resize; DPR cap; reduced motion; no-Canvas fallback"
+        },
+        {
+          "file": "work/sequence-policy.cjs",
+          "pass": true,
+          "output": "[\n  {\n    \"name\": \"Exact end and start frames are reachable\",\n    \"pass\": true\n  },\n  {\n    \"name\": \"Returning to the visible frame cancels stale intent\",\n    \"pass\": true\n  },\n  {\n    \"name\": \"Fast A-B-A requests serialize and show only the latest frame\",\n    \"pass\": true\n  },\n  {\n    \"name\": \"A newer target supersedes an in-flight decode without a flash\",\n    \"pass\": true\n  },\n  {\n    \"name\": \"Decode failure keeps the current frame and permits retry\",\n    \"pass\": true\n  },\n  {\n    \"name\": \"Missing decode API waits for load and handles errors\",\n    \"pass\": true\n  },\n  {\n    \"name\": \"Invalid progress does not request an invalid filename\",\n    \"pass\": true\n  }\n]"
+        },
+        {
+          "file": "work/prologue-merge-policy.cjs",
+          "pass": true,
+          "output": "PASS: SVG/native timeline; reverse A-B-A; DPR and resize; Canvas fallback; reading mode without flash; no clock or legacy storm"
+        },
+        {
+          "file": "work/cloud-player-policy.cjs",
+          "pass": true,
+          "output": "PASS: cloud 360 frames; exact endpoints; one decode; latest seek; error retry; portrait source invalidation; no stale orientation; no preload residency"
+        },
+        {
+          "file": "work/cloud-bridge-policy.cjs",
+          "pass": true,
+          "output": "PASS: ACT01 -> new ACT02 -> native ACT03; no lightning in ACT02; decode gating; reverse; A-B-A; reduced-motion cloud still; no stale re-entry"
+        },
+        {
+          "file": "work/cloud-preview-policy.cjs",
+          "pass": true,
+          "output": "PASS: ACT02 four phase boundaries; exact wind terminal handoff; continuous thin-mist blend; reverse; delayed decode; orientation; no independent clock"
+        },
+        {
+          "file": "work/storm-player-policy.cjs",
+          "pass": true,
+          "output": "PASS: native storm 360-frame wrapper; no preload; independent portrait at initial zero; orientation invalidation; completion event"
+        },
+        {
+          "file": "work/storm-bridge-policy.cjs",
+          "pass": true,
+          "output": "PASS: new wind/cloud/storm timeline; no old storm; cloud-first decode; reading no flash; reverse and stale re-entry; brand after storm"
+        },
+        {
+          "file": "work/storm-preview-policy.cjs",
+          "pass": true,
+          "output": "PASS: ACT03 five phases; exact cloud tail; decode gating; peak copy suppression; quiet brand lead; reverse; no clock"
+        },
+        {
+          "file": "work/storm-scroll-policy.cjs",
+          "pass": true,
+          "output": "PASS: shared controller supports ACT03 renderer and five phases without overlapping or fading final copy"
+        },
+        {
+          "file": "work/cinema-policy.cjs",
+          "pass": true,
+          "output": "{\"version\":\"v16\",\"scenes\":[{\"kind\":\"hurricane\",\"deterministic_reverse\":true,\"continuous_1000_steps\":true,\"final_side_fully_visible\":true,\"no_idle_writes\":true},{\"kind\":\"nimbus\",\"deterministic_reverse\":true,\"continuous_1000_steps\":true,\"final_side_fully_visible\":true,\"no_idle_writes\":true},{\"kind\":\"thunder\",\"deterministic_reverse\":true,\"continuous_1000_steps\":true,\"final_side_fully_visible\":true,\"no_idle_writes\":true}],\"dark_entry_lamps_only\":true,\"nimbus_fog_clears\":true,\"thunder_sequential_lamps\":true,\"no_clock_driven_car_animation\":true,\"original_scene_order_preserved\":true,\"scope\":\"Pure scroll-state + integration checks, not browser visual/FPS QA.\"}"
+        },
+        {
+          "file": "work/gallery-policy.cjs",
+          "pass": true,
+          "output": "Gallery mapping, pause/resume, focus cycle, error and fallback: PASS"
+        },
+        {
+          "file": "work/music-policy.cjs",
+          "pass": true,
+          "output": "Music reading/background intent policy: PASS"
+        },
+        {
+          "file": "work/weather-film-policy.cjs",
+          "pass": true,
+          "output": "PASS: 4+5 continuous shots; camera seam; completed-frame progress under load; bounded cache/decodes; orientation revision; exact endpoints; invalid inputs"
+        },
+        {
+          "file": "work/weather-flash-policy.cjs",
+          "pass": true,
+          "output": "PASS: warmed lightning cannot persist after a cold seek, even while all new decodes are unresolved"
+        }
+      ],
+      "javascript_files_checked": 20,
+      "html_pages_checked": 5,
+      "cloud_shots": 4,
+      "storm_shots": 5,
+      "web_frames_unchanged": 1440,
+      "protected_originals_unchanged": 21,
+      "source_copies_equal": true,
+      "videos": [
+        {
+          "file": "assets-remake/weather/previews/weather-desktop-60fps.mp4",
+          "sha256": "0034ed2da3d3d95318bf02ada9ccdc2d99093323394957c2aba8ccfcf499784b",
+          "metadata": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "width": 1920,
+                "height": 1080,
+                "r_frame_rate": "60/1",
+                "nb_frames": "1860"
+              }
+            ],
+            "format": {
+              "duration": "31.000000"
+            }
+          },
+          "full_decode": "PASS"
+        },
+        {
+          "file": "assets-remake/weather/previews/cloud-01-desktop.mp4",
+          "sha256": "c1cc3249aeaf9a2cc292a86e244732bc3f5fcc3c2839acf3d41c7d583ed40607",
+          "metadata": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "width": 1920,
+                "height": 1080,
+                "r_frame_rate": "60/1",
+                "nb_frames": "192"
+              }
+            ],
+            "format": {
+              "duration": "3.200000"
+            }
+          },
+          "full_decode": "PASS"
+        },
+        {
+          "file": "assets-remake/weather/previews/cloud-02-desktop.mp4",
+          "sha256": "5893b304a6b894df2df03191a8ce1931efd6cea1eeeae10b68312606011dad9a",
+          "metadata": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "width": 1920,
+                "height": 1080,
+                "r_frame_rate": "60/1",
+                "nb_frames": "240"
+              }
+            ],
+            "format": {
+              "duration": "4.000000"
+            }
+          },
+          "full_decode": "PASS"
+        },
+        {
+          "file": "assets-remake/weather/previews/cloud-03-desktop.mp4",
+          "sha256": "8eadf07ca789c3885425ec183c617028a2a07f7b43df6826a6ef55a2228f76d6",
+          "metadata": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "width": 1920,
+                "height": 1080,
+                "r_frame_rate": "60/1",
+                "nb_frames": "288"
+              }
+            ],
+            "format": {
+              "duration": "4.800000"
+            }
+          },
+          "full_decode": "PASS"
+        },
+        {
+          "file": "assets-remake/weather/previews/cloud-04-desktop.mp4",
+          "sha256": "94b12b1345585fcf5a8fc595c800efe848baea1bae2815cfe1488d7712c00c1a",
+          "metadata": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "width": 1920,
+                "height": 1080,
+                "r_frame_rate": "60/1",
+                "nb_frames": "240"
+              }
+            ],
+            "format": {
+              "duration": "4.000000"
+            }
+          },
+          "full_decode": "PASS"
+        },
+        {
+          "file": "assets-remake/weather/previews/storm-01-desktop.mp4",
+          "sha256": "72015e9815eba76b9f7ac3a23cad3fc1e429fd76913b0ee58edeff1bc4307ce5",
+          "metadata": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "width": 1920,
+                "height": 1080,
+                "r_frame_rate": "60/1",
+                "nb_frames": "225"
+              }
+            ],
+            "format": {
+              "duration": "3.750000"
+            }
+          },
+          "full_decode": "PASS"
+        },
+        {
+          "file": "assets-remake/weather/previews/storm-02-desktop.mp4",
+          "sha256": "3a7475f625fe3b8d4b3961505921447aa367d76bb203fa8361121188a75706cb",
+          "metadata": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "width": 1920,
+                "height": 1080,
+                "r_frame_rate": "60/1",
+                "nb_frames": "225"
+              }
+            ],
+            "format": {
+              "duration": "3.750000"
+            }
+          },
+          "full_decode": "PASS"
+        },
+        {
+          "file": "assets-remake/weather/previews/storm-03-desktop.mp4",
+          "sha256": "449dc2bed10a5421a56dc58af7953dce7480ba91645ac18ab6ecdf2de5511e25",
+          "metadata": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "width": 1920,
+                "height": 1080,
+                "r_frame_rate": "60/1",
+                "nb_frames": "180"
+              }
+            ],
+            "format": {
+              "duration": "3.000000"
+            }
+          },
+          "full_decode": "PASS"
+        },
+        {
+          "file": "assets-remake/weather/previews/storm-04-desktop.mp4",
+          "sha256": "7181ea1f8546a72f103f66448b9cb05756b411aa7febd4a4df68d0270025c137",
+          "metadata": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "width": 1920,
+                "height": 1080,
+                "r_frame_rate": "60/1",
+                "nb_frames": "162"
+              }
+            ],
+            "format": {
+              "duration": "2.700000"
+            }
+          },
+          "full_decode": "PASS"
+        },
+        {
+          "file": "assets-remake/weather/previews/storm-05-desktop.mp4",
+          "sha256": "533f73b725d2980021081e3e85378f425d0bf9e70013bbbc91a74284301e2f5e",
+          "metadata": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "width": 1920,
+                "height": 1080,
+                "r_frame_rate": "60/1",
+                "nb_frames": "108"
+              }
+            ],
+            "format": {
+              "duration": "1.800000"
+            }
+          },
+          "full_decode": "PASS"
+        },
+        {
+          "file": "assets-remake/weather/previews/weather-portrait-60fps.mp4",
+          "sha256": "16db5f6503feab56f9d1eab4318b647078cbfbebf65abe5904aa182c774eff0d",
+          "metadata": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "width": 720,
+                "height": 1280,
+                "r_frame_rate": "60/1",
+                "nb_frames": "1860"
+              }
+            ],
+            "format": {
+              "duration": "31.000000"
+            }
+          },
+          "full_decode": "PASS"
+        },
+        {
+          "file": "assets-remake/weather/previews/cloud-01-portrait.mp4",
+          "sha256": "a3e2ea050392da1e7097b92c960746a3b82776473b1ddfa145d25069a1abfc03",
+          "metadata": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "width": 720,
+                "height": 1280,
+                "r_frame_rate": "60/1",
+                "nb_frames": "192"
+              }
+            ],
+            "format": {
+              "duration": "3.200000"
+            }
+          },
+          "full_decode": "PASS"
+        },
+        {
+          "file": "assets-remake/weather/previews/cloud-02-portrait.mp4",
+          "sha256": "87350404704d1e35b1b617980c05156af6d38c56713c9018ff3a0cf4b501a65e",
+          "metadata": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "width": 720,
+                "height": 1280,
+                "r_frame_rate": "60/1",
+                "nb_frames": "240"
+              }
+            ],
+            "format": {
+              "duration": "4.000000"
+            }
+          },
+          "full_decode": "PASS"
+        },
+        {
+          "file": "assets-remake/weather/previews/cloud-03-portrait.mp4",
+          "sha256": "97507aee89d0d0d4e24857236ac417aa66b0df3ab59ff0de2e82271ec187bcc4",
+          "metadata": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "width": 720,
+                "height": 1280,
+                "r_frame_rate": "60/1",
+                "nb_frames": "288"
+              }
+            ],
+            "format": {
+              "duration": "4.800000"
+            }
+          },
+          "full_decode": "PASS"
+        },
+        {
+          "file": "assets-remake/weather/previews/cloud-04-portrait.mp4",
+          "sha256": "2110276fb3a63bddbd09fd1e75387d98197b380acced048609a9567078647d10",
+          "metadata": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "width": 720,
+                "height": 1280,
+                "r_frame_rate": "60/1",
+                "nb_frames": "240"
+              }
+            ],
+            "format": {
+              "duration": "4.000000"
+            }
+          },
+          "full_decode": "PASS"
+        },
+        {
+          "file": "assets-remake/weather/previews/storm-01-portrait.mp4",
+          "sha256": "68b02e2a68887b315fd463297805da949d06e0688322404cb63aa01b0fc5fa5d",
+          "metadata": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "width": 720,
+                "height": 1280,
+                "r_frame_rate": "60/1",
+                "nb_frames": "225"
+              }
+            ],
+            "format": {
+              "duration": "3.750000"
+            }
+          },
+          "full_decode": "PASS"
+        },
+        {
+          "file": "assets-remake/weather/previews/storm-02-portrait.mp4",
+          "sha256": "d1517dc6534e6ae042150266ea64e712f69f4544892bcef7510f8f9eb37a9931",
+          "metadata": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "width": 720,
+                "height": 1280,
+                "r_frame_rate": "60/1",
+                "nb_frames": "225"
+              }
+            ],
+            "format": {
+              "duration": "3.750000"
+            }
+          },
+          "full_decode": "PASS"
+        },
+        {
+          "file": "assets-remake/weather/previews/storm-03-portrait.mp4",
+          "sha256": "4cd0976261a749a8be0d79c079fe7213a56dcf4f771e0720f50ea1d2d1c3485c",
+          "metadata": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "width": 720,
+                "height": 1280,
+                "r_frame_rate": "60/1",
+                "nb_frames": "180"
+              }
+            ],
+            "format": {
+              "duration": "3.000000"
+            }
+          },
+          "full_decode": "PASS"
+        },
+        {
+          "file": "assets-remake/weather/previews/storm-04-portrait.mp4",
+          "sha256": "cb494b1196c0c3579e96da7b26f780a27602899c51d16a8ccdcb8177aa0f131d",
+          "metadata": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "width": 720,
+                "height": 1280,
+                "r_frame_rate": "60/1",
+                "nb_frames": "162"
+              }
+            ],
+            "format": {
+              "duration": "2.700000"
+            }
+          },
+          "full_decode": "PASS"
+        },
+        {
+          "file": "assets-remake/weather/previews/storm-05-portrait.mp4",
+          "sha256": "05ed24b5b4e5db1ca7bf563070c7ecd8be7c96a98d2341313c0ecf4feaeb9b5e",
+          "metadata": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "width": 720,
+                "height": 1280,
+                "r_frame_rate": "60/1",
+                "nb_frames": "108"
+              }
+            ],
+            "format": {
+              "duration": "1.800000"
+            }
+          },
+          "full_decode": "PASS"
+        }
+      ],
+      "visual_inspection": "Native merged-video midpoint contact sheets inspected in both aspect ratios. No browser screenshots.",
+      "review": "Independent review found stale lightning after cold seek; regression failed before fix and passed after fix. Safe-frame eviction/reload loop also guarded.",
+      "limits": [
+        "2.5D composition of existing native volume frames, not new 3D render or full 4K film.",
+        "Browser/device FPS, touch and cross-browser visual acceptance remain unmeasured.",
+        "ACT04 and later full visual remake remains outside this update."
+      ]
+    },
+    {
+      "version": "v21",
+      "verified_at": "2026-10-18T13:03:48.086860+00:00",
+      "local_only": true,
+      "uploads": false,
+      "scope": "Six content-confirmed local videos, reusable paused-video seek controller, ten logical acts on the retained scene architecture",
+      "mapping": [
+        {
+          "key": "wind",
+          "source": "act1.mp4",
+          "desktop": "assets/video/wind-desktop.mp4",
+          "mobile": "assets/video/wind-mobile.mp4",
+          "meaning": "银白风线汇聚、雾化"
+        },
+        {
+          "key": "clouds",
+          "source": "act2.mp4",
+          "desktop": "assets/video/cloud-desktop.mp4",
+          "mobile": "assets/video/cloud-mobile.mp4",
+          "meaning": "轻雾到开阔云海"
+        },
+        {
+          "key": "thunderstorm",
+          "source": "jimeng-2026-10-18-9636-ACT 03｜雷动 V2  主题  天光骤裂，万雷并起。  新核心逻辑  不再是....mp4",
+          "desktop": "assets/video/storm-desktop.mp4",
+          "mobile": "assets/video/storm-mobile.mp4",
+          "meaning": "主雷、分叉网络、收暗"
+        },
+        {
+          "key": "hurricaneReveal",
+          "source": "jimeng-2026-10-18-3597-生成一段高质量、电影感、极简高级的汽车出场短视频，主角是一辆 FULWIN 风云....mp4",
+          "desktop": "assets/video/hurricane-desktop.mp4",
+          "mobile": "assets/video/hurricane-mobile.mp4",
+          "meaning": "银白GT日行灯到前脸"
+        },
+        {
+          "key": "nimbusReveal",
+          "source": "jimeng-2026-10-18-5343-Seedance 视频生成提示词｜NIMBUS 云冕 · 云开见车  以提供的 ....mp4",
+          "desktop": "assets/video/nimbus-desktop.mp4",
+          "mobile": "assets/video/nimbus-mobile.mp4",
+          "meaning": "香槟金SUV、45度斜俯拍云开"
+        },
+        {
+          "key": "thunderReveal",
+          "source": "奔雷.mp4",
+          "desktop": "assets/video/thunder-desktop.mp4",
+          "mobile": "assets/video/thunder-mobile.mp4",
+          "meaning": "电光蓝轿跑SUV雷光觉醒"
+        }
+      ],
+      "originals": [
+        {
+          "file": "C:\\Users\\a1512\\Downloads\\act1.mp4",
+          "bytes": 10281791,
+          "sha256": "d352233588456789afb0236c3926d58ef68048b53fe9f2c876e99f63561f99e9",
+          "width": 1920,
+          "height": 1080,
+          "audio": true,
+          "frames": 121,
+          "keyframes": 1,
+          "max_gop_seconds": 5.056009
+        },
+        {
+          "file": "C:\\Users\\a1512\\Downloads\\act2.mp4",
+          "bytes": 9769254,
+          "sha256": "f96986b578d252cd437e2e19733e6844dee821ee0fef37127de048663d244639",
+          "width": 1920,
+          "height": 1080,
+          "audio": true,
+          "frames": 121,
+          "keyframes": 3,
+          "max_gop_seconds": 1.7226760000000003
+        },
+        {
+          "file": "C:\\Users\\a1512\\Downloads\\飓风.mp4",
+          "bytes": 1898642,
+          "sha256": "65b70ba45d789a07c53f88831422a985475c700d22a73c8d9d20f88244a2bfba",
+          "width": 854,
+          "height": 480,
+          "audio": true,
+          "frames": 121,
+          "keyframes": 1,
+          "max_gop_seconds": 5.056009
+        },
+        {
+          "file": "C:\\Users\\a1512\\Downloads\\云冕.mp4",
+          "bytes": 8518655,
+          "sha256": "fde690b77e483b90ee974a04b694173cc5297485a1a42d397516fed50022e2f1",
+          "width": 1920,
+          "height": 1080,
+          "audio": true,
+          "frames": 121,
+          "keyframes": 1,
+          "max_gop_seconds": 5.056009
+        },
+        {
+          "file": "C:\\Users\\a1512\\Downloads\\奔雷.mp4",
+          "bytes": 9905293,
+          "sha256": "19487321711a7d2b7f7becb988c725189baf11a332bd89d5cbc82ea05ad2dedd",
+          "width": 1920,
+          "height": 1080,
+          "audio": true,
+          "frames": 121,
+          "keyframes": 2,
+          "max_gop_seconds": 3.8060090000000004
+        },
+        {
+          "file": "C:\\Users\\a1512\\Downloads\\jimeng-2026-10-18-5343-Seedance 视频生成提示词｜NIMBUS 云冕 · 云开见车  以提供的 ....mp4",
+          "bytes": 14158126,
+          "sha256": "aae988f4150f635a3333b8e42baca9d0259ec481818f9e06cc57e56e1b028686",
+          "width": 1920,
+          "height": 1080,
+          "audio": true,
+          "frames": 121,
+          "keyframes": 1,
+          "max_gop_seconds": 5.056009
+        },
+        {
+          "file": "C:\\Users\\a1512\\Downloads\\jimeng-2026-10-18-9636-ACT 03｜雷动 V2  主题  天光骤裂，万雷并起。  新核心逻辑  不再是....mp4",
+          "bytes": 16132431,
+          "sha256": "d7836ec0c32218bdf64e908310204a268b28627bc9c83a1f60a2018f5bccf6dd",
+          "width": 1920,
+          "height": 1080,
+          "audio": true,
+          "frames": 121,
+          "keyframes": 2,
+          "max_gop_seconds": 2.6726760000000005
+        },
+        {
+          "file": "C:\\Users\\a1512\\Downloads\\jimeng-2026-10-18-3597-生成一段高质量、电影感、极简高级的汽车出场短视频，主角是一辆 FULWIN 风云....mp4",
+          "bytes": 8518655,
+          "sha256": "fde690b77e483b90ee974a04b694173cc5297485a1a42d397516fed50022e2f1",
+          "width": 1920,
+          "height": 1080,
+          "audio": true,
+          "frames": 121,
+          "keyframes": 1,
+          "max_gop_seconds": 5.056009
+        }
+      ],
+      "web_videos": [
+        {
+          "key": "wind",
+          "tier": "desktop",
+          "file": "assets/video/wind-desktop.mp4",
+          "width": 1920,
+          "height": 1080,
+          "frames": 121,
+          "fps": 24,
+          "audio": false,
+          "max_gop_seconds": 0.25,
+          "faststart": true,
+          "full_decode": "PASS",
+          "comparison_frame": 100,
+          "downsampled_480x270_psnr_db": 52.06541978815359,
+          "native_random_seek_ms_including_process_startup": [
+            106.7,
+            114.9,
+            133.6,
+            141.1,
+            133.4
+          ],
+          "browser_fps": "NOT MEASURED",
+          "sha256": "f44c3f8fca42b3c13667880241220c706b9132b1459169fcf9a802f215ec9741",
+          "bytes": 3871391
+        },
+        {
+          "key": "wind",
+          "tier": "mobile",
+          "file": "assets/video/wind-mobile.mp4",
+          "width": 1280,
+          "height": 720,
+          "frames": 121,
+          "fps": 24,
+          "audio": false,
+          "max_gop_seconds": 0.25,
+          "faststart": true,
+          "full_decode": "PASS",
+          "comparison_frame": 100,
+          "downsampled_480x270_psnr_db": 50.26395745591796,
+          "native_random_seek_ms_including_process_startup": [
+            82.8,
+            86.7,
+            93.8,
+            100.0,
+            92.6
+          ],
+          "browser_fps": "NOT MEASURED",
+          "sha256": "b82db500b5d3f26c027d8dae39fb43684b45f24f9c7ba7fec5dcd18fd77ba684",
+          "bytes": 1820421
+        },
+        {
+          "key": "clouds",
+          "tier": "desktop",
+          "file": "assets/video/cloud-desktop.mp4",
+          "width": 1920,
+          "height": 1080,
+          "frames": 121,
+          "fps": 24,
+          "audio": false,
+          "max_gop_seconds": 0.25,
+          "faststart": true,
+          "full_decode": "PASS",
+          "comparison_frame": 100,
+          "downsampled_480x270_psnr_db": 48.326818285456696,
+          "native_random_seek_ms_including_process_startup": [
+            106.1,
+            104.7,
+            130.4,
+            125.5,
+            129.6
+          ],
+          "browser_fps": "NOT MEASURED",
+          "sha256": "c3e1217a6e805a4e044e4a7334035682b5e443c9610cb48d64962b5323746e12",
+          "bytes": 3786056
+        },
+        {
+          "key": "clouds",
+          "tier": "mobile",
+          "file": "assets/video/cloud-mobile.mp4",
+          "width": 1280,
+          "height": 720,
+          "frames": 121,
+          "fps": 24,
+          "audio": false,
+          "max_gop_seconds": 0.25,
+          "faststart": true,
+          "full_decode": "PASS",
+          "comparison_frame": 100,
+          "downsampled_480x270_psnr_db": 47.292392670178735,
+          "native_random_seek_ms_including_process_startup": [
+            82.8,
+            78.9,
+            94.6,
+            93.1,
+            93.5
+          ],
+          "browser_fps": "NOT MEASURED",
+          "sha256": "721a27e9aacbb13936251ed9ed9dca35d2066ade23da9958567bfb97125b1538",
+          "bytes": 1604300
+        },
+        {
+          "key": "thunderstorm",
+          "tier": "desktop",
+          "file": "assets/video/storm-desktop.mp4",
+          "width": 1920,
+          "height": 1080,
+          "frames": 121,
+          "fps": 24,
+          "audio": false,
+          "max_gop_seconds": 0.25,
+          "faststart": true,
+          "full_decode": "PASS",
+          "comparison_frame": 100,
+          "downsampled_480x270_psnr_db": 46.70782164586639,
+          "native_random_seek_ms_including_process_startup": [
+            107.8,
+            112.7,
+            128.3,
+            142.5,
+            125.1
+          ],
+          "browser_fps": "NOT MEASURED",
+          "sha256": "1fb65a77b82a896700983156db8fa1774e52a9daa94e949b46116c58d8753222",
+          "bytes": 5984259
+        },
+        {
+          "key": "thunderstorm",
+          "tier": "mobile",
+          "file": "assets/video/storm-mobile.mp4",
+          "width": 1280,
+          "height": 720,
+          "frames": 121,
+          "fps": 24,
+          "audio": false,
+          "max_gop_seconds": 0.25,
+          "faststart": true,
+          "full_decode": "PASS",
+          "comparison_frame": 100,
+          "downsampled_480x270_psnr_db": 44.00706244672865,
+          "native_random_seek_ms_including_process_startup": [
+            87.5,
+            85.4,
+            99.3,
+            108.5,
+            97.1
+          ],
+          "browser_fps": "NOT MEASURED",
+          "sha256": "8a1dacc6034a2c4cea0e2d53e4028a6dc37db23a2f1c58a424be6529557d28d5",
+          "bytes": 3011576
+        },
+        {
+          "key": "hurricaneReveal",
+          "tier": "desktop",
+          "file": "assets/video/hurricane-desktop.mp4",
+          "width": 1920,
+          "height": 1080,
+          "frames": 121,
+          "fps": 24,
+          "audio": false,
+          "max_gop_seconds": 0.25,
+          "faststart": true,
+          "full_decode": "PASS",
+          "comparison_frame": 100,
+          "downsampled_480x270_psnr_db": 49.778906954379536,
+          "native_random_seek_ms_including_process_startup": [
+            97.5,
+            105.0,
+            127.8,
+            129.1,
+            130.0
+          ],
+          "browser_fps": "NOT MEASURED",
+          "sha256": "d4921031d2d96db60342d85693e64fd0b70b5aefced03a25eb2f5c2c60b5af7d",
+          "bytes": 3622594
+        },
+        {
+          "key": "hurricaneReveal",
+          "tier": "mobile",
+          "file": "assets/video/hurricane-mobile.mp4",
+          "width": 1280,
+          "height": 720,
+          "frames": 121,
+          "fps": 24,
+          "audio": false,
+          "max_gop_seconds": 0.25,
+          "faststart": true,
+          "full_decode": "PASS",
+          "comparison_frame": 100,
+          "downsampled_480x270_psnr_db": 47.82629946578119,
+          "native_random_seek_ms_including_process_startup": [
+            79.5,
+            79.4,
+            90.3,
+            94.0,
+            87.5
+          ],
+          "browser_fps": "NOT MEASURED",
+          "sha256": "dbe72f7faca19b606eb3de6b2a2fb1814615fd5efd807cd89ae9f10889afe9a6",
+          "bytes": 1605600
+        },
+        {
+          "key": "nimbusReveal",
+          "tier": "desktop",
+          "file": "assets/video/nimbus-desktop.mp4",
+          "width": 1920,
+          "height": 1080,
+          "frames": 121,
+          "fps": 24,
+          "audio": false,
+          "max_gop_seconds": 0.25,
+          "faststart": true,
+          "full_decode": "PASS",
+          "comparison_frame": 100,
+          "downsampled_480x270_psnr_db": 47.34969040348926,
+          "native_random_seek_ms_including_process_startup": [
+            105.1,
+            110.2,
+            124.7,
+            133.2,
+            123.2
+          ],
+          "browser_fps": "NOT MEASURED",
+          "sha256": "fa962cb3475e05616d7a9ec2079cb814eb425d208ce46142dc2fc37c4f4a00ce",
+          "bytes": 4400234
+        },
+        {
+          "key": "nimbusReveal",
+          "tier": "mobile",
+          "file": "assets/video/nimbus-mobile.mp4",
+          "width": 1280,
+          "height": 720,
+          "frames": 121,
+          "fps": 24,
+          "audio": false,
+          "max_gop_seconds": 0.25,
+          "faststart": true,
+          "full_decode": "PASS",
+          "comparison_frame": 100,
+          "downsampled_480x270_psnr_db": 45.909682995295434,
+          "native_random_seek_ms_including_process_startup": [
+            85.3,
+            86.3,
+            97.8,
+            100.8,
+            94.2
+          ],
+          "browser_fps": "NOT MEASURED",
+          "sha256": "50f6156b0dac524af238539a8446fd86f47da00a5f7a63769d5a9cdb8a24dfa0",
+          "bytes": 2089668
+        },
+        {
+          "key": "thunderReveal",
+          "tier": "desktop",
+          "file": "assets/video/thunder-desktop.mp4",
+          "width": 1920,
+          "height": 1080,
+          "frames": 121,
+          "fps": 24,
+          "audio": false,
+          "max_gop_seconds": 0.25,
+          "faststart": true,
+          "full_decode": "PASS",
+          "comparison_frame": 100,
+          "downsampled_480x270_psnr_db": 47.98531951704522,
+          "native_random_seek_ms_including_process_startup": [
+            111.3,
+            114.0,
+            129.9,
+            137.1,
+            132.6
+          ],
+          "browser_fps": "NOT MEASURED",
+          "sha256": "e26d9cec7ead63f02b3405341f9eb42ee6aee5a8f4b808d239b530de5b2a58d5",
+          "bytes": 4344086
+        },
+        {
+          "key": "thunderReveal",
+          "tier": "mobile",
+          "file": "assets/video/thunder-mobile.mp4",
+          "width": 1280,
+          "height": 720,
+          "frames": 121,
+          "fps": 24,
+          "audio": false,
+          "max_gop_seconds": 0.25,
+          "faststart": true,
+          "full_decode": "PASS",
+          "comparison_frame": 100,
+          "downsampled_480x270_psnr_db": 46.08750291047177,
+          "native_random_seek_ms_including_process_startup": [
+            84.2,
+            87.6,
+            95.6,
+            100.1,
+            94.1
+          ],
+          "browser_fps": "NOT MEASURED",
+          "sha256": "1f36c0f7d110ea452ecd9b4e1041934338c55f3c2159fc291047dad256b8bfe3",
+          "bytes": 2008569
+        }
+      ],
+      "policies": [
+        {
+          "file": "work/wind-policy.cjs",
+          "pass": true,
+          "output": "PASS: black start; deterministic A-B-A; idle cache; invalid values; clamps; resize; seed; four phases; no clock; 4K mist chroma=5"
+        },
+        {
+          "file": "work/wind-scroll-policy.cjs",
+          "pass": true,
+          "output": "PASS: normalized scroll; reverse; idle; event coalescing; scrub sync; resize; DPR cap; reduced motion; no-Canvas fallback"
+        },
+        {
+          "file": "work/sequence-policy.cjs",
+          "pass": true,
+          "output": "[\n  {\n    \"name\": \"Exact end and start frames are reachable\",\n    \"pass\": true\n  },\n  {\n    \"name\": \"Returning to the visible frame cancels stale intent\",\n    \"pass\": true\n  },\n  {\n    \"name\": \"Fast A-B-A requests serialize and show only the latest frame\",\n    \"pass\": true\n  },\n  {\n    \"name\": \"A newer target supersedes an in-flight decode without a flash\",\n    \"pass\": true\n  },\n  {\n    \"name\": \"Decode failure keeps the current frame and permits retry\",\n    \"pass\": true\n  },\n  {\n    \"name\": \"Missing decode API waits for load and handles errors\",\n    \"pass\": true\n  },\n  {\n    \"name\": \"Invalid progress does not request an invalid filename\",\n    \"pass\": true\n  }\n]"
+        },
+        {
+          "file": "work/prologue-merge-policy.cjs",
+          "pass": true,
+          "output": "PASS: SVG/native timeline; reverse A-B-A; DPR and resize; Canvas fallback; reading mode without flash; no clock or legacy storm"
+        },
+        {
+          "file": "work/cloud-player-policy.cjs",
+          "pass": true,
+          "output": "PASS: cloud 360 frames; exact endpoints; one decode; latest seek; error retry; portrait source invalidation; no stale orientation; no preload residency"
+        },
+        {
+          "file": "work/cloud-bridge-policy.cjs",
+          "pass": true,
+          "output": "PASS: ACT01 -> new ACT02 -> native ACT03; no lightning in ACT02; decode gating; reverse; A-B-A; reduced-motion cloud still; no stale re-entry"
+        },
+        {
+          "file": "work/cloud-preview-policy.cjs",
+          "pass": true,
+          "output": "PASS: ACT02 four phase boundaries; exact wind terminal handoff; continuous thin-mist blend; reverse; delayed decode; orientation; no independent clock"
+        },
+        {
+          "file": "work/storm-player-policy.cjs",
+          "pass": true,
+          "output": "PASS: native storm 360-frame wrapper; no preload; independent portrait at initial zero; orientation invalidation; completion event"
+        },
+        {
+          "file": "work/storm-bridge-policy.cjs",
+          "pass": true,
+          "output": "PASS: new wind/cloud/storm timeline; no old storm; cloud-first decode; reading no flash; reverse and stale re-entry; brand after storm"
+        },
+        {
+          "file": "work/storm-preview-policy.cjs",
+          "pass": true,
+          "output": "PASS: ACT03 five phases; exact cloud tail; decode gating; peak copy suppression; quiet brand lead; reverse; no clock"
+        },
+        {
+          "file": "work/storm-scroll-policy.cjs",
+          "pass": true,
+          "output": "PASS: shared controller supports ACT03 renderer and five phases without overlapping or fading final copy"
+        },
+        {
+          "file": "work/cinema-policy.cjs",
+          "pass": true,
+          "output": "{\"version\":\"v16\",\"scenes\":[{\"kind\":\"hurricane\",\"deterministic_reverse\":true,\"continuous_1000_steps\":true,\"final_side_fully_visible\":true,\"no_idle_writes\":true},{\"kind\":\"nimbus\",\"deterministic_reverse\":true,\"continuous_1000_steps\":true,\"final_side_fully_visible\":true,\"no_idle_writes\":true},{\"kind\":\"thunder\",\"deterministic_reverse\":true,\"continuous_1000_steps\":true,\"final_side_fully_visible\":true,\"no_idle_writes\":true}],\"dark_entry_lamps_only\":true,\"nimbus_fog_clears\":true,\"thunder_sequential_lamps\":true,\"no_clock_driven_car_animation\":true,\"original_scene_order_preserved\":true,\"scope\":\"Pure scroll-state + integration checks, not browser visual/FPS QA.\"}"
+        },
+        {
+          "file": "work/gallery-policy.cjs",
+          "pass": true,
+          "output": "Gallery mapping, pause/resume, focus cycle, error and fallback: PASS"
+        },
+        {
+          "file": "work/music-policy.cjs",
+          "pass": true,
+          "output": "Music reading/background intent policy: PASS"
+        },
+        {
+          "file": "work/weather-film-policy.cjs",
+          "pass": true,
+          "output": "PASS: 4+5 continuous shots; camera seam; completed-frame progress under load; bounded cache/decodes; orientation revision; exact endpoints; invalid inputs"
+        },
+        {
+          "file": "work/weather-flash-policy.cjs",
+          "pass": true,
+          "output": "PASS: warmed lightning cannot persist after a cold seek, even while all new decodes are unresolved"
+        },
+        {
+          "file": "work/scroll-video-policy.cjs",
+          "pass": true,
+          "output": "PASS: latest-target coalescing; metadata; one seek in flight; reverse; endpoints; idle; warm/release; hidden; reduced motion; failure/timeout"
+        },
+        {
+          "file": "work/video-scenes-policy.cjs",
+          "pass": true,
+          "output": "PASS: content-verified mapping; missing resources explicit; ten ordered acts; cloud-first warm plan; per-scene activation; native side handoff; reduced motion"
+        }
+      ],
+      "protected_originals_unchanged": 21,
+      "legacy_frames_unchanged": 1440,
+      "preserved": [
+        "A9L/T11/T7 real-car gallery",
+        "Three concept boards",
+        "Existing SVG wordmarks and screenshot-traced graphic emblem",
+        "Optional local music",
+        "Native CG scenes and independent v20 studies"
+      ],
+      "review": {
+        "important_found": 1,
+        "important_fixed": 1,
+        "finding": "Wind film had the same stacking level as the opaque native canvas. Fixed to native z1, wind z2, cloud z3, storm z4, brand z5; independent reviewer confirmed closure.",
+        "timeline_review": "Reviewer sampled 10001 timeline positions: at most two active clips and one later warm clip.",
+        "not_browser_acceptance": true
+      },
+      "limits": [
+        "Browser local-URL access was denied previously; no workaround server, alternate browser or headless browser used. Actual browser seek latency/FPS/touch/cross-browser composition is NOT VERIFIED.",
+        "Source nominal 60fps metadata describes 121 real frames in about five seconds; web copies normalize those real frames to 24fps. No synthetic optical interpolation or 4K claim.",
+        "No supplied cafe shot: existing high-resolution street and garage real-car atmosphere images are used and not described as a cafe.",
+        "HURRICANE side view remains a bounded 1120px design reference; there is no supplied independent high-resolution side-reveal clip.",
+        "ACT09 uses a two-dimensional composition of independent video stills, not a generated matched-camera three-car master.",
+        "The traced graphic emblem is not an official vector master; original project Chinese/English vector wordmarks are retained."
+      ]
+    }
+  ],
+  "current_update": {
+    "version": "v22",
+    "local_only": true,
+    "browser_visual_qa": "NOT PERFORMED - existing local URL restriction",
+    "pages": {
+      "index.html": {
+        "visible_brand_mentions": 16,
+        "emblems": 26,
+        "new_visual_scenes": 4,
+        "resources": "PASS",
+        "original_copy_preserved": true
+      },
+      "concept.html": {
+        "visible_brand_mentions": 9,
+        "emblems": 10,
+        "new_visual_scenes": 0,
+        "resources": "PASS",
+        "original_copy_preserved": true
+      }
+    },
+    "regression_groups_passed": 18,
+    "native_composition_studies": [
+      "nimbus-1440.png",
+      "nimbus-390.png",
+      "thunder-1440.png",
+      "thunder-390.png"
+    ],
+    "css_references_and_all_js_syntax": "PASS",
+    "mount_and_fallback_check": "PASS",
+    "independent_review": {
+      "important_found": 1,
+      "important_fixed": 1,
+      "finding": "Inline-flex first-image baseline shifted Chinese names below prose baseline. Fixed using inline-block and absolute emblem; reviewer confirmed remedy.",
+      "browser_verified": false
+    }
+  }
+}

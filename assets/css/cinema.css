@@ -1,0 +1,58 @@
+/* Fixed scene, scroll-controlled lighting. Every picture keeps its source shape. */
+.car-cinema::after{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(90deg,#05070b,rgba(5,7,11,.86) 24%,transparent 56%);}
+.scene--nimbus .car-cinema::after{background:linear-gradient(270deg,#05070b,rgba(5,7,11,.86) 24%,transparent 56%);}
+.car-cinema .cinema-intro,.car-cinema .car-cinema__credit{z-index:3;}
+.scene--cinematic .sticky{justify-content:center;padding-top:clamp(100px,12vh,150px);padding-bottom:80px;}
+.scene--cinematic .lane-body{max-width:31vw;padding-bottom:20px;}
+.scene--cinematic .lane-visual::before{display:none;}
+.scene--cinematic .lane-visual *{animation:none!important;}
+.car-cinema{--car-x:67%;--exposure:.022;--edge:0%;--wipe:116%;--front-opacity:1;--side-opacity:0;--side-progress:0;--lamp-left:.24;--lamp-right:.24;--beam:-90%;--beam-opacity:0;--side-beam:-90%;--side-beam-opacity:0;--fog:0;--fog-travel:0vw;--flash:0;--intro:1;position:absolute;inset:0;background:#05070b;}
+.scene--nimbus .car-cinema{--car-x:33%;--fog:1;}
+.car-cinema__front,.car-cinema__side{position:absolute;inset:0;}
+.car-cinema__front{opacity:var(--front-opacity);-webkit-mask-image:linear-gradient(104deg,#000 calc(var(--wipe) - 4%),transparent calc(var(--wipe) + 6%));mask-image:linear-gradient(104deg,#000 calc(var(--wipe) - 4%),transparent calc(var(--wipe) + 6%));}
+.car-cinema__side{opacity:var(--side-opacity);-webkit-mask-image:linear-gradient(104deg,transparent calc(var(--wipe) - 4%),#000 calc(var(--wipe) + 6%));mask-image:linear-gradient(104deg,transparent calc(var(--wipe) - 4%),#000 calc(var(--wipe) + 6%));}
+.car-cinema__frame{position:absolute;left:var(--car-x);bottom:22%;width:min(42vw,780px);aspect-ratio:var(--front-aspect);transform:translateX(-50%);}
+.car-cinema__frame--side{width:min(62vw,1420px);aspect-ratio:var(--side-aspect);}
+.car-cinema__frame>img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:contain;}
+.car-cinema__base{filter:brightness(var(--exposure));opacity:var(--base-opacity,0);}
+.car-cinema__reveal{opacity:.82;filter:brightness(.83);-webkit-mask-image:linear-gradient(90deg,#000 calc(var(--edge) - 14%),transparent calc(var(--edge) + 10%),transparent calc(90% - var(--edge)),#000 calc(114% - var(--edge)));mask-image:linear-gradient(90deg,#000 calc(var(--edge) - 14%),transparent calc(var(--edge) + 10%),transparent calc(90% - var(--edge)),#000 calc(114% - var(--edge)));}
+.car-cinema__sweep{filter:brightness(1.6);opacity:var(--beam-opacity);-webkit-mask-image:linear-gradient(105deg,transparent calc(var(--beam) - 14%),#000 var(--beam),transparent calc(var(--beam) + 14%));mask-image:linear-gradient(105deg,transparent calc(var(--beam) - 14%),#000 var(--beam),transparent calc(var(--beam) + 14%));}
+.car-cinema__sweep--side{opacity:var(--side-beam-opacity);-webkit-mask-image:linear-gradient(105deg,transparent calc(var(--side-beam) - 15%),#000 var(--side-beam),transparent calc(var(--side-beam) + 15%));mask-image:linear-gradient(105deg,transparent calc(var(--side-beam) - 15%),#000 var(--side-beam),transparent calc(var(--side-beam) + 15%));}
+.car-cinema__lamp{filter:drop-shadow(0 0 2px #d9eeff) drop-shadow(0 0 9px #8fb3d7);}
+.car-cinema__lamp--left{opacity:var(--lamp-left);}.car-cinema__lamp--right{opacity:var(--lamp-right);}
+.car-cinema__ground{position:absolute;left:var(--car-x);bottom:17%;width:min(75vw,1450px);height:13%;transform:translateX(-50%);background:radial-gradient(ellipse at center,rgba(128,148,173,.13),transparent 67%);opacity:var(--exposure);}
+.car-cinema__side img:first-child{filter:brightness(.84) contrast(1.04);}
+.car-cinema__fog{position:absolute;top:22%;bottom:17%;width:72%;opacity:var(--fog);background:radial-gradient(ellipse at 50% 56%,rgba(137,149,161,.67),rgba(83,96,111,.31) 32%,transparent 67%);filter:blur(19px);}
+.car-cinema__fog--left{left:-12%;transform:translateX(calc(-1 * var(--fog-travel)));}.car-cinema__fog--right{right:-5%;transform:translateX(var(--fog-travel));}
+.car-cinema__flash{position:absolute;inset:0;opacity:var(--flash);background:radial-gradient(ellipse at 69% 48%,#cbddeb,transparent 66%);}
+.cinema-intro{position:absolute;left:var(--pad);top:40%;opacity:var(--intro);color:var(--bone-2);}
+.cinema-intro>span{font:10px/1.6 var(--mono);letter-spacing:.32em;color:var(--ember);}.cinema-intro>p{font-size:clamp(24px,2.1vw,35px);font-weight:300;letter-spacing:.12em;margin-top:22px;}
+.scene--nimbus .cinema-intro{left:auto;right:var(--pad);text-align:right;}
+.car-cinema__credit{position:absolute;left:var(--car-x);bottom:16%;transform:translateX(-50%);font:8px/1.6 var(--mono);letter-spacing:.17em;color:var(--bone-4);white-space:nowrap;}
+@media(max-width:1000px){
+  .scene--cinematic .sticky{padding-top:100px;}
+  .scene--cinematic .car-cinema{--car-x:50%;}
+  .car-cinema__frame{width:min(78vw,580px);bottom:57%;}.car-cinema__frame--side{width:94vw;}
+  .car-cinema__ground{bottom:53%;width:100%;height:12%;}.car-cinema__credit{bottom:53%;font-size:7px;}
+  .scene--cinematic .lane-body{position:absolute;left:var(--pad);right:var(--pad);top:46%;max-width:none;padding-bottom:0;margin:0;}
+  .scene--cinematic .lane-name{margin-bottom:12px;}.scene--cinematic .lane-claim{margin-bottom:0;}
+  html.js:not(.reading) .scene--cinematic .lane-body>.body-copy,html.js:not(.reading) .scene--cinematic .lane-body>.tags,html.js:not(.reading) .scene--cinematic .lane-body>.pending{position:absolute;width:1px;height:1px;padding:0;margin:-1px;border:0;clip-path:inset(50%);overflow:hidden;white-space:nowrap;}
+  .cinema-intro,.scene--nimbus .cinema-intro{top:auto;bottom:35%;left:var(--pad);right:var(--pad);text-align:center;}.cinema-intro>p{font-size:22px;}
+  .car-cinema__fog{top:10%;bottom:48%;width:100%;}
+}
+@supports not (mask-image:linear-gradient(#000,#000)){
+  .car-cinema__front{opacity:calc(1 - var(--side-progress));}.car-cinema__side{opacity:var(--side-progress);}.car-cinema__reveal{display:none;}
+}
+html.reading .scene--cinematic .lane-visual,html:not(.js) .scene--cinematic .lane-visual{position:relative;inset:auto;width:100%;height:clamp(180px,30vw,390px);overflow:visible;margin-top:20px;}
+html.reading .scene--cinematic .car-cinema,html:not(.js) .scene--cinematic .car-cinema{--car-x:50%;background:transparent;}
+html.reading .car-cinema__front,html:not(.js) .car-cinema__front,html.reading .car-cinema__fog,html:not(.js) .car-cinema__fog,html.reading .car-cinema__flash,html:not(.js) .car-cinema__flash,html.reading .cinema-intro,html:not(.js) .cinema-intro{display:none;}
+html.reading .car-cinema__side,html:not(.js) .car-cinema__side{opacity:1;mask:none;-webkit-mask:none;}
+html.reading .car-cinema__frame--side,html:not(.js) .car-cinema__frame--side{bottom:12%;width:100%;max-width:1400px;}
+html.reading .car-cinema__sweep,html:not(.js) .car-cinema__sweep{display:none;}
+html.reading .car-cinema__credit,html:not(.js) .car-cinema__credit{bottom:0;}
+html.reading .scene--cinematic .lane-body,html:not(.js) .scene--cinematic .lane-body{position:relative;inset:auto;padding-top:24px;max-width:42em;margin:0;}
+@media(prefers-reduced-motion:reduce){.car-cinema__flash,.car-cinema__fog,.car-cinema__sweep{display:none!important;}}
+@media print{.scene--cinematic .lane-body>.body-copy,.scene--cinematic .lane-body>.tags,.scene--cinematic .lane-body>.pending{position:static!important;width:auto!important;height:auto!important;clip-path:none!important;white-space:normal!important;}}
+.car-cinema__reveal{opacity:var(--body,0);}
+@media(max-width:1000px){.car-cinema::after{display:none;}}
+html.reading .car-cinema::after,html:not(.js) .car-cinema::after{display:none;}

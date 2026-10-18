@@ -1,0 +1,1668 @@
+{
+  "clouds": {
+    "sources": {
+      "desktop": "assets/video/cloud-desktop.mp4",
+      "mobile": "assets/video/cloud-mobile.mp4"
+    },
+    "stills": [
+      {
+        "p": 0,
+        "src": "assets/video/cloud-still-0.webp"
+      },
+      {
+        "p": 0.25,
+        "src": "assets/video/cloud-still-1.webp"
+      },
+      {
+        "p": 0.5,
+        "src": "assets/video/cloud-still-2.webp"
+      },
+      {
+        "p": 0.75,
+        "src": "assets/video/cloud-still-3.webp"
+      },
+      {
+        "p": 1,
+        "src": "assets/video/cloud-still-4.webp"
+      }
+    ],
+    "poster": "assets/video/cloud-still-0.webp",
+    "staticPoster": "assets/video/cloud-still-4.webp",
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "duration": 5.041667,
+    "fit": "cover",
+    "sourceFile": "act2.mp4",
+    "sourceSha256": "f96986b578d252cd437e2e19733e6844dee821ee0fef37127de048663d244639",
+    "derivatives": {
+      "desktop": {
+        "sha256": "c3e1217a6e805a4e044e4a7334035682b5e443c9610cb48d64962b5323746e12",
+        "bytes": 3786056,
+        "metadata": {
+          "streams": [
+            {
+              "index": 0,
+              "codec_name": "h264",
+              "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+              "profile": "High",
+              "codec_type": "video",
+              "codec_tag_string": "avc1",
+              "codec_tag": "0x31637661",
+              "mime_codec_string": "avc1.640028",
+              "width": 1920,
+              "height": 1080,
+              "coded_width": 1920,
+              "coded_height": 1080,
+              "has_b_frames": 0,
+              "sample_aspect_ratio": "1:1",
+              "display_aspect_ratio": "16:9",
+              "pix_fmt": "yuv420p",
+              "level": 40,
+              "chroma_location": "left",
+              "field_order": "progressive",
+              "is_avc": "true",
+              "nal_length_size": "4",
+              "id": "0x1",
+              "r_frame_rate": "24/1",
+              "avg_frame_rate": "24/1",
+              "time_base": "1/12288",
+              "start_pts": 0,
+              "start_time": "0.000000",
+              "duration_ts": 61952,
+              "duration": "5.041667",
+              "bit_rate": "6005215",
+              "bits_per_raw_sample": "8",
+              "nb_frames": "121",
+              "extradata_size": 46,
+              "disposition": {
+                "default": 1,
+                "dub": 0,
+                "original": 0,
+                "comment": 0,
+                "lyrics": 0,
+                "karaoke": 0,
+                "forced": 0,
+                "hearing_impaired": 0,
+                "visual_impaired": 0,
+                "clean_effects": 0,
+                "attached_pic": 0,
+                "timed_thumbnails": 0,
+                "non_diegetic": 0,
+                "captions": 0,
+                "descriptions": 0,
+                "metadata": 0,
+                "dependent": 0,
+                "still_image": 0,
+                "multilayer": 0
+              },
+              "tags": {
+                "language": "und",
+                "handler_name": "VideoHandler",
+                "encoder": "Lavc62.28.101 libx264"
+              }
+            }
+          ],
+          "format": {
+            "filename": "C:\\Users\\a1512\\Documents\\Codex\\2026-10-17\\files-mentioned-by-the-user-handoff\\outputs\\FULWIN-offline\\assets\\video\\cloud-desktop.mp4",
+            "nb_streams": 1,
+            "nb_programs": 0,
+            "nb_stream_groups": 0,
+            "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+            "format_long_name": "QuickTime / MOV",
+            "start_time": "0.000000",
+            "duration": "5.041667",
+            "size": "3786056",
+            "bit_rate": "6007625",
+            "probe_score": 100,
+            "tags": {
+              "major_brand": "isom",
+              "minor_version": "512",
+              "compatible_brands": "isomiso2avc1mp41",
+              "encoder": "Lavf62.12.101",
+              "comment": "vid:v02870g10004dba9a1i7dldf9vaogjng"
+            }
+          }
+        }
+      },
+      "mobile": {
+        "sha256": "721a27e9aacbb13936251ed9ed9dca35d2066ade23da9958567bfb97125b1538",
+        "bytes": 1604300,
+        "metadata": {
+          "streams": [
+            {
+              "index": 0,
+              "codec_name": "h264",
+              "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+              "profile": "High",
+              "codec_type": "video",
+              "codec_tag_string": "avc1",
+              "codec_tag": "0x31637661",
+              "mime_codec_string": "avc1.64001f",
+              "width": 1280,
+              "height": 720,
+              "coded_width": 1280,
+              "coded_height": 720,
+              "has_b_frames": 0,
+              "sample_aspect_ratio": "1:1",
+              "display_aspect_ratio": "16:9",
+              "pix_fmt": "yuv420p",
+              "level": 31,
+              "chroma_location": "left",
+              "field_order": "progressive",
+              "is_avc": "true",
+              "nal_length_size": "4",
+              "id": "0x1",
+              "r_frame_rate": "24/1",
+              "avg_frame_rate": "24/1",
+              "time_base": "1/12288",
+              "start_pts": 0,
+              "start_time": "0.000000",
+              "duration_ts": 61952,
+              "duration": "5.041667",
+              "bit_rate": "2543289",
+              "bits_per_raw_sample": "8",
+              "nb_frames": "121",
+              "extradata_size": 45,
+              "disposition": {
+                "default": 1,
+                "dub": 0,
+                "original": 0,
+                "comment": 0,
+                "lyrics": 0,
+                "karaoke": 0,
+                "forced": 0,
+                "hearing_impaired": 0,
+                "visual_impaired": 0,
+                "clean_effects": 0,
+                "attached_pic": 0,
+                "timed_thumbnails": 0,
+                "non_diegetic": 0,
+                "captions": 0,
+                "descriptions": 0,
+                "metadata": 0,
+                "dependent": 0,
+                "still_image": 0,
+                "multilayer": 0
+              },
+              "tags": {
+                "language": "und",
+                "handler_name": "VideoHandler",
+                "encoder": "Lavc62.28.101 libx264"
+              }
+            }
+          ],
+          "format": {
+            "filename": "C:\\Users\\a1512\\Documents\\Codex\\2026-10-17\\files-mentioned-by-the-user-handoff\\outputs\\FULWIN-offline\\assets\\video\\cloud-mobile.mp4",
+            "nb_streams": 1,
+            "nb_programs": 0,
+            "nb_stream_groups": 0,
+            "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+            "format_long_name": "QuickTime / MOV",
+            "start_time": "0.000000",
+            "duration": "5.041667",
+            "size": "1604300",
+            "bit_rate": "2545665",
+            "probe_score": 100,
+            "tags": {
+              "major_brand": "isom",
+              "minor_version": "512",
+              "compatible_brands": "isomiso2avc1mp41",
+              "encoder": "Lavf62.12.101",
+              "comment": "vid:v02870g10004dba9a1i7dldf9vaogjng"
+            }
+          }
+        }
+      }
+    }
+  },
+  "hurricaneReveal": {
+    "sources": {
+      "desktop": "assets/video/hurricane-desktop.mp4",
+      "mobile": "assets/video/hurricane-mobile.mp4"
+    },
+    "stills": [
+      {
+        "p": 0,
+        "src": "assets/video/hurricane-still-0.webp"
+      },
+      {
+        "p": 0.25,
+        "src": "assets/video/hurricane-still-1.webp"
+      },
+      {
+        "p": 0.5,
+        "src": "assets/video/hurricane-still-2.webp"
+      },
+      {
+        "p": 0.75,
+        "src": "assets/video/hurricane-still-3.webp"
+      },
+      {
+        "p": 1,
+        "src": "assets/video/hurricane-still-4.webp"
+      }
+    ],
+    "poster": "assets/video/hurricane-still-0.webp",
+    "staticPoster": "assets/video/hurricane-still-4.webp",
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "duration": 5.041667,
+    "fit": "contain",
+    "sourceFile": "jimeng-2026-10-18-3597-生成一段高质量、电影感、极简高级的汽车出场短视频，主角是一辆 FULWIN 风云....mp4",
+    "sourceSha256": "fde690b77e483b90ee974a04b694173cc5297485a1a42d397516fed50022e2f1",
+    "derivatives": {
+      "desktop": {
+        "sha256": "d4921031d2d96db60342d85693e64fd0b70b5aefced03a25eb2f5c2c60b5af7d",
+        "bytes": 3622594,
+        "metadata": {
+          "streams": [
+            {
+              "index": 0,
+              "codec_name": "h264",
+              "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+              "profile": "High",
+              "codec_type": "video",
+              "codec_tag_string": "avc1",
+              "codec_tag": "0x31637661",
+              "mime_codec_string": "avc1.640028",
+              "width": 1920,
+              "height": 1080,
+              "coded_width": 1920,
+              "coded_height": 1080,
+              "has_b_frames": 0,
+              "sample_aspect_ratio": "1:1",
+              "display_aspect_ratio": "16:9",
+              "pix_fmt": "yuv420p",
+              "level": 40,
+              "chroma_location": "left",
+              "field_order": "progressive",
+              "is_avc": "true",
+              "nal_length_size": "4",
+              "id": "0x1",
+              "r_frame_rate": "24/1",
+              "avg_frame_rate": "24/1",
+              "time_base": "1/12288",
+              "start_pts": 0,
+              "start_time": "0.000000",
+              "duration_ts": 61952,
+              "duration": "5.041667",
+              "bit_rate": "5745838",
+              "bits_per_raw_sample": "8",
+              "nb_frames": "121",
+              "extradata_size": 46,
+              "disposition": {
+                "default": 1,
+                "dub": 0,
+                "original": 0,
+                "comment": 0,
+                "lyrics": 0,
+                "karaoke": 0,
+                "forced": 0,
+                "hearing_impaired": 0,
+                "visual_impaired": 0,
+                "clean_effects": 0,
+                "attached_pic": 0,
+                "timed_thumbnails": 0,
+                "non_diegetic": 0,
+                "captions": 0,
+                "descriptions": 0,
+                "metadata": 0,
+                "dependent": 0,
+                "still_image": 0,
+                "multilayer": 0
+              },
+              "tags": {
+                "language": "und",
+                "handler_name": "VideoHandler",
+                "encoder": "Lavc62.28.101 libx264"
+              }
+            }
+          ],
+          "format": {
+            "filename": "C:\\Users\\a1512\\Documents\\Codex\\2026-10-17\\files-mentioned-by-the-user-handoff\\outputs\\FULWIN-offline\\assets\\video\\hurricane-desktop.mp4",
+            "nb_streams": 1,
+            "nb_programs": 0,
+            "nb_stream_groups": 0,
+            "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+            "format_long_name": "QuickTime / MOV",
+            "start_time": "0.000000",
+            "duration": "5.041667",
+            "size": "3622594",
+            "bit_rate": "5748247",
+            "probe_score": 100,
+            "tags": {
+              "major_brand": "isom",
+              "minor_version": "512",
+              "compatible_brands": "isomiso2avc1mp41",
+              "encoder": "Lavf62.12.101",
+              "comment": "vid:v02870g10004dba9gva7dld844njfg6g"
+            }
+          }
+        }
+      },
+      "mobile": {
+        "sha256": "dbe72f7faca19b606eb3de6b2a2fb1814615fd5efd807cd89ae9f10889afe9a6",
+        "bytes": 1605600,
+        "metadata": {
+          "streams": [
+            {
+              "index": 0,
+              "codec_name": "h264",
+              "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+              "profile": "High",
+              "codec_type": "video",
+              "codec_tag_string": "avc1",
+              "codec_tag": "0x31637661",
+              "mime_codec_string": "avc1.64001f",
+              "width": 1280,
+              "height": 720,
+              "coded_width": 1280,
+              "coded_height": 720,
+              "has_b_frames": 0,
+              "sample_aspect_ratio": "1:1",
+              "display_aspect_ratio": "16:9",
+              "pix_fmt": "yuv420p",
+              "level": 31,
+              "chroma_location": "left",
+              "field_order": "progressive",
+              "is_avc": "true",
+              "nal_length_size": "4",
+              "id": "0x1",
+              "r_frame_rate": "24/1",
+              "avg_frame_rate": "24/1",
+              "time_base": "1/12288",
+              "start_pts": 0,
+              "start_time": "0.000000",
+              "duration_ts": 61952,
+              "duration": "5.041667",
+              "bit_rate": "2545351",
+              "bits_per_raw_sample": "8",
+              "nb_frames": "121",
+              "extradata_size": 45,
+              "disposition": {
+                "default": 1,
+                "dub": 0,
+                "original": 0,
+                "comment": 0,
+                "lyrics": 0,
+                "karaoke": 0,
+                "forced": 0,
+                "hearing_impaired": 0,
+                "visual_impaired": 0,
+                "clean_effects": 0,
+                "attached_pic": 0,
+                "timed_thumbnails": 0,
+                "non_diegetic": 0,
+                "captions": 0,
+                "descriptions": 0,
+                "metadata": 0,
+                "dependent": 0,
+                "still_image": 0,
+                "multilayer": 0
+              },
+              "tags": {
+                "language": "und",
+                "handler_name": "VideoHandler",
+                "encoder": "Lavc62.28.101 libx264"
+              }
+            }
+          ],
+          "format": {
+            "filename": "C:\\Users\\a1512\\Documents\\Codex\\2026-10-17\\files-mentioned-by-the-user-handoff\\outputs\\FULWIN-offline\\assets\\video\\hurricane-mobile.mp4",
+            "nb_streams": 1,
+            "nb_programs": 0,
+            "nb_stream_groups": 0,
+            "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+            "format_long_name": "QuickTime / MOV",
+            "start_time": "0.000000",
+            "duration": "5.041667",
+            "size": "1605600",
+            "bit_rate": "2547728",
+            "probe_score": 100,
+            "tags": {
+              "major_brand": "isom",
+              "minor_version": "512",
+              "compatible_brands": "isomiso2avc1mp41",
+              "encoder": "Lavf62.12.101",
+              "comment": "vid:v02870g10004dba9gva7dld844njfg6g"
+            }
+          }
+        }
+      }
+    },
+    "scrollMap": [
+      [
+        0,
+        0
+      ],
+      [
+        0.25,
+        0.24
+      ],
+      [
+        0.55,
+        0.56
+      ],
+      [
+        0.8,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "beats": [
+      {
+        "end": 0.25,
+        "label": "日行灯浮现"
+      },
+      {
+        "end": 0.55,
+        "label": "前脸显现"
+      },
+      {
+        "end": 0.8,
+        "label": "锋芒渐近"
+      },
+      {
+        "end": 1,
+        "label": "侧影 · 设计参照"
+      }
+    ],
+    "sideReference": "assets/img/car-hurricane-side.webp"
+  },
+  "nimbusReveal": {
+    "sources": {
+      "desktop": "assets/video/nimbus-desktop.mp4",
+      "mobile": "assets/video/nimbus-mobile.mp4"
+    },
+    "stills": [
+      {
+        "p": 0,
+        "src": "assets/video/nimbus-still-0.webp"
+      },
+      {
+        "p": 0.25,
+        "src": "assets/video/nimbus-still-1.webp"
+      },
+      {
+        "p": 0.5,
+        "src": "assets/video/nimbus-still-2.webp"
+      },
+      {
+        "p": 0.75,
+        "src": "assets/video/nimbus-still-3.webp"
+      },
+      {
+        "p": 1,
+        "src": "assets/video/nimbus-still-4.webp"
+      }
+    ],
+    "poster": "assets/video/nimbus-still-0.webp",
+    "staticPoster": "assets/video/nimbus-still-4.webp",
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "duration": 5.041667,
+    "fit": "contain",
+    "sourceFile": "jimeng-2026-10-18-5343-Seedance 视频生成提示词｜NIMBUS 云冕 · 云开见车  以提供的 ....mp4",
+    "sourceSha256": "aae988f4150f635a3333b8e42baca9d0259ec481818f9e06cc57e56e1b028686",
+    "derivatives": {
+      "desktop": {
+        "sha256": "fa962cb3475e05616d7a9ec2079cb814eb425d208ce46142dc2fc37c4f4a00ce",
+        "bytes": 4400234,
+        "metadata": {
+          "streams": [
+            {
+              "index": 0,
+              "codec_name": "h264",
+              "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+              "profile": "High",
+              "codec_type": "video",
+              "codec_tag_string": "avc1",
+              "codec_tag": "0x31637661",
+              "mime_codec_string": "avc1.640028",
+              "width": 1920,
+              "height": 1080,
+              "coded_width": 1920,
+              "coded_height": 1080,
+              "has_b_frames": 0,
+              "sample_aspect_ratio": "1:1",
+              "display_aspect_ratio": "16:9",
+              "pix_fmt": "yuv420p",
+              "level": 40,
+              "chroma_location": "left",
+              "field_order": "progressive",
+              "is_avc": "true",
+              "nal_length_size": "4",
+              "id": "0x1",
+              "r_frame_rate": "24/1",
+              "avg_frame_rate": "24/1",
+              "time_base": "1/12288",
+              "start_pts": 0,
+              "start_time": "0.000000",
+              "duration_ts": 61952,
+              "duration": "5.041667",
+              "bit_rate": "6979734",
+              "bits_per_raw_sample": "8",
+              "nb_frames": "121",
+              "extradata_size": 46,
+              "disposition": {
+                "default": 1,
+                "dub": 0,
+                "original": 0,
+                "comment": 0,
+                "lyrics": 0,
+                "karaoke": 0,
+                "forced": 0,
+                "hearing_impaired": 0,
+                "visual_impaired": 0,
+                "clean_effects": 0,
+                "attached_pic": 0,
+                "timed_thumbnails": 0,
+                "non_diegetic": 0,
+                "captions": 0,
+                "descriptions": 0,
+                "metadata": 0,
+                "dependent": 0,
+                "still_image": 0,
+                "multilayer": 0
+              },
+              "tags": {
+                "language": "und",
+                "handler_name": "VideoHandler",
+                "encoder": "Lavc62.28.101 libx264"
+              }
+            }
+          ],
+          "format": {
+            "filename": "C:\\Users\\a1512\\Documents\\Codex\\2026-10-17\\files-mentioned-by-the-user-handoff\\outputs\\FULWIN-offline\\assets\\video\\nimbus-desktop.mp4",
+            "nb_streams": 1,
+            "nb_programs": 0,
+            "nb_stream_groups": 0,
+            "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+            "format_long_name": "QuickTime / MOV",
+            "start_time": "0.000000",
+            "duration": "5.041667",
+            "size": "4400234",
+            "bit_rate": "6982189",
+            "probe_score": 100,
+            "tags": {
+              "major_brand": "isom",
+              "minor_version": "512",
+              "compatible_brands": "isomiso2avc1mp41",
+              "encoder": "Lavf62.12.101",
+              "comment": "vid:v02870g10004dba9joi7dld6376pkln0"
+            }
+          }
+        }
+      },
+      "mobile": {
+        "sha256": "50f6156b0dac524af238539a8446fd86f47da00a5f7a63769d5a9cdb8a24dfa0",
+        "bytes": 2089668,
+        "metadata": {
+          "streams": [
+            {
+              "index": 0,
+              "codec_name": "h264",
+              "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+              "profile": "High",
+              "codec_type": "video",
+              "codec_tag_string": "avc1",
+              "codec_tag": "0x31637661",
+              "mime_codec_string": "avc1.64001f",
+              "width": 1280,
+              "height": 720,
+              "coded_width": 1280,
+              "coded_height": 720,
+              "has_b_frames": 0,
+              "sample_aspect_ratio": "1:1",
+              "display_aspect_ratio": "16:9",
+              "pix_fmt": "yuv420p",
+              "level": 31,
+              "chroma_location": "left",
+              "field_order": "progressive",
+              "is_avc": "true",
+              "nal_length_size": "4",
+              "id": "0x1",
+              "r_frame_rate": "24/1",
+              "avg_frame_rate": "24/1",
+              "time_base": "1/12288",
+              "start_pts": 0,
+              "start_time": "0.000000",
+              "duration_ts": 61952,
+              "duration": "5.041667",
+              "bit_rate": "3313459",
+              "bits_per_raw_sample": "8",
+              "nb_frames": "121",
+              "extradata_size": 45,
+              "disposition": {
+                "default": 1,
+                "dub": 0,
+                "original": 0,
+                "comment": 0,
+                "lyrics": 0,
+                "karaoke": 0,
+                "forced": 0,
+                "hearing_impaired": 0,
+                "visual_impaired": 0,
+                "clean_effects": 0,
+                "attached_pic": 0,
+                "timed_thumbnails": 0,
+                "non_diegetic": 0,
+                "captions": 0,
+                "descriptions": 0,
+                "metadata": 0,
+                "dependent": 0,
+                "still_image": 0,
+                "multilayer": 0
+              },
+              "tags": {
+                "language": "und",
+                "handler_name": "VideoHandler",
+                "encoder": "Lavc62.28.101 libx264"
+              }
+            }
+          ],
+          "format": {
+            "filename": "C:\\Users\\a1512\\Documents\\Codex\\2026-10-17\\files-mentioned-by-the-user-handoff\\outputs\\FULWIN-offline\\assets\\video\\nimbus-mobile.mp4",
+            "nb_streams": 1,
+            "nb_programs": 0,
+            "nb_stream_groups": 0,
+            "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+            "format_long_name": "QuickTime / MOV",
+            "start_time": "0.000000",
+            "duration": "5.041667",
+            "size": "2089668",
+            "bit_rate": "3315836",
+            "probe_score": 100,
+            "tags": {
+              "major_brand": "isom",
+              "minor_version": "512",
+              "compatible_brands": "isomiso2avc1mp41",
+              "encoder": "Lavf62.12.101",
+              "comment": "vid:v02870g10004dba9joi7dld6376pkln0"
+            }
+          }
+        }
+      }
+    },
+    "scrollMap": [
+      [
+        0,
+        0
+      ],
+      [
+        0.25,
+        0.18
+      ],
+      [
+        0.55,
+        0.5
+      ],
+      [
+        0.8,
+        0.9
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "beats": [
+      {
+        "end": 0.25,
+        "label": "云雾遮蔽"
+      },
+      {
+        "end": 0.55,
+        "label": "云开见车"
+      },
+      {
+        "end": 0.8,
+        "label": "从容显现"
+      },
+      {
+        "end": 1,
+        "label": "旗舰定格"
+      }
+    ]
+  },
+  "thunderReveal": {
+    "sources": {
+      "desktop": "assets/video/thunder-desktop.mp4",
+      "mobile": "assets/video/thunder-mobile.mp4"
+    },
+    "stills": [
+      {
+        "p": 0,
+        "src": "assets/video/thunder-still-0.webp"
+      },
+      {
+        "p": 0.25,
+        "src": "assets/video/thunder-still-1.webp"
+      },
+      {
+        "p": 0.5,
+        "src": "assets/video/thunder-still-2.webp"
+      },
+      {
+        "p": 0.75,
+        "src": "assets/video/thunder-still-3.webp"
+      },
+      {
+        "p": 1,
+        "src": "assets/video/thunder-still-4.webp"
+      }
+    ],
+    "poster": "assets/video/thunder-still-0.webp",
+    "staticPoster": "assets/video/thunder-still-4.webp",
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "duration": 5.041667,
+    "fit": "contain",
+    "sourceFile": "奔雷.mp4",
+    "sourceSha256": "19487321711a7d2b7f7becb988c725189baf11a332bd89d5cbc82ea05ad2dedd",
+    "derivatives": {
+      "desktop": {
+        "sha256": "e26d9cec7ead63f02b3405341f9eb42ee6aee5a8f4b808d239b530de5b2a58d5",
+        "bytes": 4344086,
+        "metadata": {
+          "streams": [
+            {
+              "index": 0,
+              "codec_name": "h264",
+              "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+              "profile": "High",
+              "codec_type": "video",
+              "codec_tag_string": "avc1",
+              "codec_tag": "0x31637661",
+              "mime_codec_string": "avc1.640028",
+              "width": 1920,
+              "height": 1080,
+              "coded_width": 1920,
+              "coded_height": 1080,
+              "has_b_frames": 0,
+              "sample_aspect_ratio": "1:1",
+              "display_aspect_ratio": "16:9",
+              "pix_fmt": "yuv420p",
+              "level": 40,
+              "chroma_location": "left",
+              "field_order": "progressive",
+              "is_avc": "true",
+              "nal_length_size": "4",
+              "id": "0x1",
+              "r_frame_rate": "24/1",
+              "avg_frame_rate": "24/1",
+              "time_base": "1/12288",
+              "start_pts": 0,
+              "start_time": "0.000000",
+              "duration_ts": 61952,
+              "duration": "5.041667",
+              "bit_rate": "6890640",
+              "bits_per_raw_sample": "8",
+              "nb_frames": "121",
+              "extradata_size": 46,
+              "disposition": {
+                "default": 1,
+                "dub": 0,
+                "original": 0,
+                "comment": 0,
+                "lyrics": 0,
+                "karaoke": 0,
+                "forced": 0,
+                "hearing_impaired": 0,
+                "visual_impaired": 0,
+                "clean_effects": 0,
+                "attached_pic": 0,
+                "timed_thumbnails": 0,
+                "non_diegetic": 0,
+                "captions": 0,
+                "descriptions": 0,
+                "metadata": 0,
+                "dependent": 0,
+                "still_image": 0,
+                "multilayer": 0
+              },
+              "tags": {
+                "language": "und",
+                "handler_name": "VideoHandler",
+                "encoder": "Lavc62.28.101 libx264"
+              }
+            }
+          ],
+          "format": {
+            "filename": "C:\\Users\\a1512\\Documents\\Codex\\2026-10-17\\files-mentioned-by-the-user-handoff\\outputs\\FULWIN-offline\\assets\\video\\thunder-desktop.mp4",
+            "nb_streams": 1,
+            "nb_programs": 0,
+            "nb_stream_groups": 0,
+            "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+            "format_long_name": "QuickTime / MOV",
+            "start_time": "0.000000",
+            "duration": "5.041667",
+            "size": "4344086",
+            "bit_rate": "6893094",
+            "probe_score": 100,
+            "tags": {
+              "major_brand": "isom",
+              "minor_version": "512",
+              "compatible_brands": "isomiso2avc1mp41",
+              "encoder": "Lavf62.12.101",
+              "comment": "vid:v02870g10004dba9mta7dlddiq8pu5b0"
+            }
+          }
+        }
+      },
+      "mobile": {
+        "sha256": "1f36c0f7d110ea452ecd9b4e1041934338c55f3c2159fc291047dad256b8bfe3",
+        "bytes": 2008569,
+        "metadata": {
+          "streams": [
+            {
+              "index": 0,
+              "codec_name": "h264",
+              "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+              "profile": "High",
+              "codec_type": "video",
+              "codec_tag_string": "avc1",
+              "codec_tag": "0x31637661",
+              "mime_codec_string": "avc1.64001f",
+              "width": 1280,
+              "height": 720,
+              "coded_width": 1280,
+              "coded_height": 720,
+              "has_b_frames": 0,
+              "sample_aspect_ratio": "1:1",
+              "display_aspect_ratio": "16:9",
+              "pix_fmt": "yuv420p",
+              "level": 31,
+              "chroma_location": "left",
+              "field_order": "progressive",
+              "is_avc": "true",
+              "nal_length_size": "4",
+              "id": "0x1",
+              "r_frame_rate": "24/1",
+              "avg_frame_rate": "24/1",
+              "time_base": "1/12288",
+              "start_pts": 0,
+              "start_time": "0.000000",
+              "duration_ts": 61952,
+              "duration": "5.041667",
+              "bit_rate": "3184773",
+              "bits_per_raw_sample": "8",
+              "nb_frames": "121",
+              "extradata_size": 45,
+              "disposition": {
+                "default": 1,
+                "dub": 0,
+                "original": 0,
+                "comment": 0,
+                "lyrics": 0,
+                "karaoke": 0,
+                "forced": 0,
+                "hearing_impaired": 0,
+                "visual_impaired": 0,
+                "clean_effects": 0,
+                "attached_pic": 0,
+                "timed_thumbnails": 0,
+                "non_diegetic": 0,
+                "captions": 0,
+                "descriptions": 0,
+                "metadata": 0,
+                "dependent": 0,
+                "still_image": 0,
+                "multilayer": 0
+              },
+              "tags": {
+                "language": "und",
+                "handler_name": "VideoHandler",
+                "encoder": "Lavc62.28.101 libx264"
+              }
+            }
+          ],
+          "format": {
+            "filename": "C:\\Users\\a1512\\Documents\\Codex\\2026-10-17\\files-mentioned-by-the-user-handoff\\outputs\\FULWIN-offline\\assets\\video\\thunder-mobile.mp4",
+            "nb_streams": 1,
+            "nb_programs": 0,
+            "nb_stream_groups": 0,
+            "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+            "format_long_name": "QuickTime / MOV",
+            "start_time": "0.000000",
+            "duration": "5.041667",
+            "size": "2008569",
+            "bit_rate": "3187150",
+            "probe_score": 100,
+            "tags": {
+              "major_brand": "isom",
+              "minor_version": "512",
+              "compatible_brands": "isomiso2avc1mp41",
+              "encoder": "Lavf62.12.101",
+              "comment": "vid:v02870g10004dba9mta7dlddiq8pu5b0"
+            }
+          }
+        }
+      }
+    },
+    "scrollMap": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "beats": [
+      {
+        "end": 0.2,
+        "label": "暗场积势"
+      },
+      {
+        "end": 0.35,
+        "label": "雷光初现"
+      },
+      {
+        "end": 0.55,
+        "label": "灯光觉醒"
+      },
+      {
+        "end": 0.8,
+        "label": "电光蓝显现"
+      },
+      {
+        "end": 1,
+        "label": "完整呈现"
+      }
+    ]
+  },
+  "wind": {
+    "sources": {
+      "desktop": "assets/video/wind-desktop.mp4",
+      "mobile": "assets/video/wind-mobile.mp4"
+    },
+    "stills": [
+      {
+        "p": 0,
+        "src": "assets/video/wind-still-0.webp"
+      },
+      {
+        "p": 0.25,
+        "src": "assets/video/wind-still-1.webp"
+      },
+      {
+        "p": 0.5,
+        "src": "assets/video/wind-still-2.webp"
+      },
+      {
+        "p": 0.75,
+        "src": "assets/video/wind-still-3.webp"
+      },
+      {
+        "p": 1,
+        "src": "assets/video/wind-still-4.webp"
+      }
+    ],
+    "poster": "assets/video/wind-still-0.webp",
+    "staticPoster": "assets/video/wind-still-4.webp",
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "duration": 5.041667,
+    "fit": "cover",
+    "sourceFile": "act1.mp4",
+    "sourceSha256": "d352233588456789afb0236c3926d58ef68048b53fe9f2c876e99f63561f99e9",
+    "derivatives": {
+      "desktop": {
+        "sha256": "f44c3f8fca42b3c13667880241220c706b9132b1459169fcf9a802f215ec9741",
+        "bytes": 3871391,
+        "metadata": {
+          "streams": [
+            {
+              "index": 0,
+              "codec_name": "h264",
+              "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+              "profile": "High",
+              "codec_type": "video",
+              "codec_tag_string": "avc1",
+              "codec_tag": "0x31637661",
+              "mime_codec_string": "avc1.640028",
+              "width": 1920,
+              "height": 1080,
+              "coded_width": 1920,
+              "coded_height": 1080,
+              "has_b_frames": 0,
+              "sample_aspect_ratio": "1:1",
+              "display_aspect_ratio": "16:9",
+              "pix_fmt": "yuv420p",
+              "level": 40,
+              "chroma_location": "left",
+              "field_order": "progressive",
+              "is_avc": "true",
+              "nal_length_size": "4",
+              "id": "0x1",
+              "r_frame_rate": "24/1",
+              "avg_frame_rate": "24/1",
+              "time_base": "1/12288",
+              "start_pts": 0,
+              "start_time": "0.000000",
+              "duration_ts": 61952,
+              "duration": "5.041667",
+              "bit_rate": "6140604",
+              "bits_per_raw_sample": "8",
+              "nb_frames": "121",
+              "extradata_size": 46,
+              "disposition": {
+                "default": 1,
+                "dub": 0,
+                "original": 0,
+                "comment": 0,
+                "lyrics": 0,
+                "karaoke": 0,
+                "forced": 0,
+                "hearing_impaired": 0,
+                "visual_impaired": 0,
+                "clean_effects": 0,
+                "attached_pic": 0,
+                "timed_thumbnails": 0,
+                "non_diegetic": 0,
+                "captions": 0,
+                "descriptions": 0,
+                "metadata": 0,
+                "dependent": 0,
+                "still_image": 0,
+                "multilayer": 0
+              },
+              "tags": {
+                "language": "und",
+                "handler_name": "VideoHandler",
+                "encoder": "Lavc62.28.101 libx264"
+              }
+            }
+          ],
+          "format": {
+            "filename": "C:\\Users\\a1512\\Documents\\Codex\\2026-10-17\\files-mentioned-by-the-user-handoff\\outputs\\FULWIN-offline\\assets\\video\\wind-desktop.mp4",
+            "nb_streams": 1,
+            "nb_programs": 0,
+            "nb_stream_groups": 0,
+            "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+            "format_long_name": "QuickTime / MOV",
+            "start_time": "0.000000",
+            "duration": "5.041667",
+            "size": "3871391",
+            "bit_rate": "6143033",
+            "probe_score": 100,
+            "tags": {
+              "major_brand": "isom",
+              "minor_version": "512",
+              "compatible_brands": "isomiso2avc1mp41",
+              "encoder": "Lavf62.12.101",
+              "comment": "vid:v02870g10004dba9e5i7dldb2gaql5e0"
+            }
+          }
+        }
+      },
+      "mobile": {
+        "sha256": "b82db500b5d3f26c027d8dae39fb43684b45f24f9c7ba7fec5dcd18fd77ba684",
+        "bytes": 1820421,
+        "metadata": {
+          "streams": [
+            {
+              "index": 0,
+              "codec_name": "h264",
+              "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+              "profile": "High",
+              "codec_type": "video",
+              "codec_tag_string": "avc1",
+              "codec_tag": "0x31637661",
+              "mime_codec_string": "avc1.64001f",
+              "width": 1280,
+              "height": 720,
+              "coded_width": 1280,
+              "coded_height": 720,
+              "has_b_frames": 0,
+              "sample_aspect_ratio": "1:1",
+              "display_aspect_ratio": "16:9",
+              "pix_fmt": "yuv420p",
+              "level": 31,
+              "chroma_location": "left",
+              "field_order": "progressive",
+              "is_avc": "true",
+              "nal_length_size": "4",
+              "id": "0x1",
+              "r_frame_rate": "24/1",
+              "avg_frame_rate": "24/1",
+              "time_base": "1/12288",
+              "start_pts": 0,
+              "start_time": "0.000000",
+              "duration_ts": 61952,
+              "duration": "5.041667",
+              "bit_rate": "2886224",
+              "bits_per_raw_sample": "8",
+              "nb_frames": "121",
+              "extradata_size": 45,
+              "disposition": {
+                "default": 1,
+                "dub": 0,
+                "original": 0,
+                "comment": 0,
+                "lyrics": 0,
+                "karaoke": 0,
+                "forced": 0,
+                "hearing_impaired": 0,
+                "visual_impaired": 0,
+                "clean_effects": 0,
+                "attached_pic": 0,
+                "timed_thumbnails": 0,
+                "non_diegetic": 0,
+                "captions": 0,
+                "descriptions": 0,
+                "metadata": 0,
+                "dependent": 0,
+                "still_image": 0,
+                "multilayer": 0
+              },
+              "tags": {
+                "language": "und",
+                "handler_name": "VideoHandler",
+                "encoder": "Lavc62.28.101 libx264"
+              }
+            }
+          ],
+          "format": {
+            "filename": "C:\\Users\\a1512\\Documents\\Codex\\2026-10-17\\files-mentioned-by-the-user-handoff\\outputs\\FULWIN-offline\\assets\\video\\wind-mobile.mp4",
+            "nb_streams": 1,
+            "nb_programs": 0,
+            "nb_stream_groups": 0,
+            "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+            "format_long_name": "QuickTime / MOV",
+            "start_time": "0.000000",
+            "duration": "5.041667",
+            "size": "1820421",
+            "bit_rate": "2888601",
+            "probe_score": 100,
+            "tags": {
+              "major_brand": "isom",
+              "minor_version": "512",
+              "compatible_brands": "isomiso2avc1mp41",
+              "encoder": "Lavf62.12.101",
+              "comment": "vid:v02870g10004dba9e5i7dldb2gaql5e0"
+            }
+          }
+        }
+      }
+    }
+  },
+  "thunderstorm": {
+    "sources": {
+      "desktop": "assets/video/storm-desktop.mp4",
+      "mobile": "assets/video/storm-mobile.mp4"
+    },
+    "stills": [
+      {
+        "p": 0,
+        "src": "assets/video/storm-still-0.webp"
+      },
+      {
+        "p": 0.25,
+        "src": "assets/video/storm-still-1.webp"
+      },
+      {
+        "p": 0.5,
+        "src": "assets/video/storm-still-2.webp"
+      },
+      {
+        "p": 0.75,
+        "src": "assets/video/storm-still-3.webp"
+      },
+      {
+        "p": 1,
+        "src": "assets/video/storm-still-4.webp"
+      }
+    ],
+    "poster": "assets/video/storm-still-0.webp",
+    "staticPoster": "assets/video/storm-still-4.webp",
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "duration": 5.041667,
+    "fit": "cover",
+    "sourceFile": "jimeng-2026-10-18-9636-ACT 03｜雷动 V2  主题  天光骤裂，万雷并起。  新核心逻辑  不再是....mp4",
+    "sourceSha256": "d7836ec0c32218bdf64e908310204a268b28627bc9c83a1f60a2018f5bccf6dd",
+    "derivatives": {
+      "desktop": {
+        "sha256": "1fb65a77b82a896700983156db8fa1774e52a9daa94e949b46116c58d8753222",
+        "bytes": 5984259,
+        "metadata": {
+          "streams": [
+            {
+              "index": 0,
+              "codec_name": "h264",
+              "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+              "profile": "High",
+              "codec_type": "video",
+              "codec_tag_string": "avc1",
+              "codec_tag": "0x31637661",
+              "mime_codec_string": "avc1.640028",
+              "width": 1920,
+              "height": 1080,
+              "coded_width": 1920,
+              "coded_height": 1080,
+              "has_b_frames": 0,
+              "sample_aspect_ratio": "1:1",
+              "display_aspect_ratio": "16:9",
+              "pix_fmt": "yuv420p",
+              "level": 40,
+              "chroma_location": "left",
+              "field_order": "progressive",
+              "is_avc": "true",
+              "nal_length_size": "4",
+              "id": "0x1",
+              "r_frame_rate": "24/1",
+              "avg_frame_rate": "24/1",
+              "time_base": "1/12288",
+              "start_pts": 0,
+              "start_time": "0.000000",
+              "duration_ts": 61952,
+              "duration": "5.041667",
+              "bit_rate": "9493203",
+              "bits_per_raw_sample": "8",
+              "nb_frames": "121",
+              "extradata_size": 46,
+              "disposition": {
+                "default": 1,
+                "dub": 0,
+                "original": 0,
+                "comment": 0,
+                "lyrics": 0,
+                "karaoke": 0,
+                "forced": 0,
+                "hearing_impaired": 0,
+                "visual_impaired": 0,
+                "clean_effects": 0,
+                "attached_pic": 0,
+                "timed_thumbnails": 0,
+                "non_diegetic": 0,
+                "captions": 0,
+                "descriptions": 0,
+                "metadata": 0,
+                "dependent": 0,
+                "still_image": 0,
+                "multilayer": 0
+              },
+              "tags": {
+                "language": "und",
+                "handler_name": "VideoHandler",
+                "encoder": "Lavc62.28.101 libx264"
+              }
+            }
+          ],
+          "format": {
+            "filename": "C:\\Users\\a1512\\Documents\\Codex\\2026-10-17\\files-mentioned-by-the-user-handoff\\outputs\\FULWIN-offline\\assets\\video\\storm-desktop.mp4",
+            "nb_streams": 1,
+            "nb_programs": 0,
+            "nb_stream_groups": 0,
+            "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+            "format_long_name": "QuickTime / MOV",
+            "start_time": "0.000000",
+            "duration": "5.041667",
+            "size": "5984259",
+            "bit_rate": "9495683",
+            "probe_score": 100,
+            "tags": {
+              "major_brand": "isom",
+              "minor_version": "512",
+              "compatible_brands": "isomiso2avc1mp41",
+              "encoder": "Lavf62.12.101",
+              "comment": "vid:v02870g10004dbabcta7dld9db4gqb70"
+            }
+          }
+        }
+      },
+      "mobile": {
+        "sha256": "8a1dacc6034a2c4cea0e2d53e4028a6dc37db23a2f1c58a424be6529557d28d5",
+        "bytes": 3011576,
+        "metadata": {
+          "streams": [
+            {
+              "index": 0,
+              "codec_name": "h264",
+              "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+              "profile": "High",
+              "codec_type": "video",
+              "codec_tag_string": "avc1",
+              "codec_tag": "0x31637661",
+              "mime_codec_string": "avc1.64001f",
+              "width": 1280,
+              "height": 720,
+              "coded_width": 1280,
+              "coded_height": 720,
+              "has_b_frames": 0,
+              "sample_aspect_ratio": "1:1",
+              "display_aspect_ratio": "16:9",
+              "pix_fmt": "yuv420p",
+              "level": 31,
+              "chroma_location": "left",
+              "field_order": "progressive",
+              "is_avc": "true",
+              "nal_length_size": "4",
+              "id": "0x1",
+              "r_frame_rate": "24/1",
+              "avg_frame_rate": "24/1",
+              "time_base": "1/12288",
+              "start_pts": 0,
+              "start_time": "0.000000",
+              "duration_ts": 61952,
+              "duration": "5.041667",
+              "bit_rate": "4776296",
+              "bits_per_raw_sample": "8",
+              "nb_frames": "121",
+              "extradata_size": 45,
+              "disposition": {
+                "default": 1,
+                "dub": 0,
+                "original": 0,
+                "comment": 0,
+                "lyrics": 0,
+                "karaoke": 0,
+                "forced": 0,
+                "hearing_impaired": 0,
+                "visual_impaired": 0,
+                "clean_effects": 0,
+                "attached_pic": 0,
+                "timed_thumbnails": 0,
+                "non_diegetic": 0,
+                "captions": 0,
+                "descriptions": 0,
+                "metadata": 0,
+                "dependent": 0,
+                "still_image": 0,
+                "multilayer": 0
+              },
+              "tags": {
+                "language": "und",
+                "handler_name": "VideoHandler",
+                "encoder": "Lavc62.28.101 libx264"
+              }
+            }
+          ],
+          "format": {
+            "filename": "C:\\Users\\a1512\\Documents\\Codex\\2026-10-17\\files-mentioned-by-the-user-handoff\\outputs\\FULWIN-offline\\assets\\video\\storm-mobile.mp4",
+            "nb_streams": 1,
+            "nb_programs": 0,
+            "nb_stream_groups": 0,
+            "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+            "format_long_name": "QuickTime / MOV",
+            "start_time": "0.000000",
+            "duration": "5.041667",
+            "size": "3011576",
+            "bit_rate": "4778698",
+            "probe_score": 100,
+            "tags": {
+              "major_brand": "isom",
+              "minor_version": "512",
+              "compatible_brands": "isomiso2avc1mp41",
+              "encoder": "Lavf62.12.101",
+              "comment": "vid:v02870g10004dbabcta7dld9db4gqb70"
+            }
+          }
+        }
+      }
+    },
+    "beats": [
+      {
+        "end": 0.25,
+        "label": "厚云积势"
+      },
+      {
+        "end": 0.52,
+        "label": "天光将裂"
+      },
+      {
+        "end": 0.67,
+        "label": "主雷贯空"
+      },
+      {
+        "end": 0.88,
+        "label": "万雷并起"
+      },
+      {
+        "end": 1,
+        "label": "雷后归寂"
+      }
+    ],
+    "flashWindow": [
+      0.52,
+      0.88
+    ],
+    "fadeToBlack": [
+      0.88,
+      1
+    ]
+  },
+  "missing": {},
+  "notes": [
+    "Initial 云冕.mp4 is a mislabeled duplicate sedan; replaced by the actual 5343 flagship SUV clip.",
+    "HURRICANE uses the supplied 3597 1080p master; original 飓风.mp4 is 854x480 and preserved without upscaling.",
+    "ACT03 uses the supplied 9636 multi-branch V2; this supersedes the former single-flash native CG. Old native assets are retained.",
+    "No supplied cafe scene or matched three-car scene master. Existing real street/garage images and a bounded composition are used.",
+    "Sources have 121 real frames and nominal 60fps metadata; derivatives use those frames at constant 24fps without synthetic interpolation.",
+    "Web derivatives remove source audio; the existing optional music remains."
+  ],
+  "version": "v21",
+  "originals": [
+    {
+      "file": "C:\\Users\\a1512\\Downloads\\act1.mp4",
+      "bytes": 10281791,
+      "sha256": "d352233588456789afb0236c3926d58ef68048b53fe9f2c876e99f63561f99e9",
+      "width": 1920,
+      "height": 1080,
+      "audio": true,
+      "frames": 121,
+      "keyframes": 1,
+      "max_gop_seconds": 5.056009
+    },
+    {
+      "file": "C:\\Users\\a1512\\Downloads\\act2.mp4",
+      "bytes": 9769254,
+      "sha256": "f96986b578d252cd437e2e19733e6844dee821ee0fef37127de048663d244639",
+      "width": 1920,
+      "height": 1080,
+      "audio": true,
+      "frames": 121,
+      "keyframes": 3,
+      "max_gop_seconds": 1.7226760000000003
+    },
+    {
+      "file": "C:\\Users\\a1512\\Downloads\\飓风.mp4",
+      "bytes": 1898642,
+      "sha256": "65b70ba45d789a07c53f88831422a985475c700d22a73c8d9d20f88244a2bfba",
+      "width": 854,
+      "height": 480,
+      "audio": true,
+      "frames": 121,
+      "keyframes": 1,
+      "max_gop_seconds": 5.056009
+    },
+    {
+      "file": "C:\\Users\\a1512\\Downloads\\云冕.mp4",
+      "bytes": 8518655,
+      "sha256": "fde690b77e483b90ee974a04b694173cc5297485a1a42d397516fed50022e2f1",
+      "width": 1920,
+      "height": 1080,
+      "audio": true,
+      "frames": 121,
+      "keyframes": 1,
+      "max_gop_seconds": 5.056009
+    },
+    {
+      "file": "C:\\Users\\a1512\\Downloads\\奔雷.mp4",
+      "bytes": 9905293,
+      "sha256": "19487321711a7d2b7f7becb988c725189baf11a332bd89d5cbc82ea05ad2dedd",
+      "width": 1920,
+      "height": 1080,
+      "audio": true,
+      "frames": 121,
+      "keyframes": 2,
+      "max_gop_seconds": 3.8060090000000004
+    },
+    {
+      "file": "C:\\Users\\a1512\\Downloads\\jimeng-2026-10-18-5343-Seedance 视频生成提示词｜NIMBUS 云冕 · 云开见车  以提供的 ....mp4",
+      "bytes": 14158126,
+      "sha256": "aae988f4150f635a3333b8e42baca9d0259ec481818f9e06cc57e56e1b028686",
+      "width": 1920,
+      "height": 1080,
+      "audio": true,
+      "frames": 121,
+      "keyframes": 1,
+      "max_gop_seconds": 5.056009
+    },
+    {
+      "file": "C:\\Users\\a1512\\Downloads\\jimeng-2026-10-18-9636-ACT 03｜雷动 V2  主题  天光骤裂，万雷并起。  新核心逻辑  不再是....mp4",
+      "bytes": 16132431,
+      "sha256": "d7836ec0c32218bdf64e908310204a268b28627bc9c83a1f60a2018f5bccf6dd",
+      "width": 1920,
+      "height": 1080,
+      "audio": true,
+      "frames": 121,
+      "keyframes": 2,
+      "max_gop_seconds": 2.6726760000000005
+    },
+    {
+      "file": "C:\\Users\\a1512\\Downloads\\jimeng-2026-10-18-3597-生成一段高质量、电影感、极简高级的汽车出场短视频，主角是一辆 FULWIN 风云....mp4",
+      "bytes": 8518655,
+      "sha256": "fde690b77e483b90ee974a04b694173cc5297485a1a42d397516fed50022e2f1",
+      "width": 1920,
+      "height": 1080,
+      "audio": true,
+      "frames": 121,
+      "keyframes": 1,
+      "max_gop_seconds": 5.056009
+    }
+  ],
+  "acts": [
+    {
+      "id": "act01",
+      "layer": 0,
+      "start": 0,
+      "end": 0.24,
+      "name": "风起",
+      "en": "WIND"
+    },
+    {
+      "id": "act02",
+      "layer": 0,
+      "start": 0.24,
+      "end": 0.59,
+      "name": "云生",
+      "en": "CLOUDS"
+    },
+    {
+      "id": "act03",
+      "layer": 0,
+      "start": 0.59,
+      "end": 1,
+      "name": "雷动",
+      "en": "STORM"
+    },
+    {
+      "id": "act04",
+      "layer": 1,
+      "start": 0,
+      "end": 1,
+      "name": "风云之名",
+      "en": "THE NAME"
+    },
+    {
+      "id": "act05",
+      "layer": 2,
+      "start": 0,
+      "end": 1,
+      "name": "品牌的感觉",
+      "en": "THE FEELING"
+    },
+    {
+      "id": "act06",
+      "layer": 3,
+      "start": 0,
+      "end": 1,
+      "name": "飓风",
+      "en": "HURRICANE"
+    },
+    {
+      "id": "act07",
+      "layer": 4,
+      "start": 0,
+      "end": 1,
+      "name": "云冕",
+      "en": "NIMBUS"
+    },
+    {
+      "id": "act08",
+      "layer": 5,
+      "start": 0,
+      "end": 1,
+      "name": "奔雷",
+      "en": "THUNDER"
+    },
+    {
+      "id": "act09",
+      "layer": 6,
+      "start": 0,
+      "end": 0.46,
+      "name": "三车同台",
+      "en": "TOGETHER"
+    },
+    {
+      "id": "act10",
+      "layer": 6,
+      "start": 0.46,
+      "end": 1,
+      "name": "品牌终章",
+      "en": "FULWIN"
+    }
+  ],
+  "opening": {
+    "wind": [
+      0,
+      0.29
+    ],
+    "clouds": [
+      0.24,
+      0.59
+    ],
+    "storm": [
+      0.59,
+      0.92
+    ],
+    "cloudBlend": [
+      0.24,
+      0.34
+    ],
+    "stormBlend": [
+      0.59,
+      0.64
+    ],
+    "windFuse": [
+      0.06,
+      0.14
+    ]
+  },
+  "layout": {
+    "weights": [
+      72,
+      36,
+      38,
+      42,
+      40,
+      42,
+      34
+    ],
+    "trackVh": 1740,
+    "demoMs": 180000
+  }
+}
