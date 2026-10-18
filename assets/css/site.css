@@ -1107,7 +1107,7 @@ dialog::backdrop{background:rgba(4,6,10,.86);}
 .concept__help a,.concept__help button{border-bottom:1px solid var(--hair);color:var(--bone-2);padding:4px 0;}
 html:has(dialog[open]){overflow:hidden;}
 .reading-page{background:var(--void);}
-.reading-document{max-width:860px;margin:0 auto;padding:calc(36px + env(safe-area-inset-top)) 36px calc(80px + env(safe-area-inset-bottom));}
+.reading-document{max-width:860px;margin:0 auto;padding:calc(36px + env(safe-area-inset-top)) max(36px, env(safe-area-inset-left)) calc(80px + env(safe-area-inset-bottom)) max(36px, env(safe-area-inset-right));}
 .reading-back{display:inline-block;padding:8px 0;margin-bottom:64px;font-size:13px;color:var(--bone-2);border-bottom:1px solid var(--hair);}
 .reading-credit{font-size:11px;color:var(--bone-3);margin-top:48px;}
 .no-script-note{position:relative;z-index:100;padding:20px var(--pad);color:var(--bone-2);font-size:13px;}
@@ -1117,7 +1117,7 @@ html:has(dialog[open]){overflow:hidden;}
 html:not(.js) .stage,html.reading .stage{position:relative;overflow:visible;}
 html:not(.js) .titlecard,html.reading .titlecard{display:none;}
 html:not(.js) .layer,html.reading .layer{position:relative;min-height:100vh;min-height:100svh;opacity:1 !important;transform:none !important;visibility:visible !important;overflow:clip;}
-html:not(.js) .sticky,html.reading .sticky{position:relative;height:auto;min-height:100vh;min-height:100svh;overflow:visible;padding:110px var(--pad) calc(70px + env(safe-area-inset-bottom));}
+html:not(.js) .sticky,html.reading .sticky{position:relative;height:auto;min-height:100vh;min-height:100svh;overflow:visible;padding:110px max(var(--pad), env(safe-area-inset-left)) calc(70px + env(safe-area-inset-bottom)) max(var(--pad), env(safe-area-inset-right));}
 html:not(.js) .track,html.reading .track,html:not(.js) .rail,html.reading .rail,html:not(.js) .experience-bar{display:none;}
 html:not(.js) .panel,html.reading .panel,html:not(.js) .feel,html.reading .feel,html:not(.js) .feel__beat,html.reading .feel__beat,html:not(.js) .feel__answer,html.reading .feel__answer,html:not(.js) .panel__full,html.reading .panel__full,html:not(.js) .finale,html.reading .finale,html:not(.js) .prologue__title,html.reading .prologue__title{position:relative;inset:auto;}
 html:not(.js) .fx,html.reading .fx{opacity:1 !important;transform:none !important;}
@@ -1203,7 +1203,7 @@ html.reading .layer *,html:not(.js) .layer *{animation:none !important;}
   .control-divider{display:none;}
   dialog{width:calc(100% - 24px);max-height:calc(100vh - 28px);max-height:calc(100dvh - 28px - env(safe-area-inset-top) - env(safe-area-inset-bottom));}.concept__top{padding:8px 20px;font-size:8px;}
   .concept__body{padding:28px 24px;}.concept__lead{font-size:16px;}.concept__body section p,.concept__lanes dd{font-size:14px;}
-  .reading-document{padding:calc(28px + env(safe-area-inset-top)) 24px calc(60px + env(safe-area-inset-bottom));}
+  .reading-document{padding:calc(28px + env(safe-area-inset-top)) max(24px, env(safe-area-inset-left)) calc(60px + env(safe-area-inset-bottom)) max(24px, env(safe-area-inset-right));}
 }
 @media (max-height:650px) and (min-width:621px){
   .lane-body{padding-bottom:26px;max-width:44vw;}.lane-name strong{font-size:44px;}.lane-name{gap:8px;}.lane-claim{font-size:18px;}.lane-body .body-copy{font-size:13px;}.tags,.pending{margin-top:10px;}
