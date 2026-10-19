@@ -40,7 +40,6 @@
     activeAct=n;
     document.querySelector('.where__no').textContent = String(n+1).padStart(2,'0');
     document.querySelector('.where__cn').textContent = act?act.name:chapters[i][0];
-    document.querySelector('.where__cn').classList.toggle('has-brand-name',(act?act.name:chapters[i][0]).includes('风云'));
     document.querySelector('.where__en').textContent = act?act.en:chapters[i][1];
     rail.forEach((a,k)=>{
       const on=act?a.dataset.act===act.id:k===i;
