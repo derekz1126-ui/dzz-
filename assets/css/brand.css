@@ -1,20 +1,11 @@
-/* One emblem above each visible Chinese brand name; all vectors remain local. */
+/* Emblems only at the main brand moments; small text stays clean. */
 .topbar .mark{flex-direction:column;gap:7px;}
 .topbar .mark__symbol{width:58px;}
 .brand-crown{display:block;width:1.35em;height:auto;max-width:100%;flex:none;}
-.brand-mention{position:relative;display:inline-block;padding-top:.45em;vertical-align:baseline;line-height:1.12;text-align:center;white-space:nowrap;text-indent:0;}
-.brand-mention>.brand-crown{position:absolute;top:0;left:50%;width:1.35em;transform:translateX(-50%);margin:0;opacity:.85;}
-.brand-mention>span{letter-spacing:inherit;}
 .word>.brand-crown,.union__glyph>.brand-crown{grid-column:1/-1;justify-self:center;width:clamp(90px,13vw,190px);}
 .finale__word>.brand-crown{width:clamp(110px,16vw,230px);}
 .titlecard__emblem{width:clamp(140px,18vw,250px);height:auto;margin:0 auto 22px;}
-.brandlock>.brand-crown{width:42px;}
 .ghost--pair>.brand-crown{width:1.35em;}
-.tick-brand>.brand-crown{width:34px;}
-.where__cn.has-brand-name{display:flex;flex-direction:column;align-items:center;gap:4px;}
-.where__cn.has-brand-name::before{content:'';width:29px;height:9px;background:url('../logo/fulwin-emblem.svg') center/contain no-repeat;}
-.rail .brand-mention{display:inline-block;}
-.rail .brand-mention>span{opacity:1;transform:none;}
 .footer .brand-crown,.concept__body .brand-crown,.reading-document .brand-crown{max-width:100%;}
 @media(max-width:700px){.topbar .mark__symbol{width:43px;}.topbar .mark{gap:5px;}.finale__word{gap:16px;}.finale__word>.brand-crown{width:100px;}}
 @media print{.brand-crown,.lemblem{filter:invert(1);}}

@@ -61,11 +61,6 @@ html.js[data-video-weather]:not(.reading) .prologue__title{display:none;}
 .feel__beat,.feel__answer,.panel--union,.finale{isolation:isolate;}
 .brand-visual{position:absolute;inset:0;margin:0;z-index:-1;overflow:hidden;pointer-events:none;}
 .brand-visual img{position:absolute;width:100%;height:100%;object-fit:cover;}
-.brand-visual--mind .brand-visual__air{inset:0;opacity:.34;filter:saturate(.3);transform:scale(calc(1.03 + var(--t,0) * .05));}
-.brand-visual--mind .brand-visual__car{right:-12%;top:9%;width:86%;height:87%;object-fit:contain;opacity:.9;transform:translateX(calc((.5 - var(--t,0)) * 4vw));-webkit-mask-image:radial-gradient(ellipse at 58% 55%,#000 35%,transparent 72%);mask-image:radial-gradient(ellipse at 58% 55%,#000 35%,transparent 72%);}
-.brand-visual--mind::after,.brand-visual--claim::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#090b10 2%,rgba(9,11,16,.94) 30%,rgba(9,11,16,.62) 50%,transparent 78%),linear-gradient(0deg,#090b10,transparent 35%,transparent 75%,#090b10);}
-.brand-visual--claim .brand-visual__car{left:23%;top:6%;width:94%;height:94%;object-position:57% 50%;opacity:.9;transform:scale(calc(1 + var(--t,0) * .08));}
-.brand-visual--claim .brand-visual__air{inset:0;opacity:.16;mix-blend-mode:screen;object-fit:cover;transform:translateX(calc((var(--t,0) - .65) * -10vw));}
 .brand-visual--union img{object-fit:cover;opacity:.32;transform:scale(calc(1.05 + var(--t,0) * .08));-webkit-mask-image:radial-gradient(ellipse,#000 25%,transparent 72%);mask-image:radial-gradient(ellipse,#000 25%,transparent 72%);}
 .brand-visual--finale img{left:24%;top:30%;width:65%;height:75%;object-fit:contain;opacity:.29;transform:translateX(calc((1 - var(--t,0)) * 3vw));-webkit-mask-image:radial-gradient(ellipse,#000 25%,transparent 70%);mask-image:radial-gradient(ellipse,#000 25%,transparent 70%);}
 .finale>.finale-wind{z-index:-1;}
@@ -77,9 +72,6 @@ html.js[data-video-weather]:not(.reading) .prologue__title{display:none;}
 .scene--feel .feel__beat:has(.brand-visual) .statement{max-width:14em;}
 .scene--feel .feel__beat:has(.brand-visual) .body-copy{max-width:29em;}
 @media(max-width:700px){
- .brand-visual--mind .brand-visual__car{top:28%;right:-25%;width:130%;height:65%;opacity:.75;}
- .brand-visual--claim .brand-visual__car{top:30%;left:-8%;width:135%;height:65%;object-fit:contain;opacity:.68;}
- .brand-visual--mind::after,.brand-visual--claim::after{background:linear-gradient(180deg,#090b10 6%,rgba(9,11,16,.78) 30%,rgba(9,11,16,.2) 62%,#090b10),linear-gradient(90deg,rgba(9,11,16,.65),transparent 90%);}
  .brand-visual--finale img{left:-5%;top:40%;width:110%;height:55%;opacity:.25;}
 }
 html.reading .brand-visual img{transform:none;}
@@ -112,3 +104,19 @@ html.reading .video-side,html.reading .video-beat{display:none;}
 html.reading .has-video .lane-body .body-copy{display:block;}
 html.reading .cloud-film{opacity:1!important;}
 @media(prefers-reduced-motion:reduce){.union__glyph,.converge__cars img{animation:none!important;}}
+
+/* Brand question / pure type claim */
+.scene--feel .feel__beat--mind{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);align-items:center;align-content:center;gap:clamp(24px,4vw,64px);}
+.brand-question__copy{min-width:0;}
+.scene--feel .brand-question__copy .statement{font-size:clamp(24px,2.8vw,44px);line-height:1.5;}
+.brand-question__image{margin:0;min-width:0;}
+.brand-question__image img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:contain;}
+.scene--feel .feel__answer{align-items:center;justify-content:center;text-align:center;background:var(--void);}
+.scene--feel .feel__answer .claim{font-size:clamp(28px,6.8vw,110px);line-height:1.35;letter-spacing:.05em;white-space:nowrap;}
+@media(max-width:800px){
+ .scene--feel .feel__beat--mind{grid-template-columns:1fr;gap:20px;padding-top:110px;padding-bottom:120px;}
+ .scene--feel .brand-question__copy .statement{font-size:clamp(23px,5vw,30px);}
+ .brand-question__image{width:min(100%,560px);justify-self:center;}
+ .brand-question__image img{max-height:29vh;max-height:29svh;}
+}
+@media print{.brand-question__image{max-width:360px;}}
