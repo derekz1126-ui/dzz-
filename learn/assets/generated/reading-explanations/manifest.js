@@ -1,0 +1,1 @@
+globalThis.__READING_EXPLANATION_MANIFEST__ = {};

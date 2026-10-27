@@ -1,0 +1,8 @@
+local-backups/
+*.log
+*.db
+*.sqlite*
+*.xlsx
+*.xls
+vocab-progress-*.json
+ielts-backup-*.json
