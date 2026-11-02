@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DZZ / Learn. Build. Deploy.</title>
+<meta name="description" content="DZZ. A curious builder exploring the space between learning, technology and real-world problems.">
+<meta name="theme-color" content="#f6f5f2">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/archivo.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+<script defer src="assets/gsap.min.js"></script><script defer src="assets/ScrollTrigger.min.js"></script>
+<script defer src="liquid.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+<a class="skip" href="#about">Skip to content</a>
+<header class="nav"><a class="wordmark" href="#top" aria-label="DZZ home">dzz</a><span class="nav-description" data-en="Independent mind. Applied imagination." data-zh="独立思考，让想象落地。">Independent mind. Applied imagination.</span><nav aria-label="Main navigation"><a href="#work" data-en="Explore" data-zh="探索">Explore</a><a href="#about" data-en="Approach" data-zh="方法">Approach</a><a href="#contact" data-en="Contact ↗" data-zh="联系 ↗">Contact ↗</a><button id="language" aria-label="Switch to Chinese">中文</button></nav></header>
+<main>
+<section class="opening" id="top" aria-label="Interactive DZZ wordmark">
+ <div class="hero-sticky">
+  <h1 id="liquid-fallback">DZZ</h1><canvas id="liquid-canvas" aria-hidden="true"></canvas>
+  <div class="hero-corner"><span>DZZ UNIVERSE</span><span data-en="A mind in motion." data-zh="保持流动，持续进化。">A mind in motion.</span></div>
+  <div class="hero-bottom"><span data-en="Move your cursor. Leave a trace." data-zh="移动鼠标，留下你的痕迹。">Move your cursor. Leave a trace.</span><a href="#manifesto" aria-label="Explore below">↓</a><span>LEARNING × BUILDING × FDE</span></div>
+ </div>
+</section>
+<div class="dark-page">
+<section class="manifesto section" id="manifesto">
+ <div class="section-line"><span data-en="Curiosity, put to work." data-zh="让好奇心产生作用。">Curiosity, put to work.</span><span>01 / 03</span></div>
+ <h2 class="manifesto-type"><span class="type-line">Learn.</span><span class="type-line">Build.</span><span class="type-line">Deploy.</span></h2>
+ <div class="manifesto-caption"><span class="cross">+</span><p data-en="I connect unfamiliar ideas to real problems, then build my way to understanding." data-zh="把陌生的知识和真实的问题连接起来，在动手构建中理解它们。">I connect unfamiliar ideas to real problems, then build my way to understanding.</p></div>
+</section>
+<section id="work" class="work-section">
+ <div class="work-heading section"><h2 data-en="In the making" data-zh="正在构建">In the making</h2><p data-en="A personal project and two interactive studies." data-zh="一个个人项目，两个交互实验。">A personal project and two interactive studies.</p><span class="work-count">[ 03 ]</span></div>
+ <div class="work-window"><div class="work-track">
+  <button class="work-card" data-project="universe"><div class="art art-universe"><img src="assets/hero-city.webp" alt="Illustrated neon comic city from DZZ Universe" width="1536" height="1024" loading="lazy"><span class="art-open" aria-hidden="true">↗</span></div><span class="card-info"><strong>DZZ Universe</strong><span data-en="Personal site / Creative development" data-zh="个人网站 / 创意开发">Personal site / Creative development</span><small>01</small></span></button>
+  <button class="work-card" data-project="flow"><div class="art art-flow"><canvas id="flow-art" aria-hidden="true"></canvas><span class="art-open" aria-hidden="true">↗</span></div><span class="card-info"><strong data-en="Order from motion" data-zh="流动中的秩序">Order from motion</strong><span data-en="Generative study / Systems thinking" data-zh="生成实验 / 系统思维">Generative study / Systems thinking</span><small>02</small></span></button>
+  <button class="work-card" data-project="signal"><div class="art art-signal"><canvas id="signal-art" aria-hidden="true"></canvas><span class="art-open" aria-hidden="true">↗</span></div><span class="card-info"><strong data-en="Signal, not noise" data-zh="从噪声中找到信号">Signal, not noise</strong><span data-en="Interactive study / Iteration" data-zh="交互实验 / 持续迭代">Interactive study / Iteration</span><small>03</small></span></button>
+ </div></div>
+ <div class="gallery-controls section"><span data-en="Different ideas. One instinct: make it work." data-zh="不同的想法，同一种本能：把它做出来。">Different ideas. One instinct: make it work.</span><div><button id="prev-work" aria-label="Previous work">←</button><button id="next-work" aria-label="Next work">→</button></div></div>
+</section>
+<section id="about" class="about section">
+ <div class="section-line"><span data-en="The way I think" data-zh="我的思考方式">The way I think</span><span>[ DZZ ]</span></div>
+ <h2 class="about-heading" data-en="Stay curious.<br>Get close.<br>Make it real." data-zh="保持好奇。<br>走近问题。<br>动手实现。">Stay curious.<br>Get close.<br>Make it real.</h2>
+ <div class="approach-grid"><article><span class="approach-number">(01)</span><h3 data-en="Learn by building" data-zh="在构建中学习">Learn by building</h3><p data-en="Start with a question. Find the missing knowledge. Build a small experiment and let the result challenge the idea." data-zh="从一个问题出发，补齐缺失的知识。用一个小实验，让结果检验想法。">Start with a question. Find the missing knowledge. Build a small experiment and let the result challenge the idea.</p><span class="approach-tag">CURIOSITY → UNDERSTANDING</span></article><article><span class="approach-number">(02)</span><h3 data-en="Think in the field" data-zh="在现场理解问题">Think in the field</h3><p data-en="An FDE mindset: understand the workflow, ask the next question and turn an ambiguous need into something people can use." data-zh="以 FDE 的方式思考：理解实际流程，追问真实需求，把模糊的问题变成可用的方案。">An FDE mindset: understand the workflow, ask the next question and turn an ambiguous need into something people can use.</p><span class="approach-tag">CONTEXT → WORKING SOLUTION</span></article><article><span class="approach-number">(03)</span><h3 data-en="Close the loop" data-zh="让反馈形成闭环">Close the loop</h3><p data-en="A working prototype starts the conversation. Observe what happens, listen to feedback and make the next version better." data-zh="可运行的原型是交流的起点。观察结果、听取反馈，让下一版更好。">A working prototype starts the conversation. Observe what happens, listen to feedback and make the next version better.</p><span class="approach-tag">FEEDBACK → NEXT ITERATION</span></article></div>
+</section>
+<section id="contact" class="contact section"><div class="section-line"><span data-en="Something worth figuring out together?" data-zh="有值得一起探索的问题？">Something worth figuring out together?</span><span>LET’S TALK ↙</span></div><a class="contact-title" href="mailto:derek1126z@163.com" data-en="Get in touch<span>↗</span>" data-zh="聊一聊<span>↗</span>">Get in touch<span>↗</span></a><div class="contact-details"><a href="mailto:derek1126z@163.com">derek1126z@163.com</a><button id="copy-email" data-en="Copy email ↗" data-zh="复制邮箱 ↗">Copy email ↗</button><a href="https://github.com/derekz1126-ui" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div><footer><span>DZZ UNIVERSE © 2026</span><a href="#top" data-en="Back to the beginning ↑" data-zh="回到起点 ↑">Back to the beginning ↑</a><button id="invert" data-en="Invert colors ◐" data-zh="反转颜色 ◐">Invert colors ◐</button></footer></section>
+</div>
+</main>
+<dialog id="project-dialog"><button id="close-project" aria-label="Close project">Close ×</button><div class="project-content"><span id="project-kind"></span><h2 id="project-title"></h2><p id="project-description"></p><div id="project-preview"></div><a id="project-link" href="#">Open project ↗</a></div></dialog>
+<p id="toast" role="status" aria-live="polite"></p>
+</body></html>
