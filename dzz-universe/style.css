@@ -352,4 +352,5 @@ html[lang='zh-CN'] .portal-kicker{font-size:24px;letter-spacing:6px}
 .contact-signal a:focus-visible,.contact-small-button:focus-visible{outline:3px solid var(--red,#ff004d);outline-offset:6px}
 html[lang='zh-CN'] .contact-signal #signalTitle{font-size:64px;line-height:1.14;max-width:none;letter-spacing:2px}
 html[lang='zh-CN'] .contact-card-title{font-family:var(--body,'Space Grotesk',Arial,sans-serif);font-size:27px;line-height:1.35;font-weight:900}
-@media(max-width:1150px){.contact-grid{gap:35px;padding:33px}.contact-signal #signalTitle{font-size:68px}.contact-lead .signal-subtitle{font-size:12px}.contact-email{font-size:20px;gap:9px}.contact-card{padding:24px}.contact-card-title{font-size:30px}.contact-card-c
+@media(max-width:1150px){.contact-grid{gap:35px;padding:33px}.contact-signal #signalTitle{font-size:68px}.contact-lead .signal-subtitle{font-size:12px}.contact-email{font-size:20px;gap:9px}.contact-card{padding:24px}.contact-card-title{font-size:30px}.contact-card-copy{font-size:11px}.contact-secondary{padding:20px 32px;gap:23px}.contact-secondary #fieldQuote{font-size:12px}html[lang='zh-CN'] .contact-signal #signalTitle{font-size:55px}html[lang='zh-CN'] .contact-card-title{font-size:24px}}
+@media(prefers-reduced-motion:reduce){.contact-email,.contact-mail-button,.contact-small-button{transition:none!important}}

@@ -276,4 +276,12 @@
     return next;
   }
   window.DZZI18n = { lang: () => currentLanguage, t, setLanguage };
-  funct
+  function initialize() {
+    if (initialized) return;
+    initialized = true;
+    captureStaticText();
+    setLanguage(currentLanguage);
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initialize, { once: true });
+  else initialize();
+})();

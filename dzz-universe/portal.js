@@ -113,7 +113,6 @@
     intro.hidden=true;warp.hidden=true;webCanvas.hidden=true;webCtx.clearRect(0,0,width,height);site.inert=false;
     document.body.classList.remove('portal-open');
     if(window.gsap){gsap.set([intro,warp,enter],{clearProps:'all'});gsap.set('.portal-heading,.warp-ring,.warp-word',{clearProps:'all'});}
-    try{sessionStorage.setItem('dzz-entered-v2','yes');}catch{}
     scrollTo({top:0,behavior:'instant'});
     document.getElementById('pageTitle').focus({preventScroll:true});
     dispatchEvent(new CustomEvent('dzz:entered'));
@@ -149,7 +148,7 @@
     previousFocus=document.activeElement;
     active=true;jumping=false;intro.hidden=false;warp.hidden=true;webCanvas.hidden=true;site.inert=true;
     document.body.classList.add('portal-open');
-    if(window.gsap){gsap.set([intro,'.portal-heading'],{clearProps:'all'});if(enabled)gsap.fromTo('.portal-heading',{scale:.85,opacity:0,y:25},{scale:1,opacity:1,y:0,duration:.75,ease:'back.out(1.1)'});}
+    if(window.gsap){gsap.set([intro,warp,enter,'.portal-heading','.warp-ring','.warp-word'],{clearProps:'all'});if(enabled)gsap.fromTo('.portal-heading',{scale:.85,opacity:0,y:25},{scale:1,opacity:1,y:0,duration:.75,ease:'back.out(1.1)'});}
     document.getElementById('portalMessage').textContent='';
     enter.focus({preventScroll:true});start();
   }
@@ -178,4 +177,7 @@
   document.addEventListener('dzz:language',()=>{const message=document.getElementById('portalMessage');if(active&&message.textContent)message.textContent=t('portal.hint','Follow the yellow signal. That’s where you’ll find DZZ.');});
   addEventListener('resize',resize);
   document.addEventListener('visibilitychange',()=>{if(document.hidden){stop();stopAmbientShot();}else start();});
-  window.DZZPortal={open,c
+  window.DZZPortal={open,close,setEnabled,isActive:()=>active};
+  addEventListener('pageshow',event=>{if(event.persisted)open();});
+  open();
+})();

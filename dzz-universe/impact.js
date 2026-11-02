@@ -242,4 +242,8 @@
     host = canvas = ctx = null;
   }
 
-  window.addEventListene
+  window.addEventListener('resize', resize, { passive: true });
+  if (media.addEventListener) media.addEventListener('change', onMotionChange);
+  else if (media.addListener) media.addListener(onMotionChange);
+  window.DZZImpact = { burst, setEnabled, destroy };
+})();

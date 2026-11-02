@@ -189,4 +189,8 @@
   document.addEventListener('dzz:before-language', cancelAll);
   document.addEventListener('dzz:motion', onMotion);
   document.addEventListener('visibilitychange', onVisibility);
-  window.addEventListener('resize', cancelAll, { passive: true }
+  window.addEventListener('resize', cancelAll, { passive: true });
+  if (media.addEventListener) media.addEventListener('change', cancelAll);
+  else if (media.addListener) media.addListener(cancelAll);
+  window.DZZScramble = { destroy, cancelAll };
+})();

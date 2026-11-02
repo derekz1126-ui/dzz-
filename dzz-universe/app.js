@@ -134,4 +134,6 @@
   if(['127.0.0.1','localhost'].includes(location.hostname)){
     let version;
     setInterval(async()=>{try{const response=await fetch('/__dev/version',{cache:'no-store'});if(!response.ok)return;const next=await response.text();if(version&&next!==version){sessionStorage.setItem('dzz-preview-scroll',String(scrollY));location.reload();}version=next;}catch{}},1500);
-    const saved=sessionStorage.getItem('dzz-preview-scroll');if(saved){sessionStorage.removeItem('dzz-previ
+    const saved=sessionStorage.getItem('dzz-preview-scroll');if(saved){sessionStorage.removeItem('dzz-preview-scroll');requestAnimationFrame(()=>{if(!window.DZZPortal?.isActive())scrollTo({top:Number(saved),behavior:'instant'});});}
+  }
+})();
