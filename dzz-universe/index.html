@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111113">
+  <meta name="description" content="DZZ UNIVERSE — a curious builder with a forward-deployed mindset. Learn fast, think clearly, and build what matters.">
+  <title>DZZ UNIVERSE</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/bangers.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/space.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script src="assets/gsap.min.js" defer></script>
+  <script src="assets/ScrollTrigger.min.js" defer></script>
+  <script src="impact.js" defer></script>
+  <script src="i18n.js" defer></script>
+  <script src="portal.js" defer></script>
+  <script src="app.js" defer></script>
+  <script src="scramble.js" defer></script>
+</head>
+<body data-theme="earth">
+  <div id="siteContent">
+    <a class="skip-link" href="#pageTitle">Skip to content</a>
+    <header class="site-header">
+      <a class="wordmark" href="#origin" aria-label="DZZ Universe, back to origin">DZZ<span class="wordmark-dot">.</span><span class="wordmark-universe">UNIVERSE</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#origin">ORIGIN</a>
+        <a href="#powers">POWERS</a>
+        <a href="#missions">MISSIONS</a>
+        <a href="#field">FIELD NOTES</a>
+        <a href="#comms">COMMS</a>
+      </nav>
+      <div class="header-controls">
+        <button id="languageToggle" class="language-toggle" type="button" aria-label="Switch to Chinese">中文</button>
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="Change color universe">EARTH-01</button>
+        <button id="motionToggle" class="motion-toggle" type="button" aria-pressed="false"><span class="motion-light" aria-hidden="true"></span>MOTION ON</button>
+      </div>
+    </header>
+
+    <main class="comic-page">
+      <section id="origin" class="origin-panel panel" aria-labelledby="pageTitle">
+        <span class="panel-corner" aria-hidden="true">01 / ORIGIN STORY</span>
+        <div class="portrait-stage">
+          <span class="portrait-burst" aria-hidden="true">STILL<br>CURIOUS!</span>
+          <figure class="portrait-frame">
+            <span class="tape tape-one" aria-hidden="true"></span>
+            <span class="tape tape-two" aria-hidden="true"></span>
+            <div class="portrait-image-wrap"><img class="portrait-art" src="assets/hero-city.webp" alt="An illustrated figure overlooking a vivid comic-book city" width="960" height="1280"></div>
+            <figcaption>ALWAYS A WORK IN PROGRESS.</figcaption>
+          </figure>
+          <span class="portrait-scribble" aria-hidden="true">a mind in motion ↗</span>
+          <span class="portrait-stars" aria-hidden="true">✦</span>
+        </div>
+        <div class="origin-copy">
+          <p class="identity-caption">EARTH-01 <span aria-hidden="true">//</span> DZZ</p>
+          <h1 id="pageTitle" class="comic-title" tabindex="-1">DZZ<br>UNIVERSE</h1>
+          <p class="role-line">FAST LEARNER. FDE MINDSET.</p>
+          <div class="speech-bubble"><p>“Learn fast. Build what matters.”</p><span aria-hidden="true">✳</span></div>
+          <p class="origin-description">I get close to real problems, learn what it takes, and turn ideas into working software. My forward-deployed mindset connects people, tools, and systems — from the first question to a useful solution. Curious by default. Hands-on by choice. Always learning through the work.</p>
+          <a class="origin-link" href="#powers">GET TO KNOW THE MINDSET <span aria-hidden="true">↘</span></a>
+        </div>
+      </section>
+
+      <div class="powers-row">
+        <aside class="principles-panel panel" aria-label="Three guiding principles">
+          <div class="principle"><p>LEARN</p><span>STAY CURIOUS.<br>GET UP TO SPEED.</span></div>
+          <div class="principle"><p>BUILD</p><span>MAKE IT REAL.<br>MAKE IT USEFUL.</span></div>
+          <div class="principle"><p>DEPLOY</p><span>MEET THE FIELD.<br>CLOSE THE LOOP.</span></div>
+        </aside>
+
+        <section id="powers" class="powers-panel panel" aria-labelledby="powersTitle">
+          <div class="panel-heading"><h2 id="powersTitle" class="label-sticker">MY POWERS</h2></div>
+          <div class="power-cloud" role="group" aria-label="Explore my working capabilities">
+            <button class="power-chip" type="button" data-power="learn" aria-pressed="true" aria-controls="powerDetail"><span aria-hidden="true">↗</span> Rapid Learning</button>
+            <button class="power-chip" type="button" data-power="frame" aria-pressed="false" aria-controls="powerDetail"><span aria-hidden="true">◎</span> Problem Framing</button>
+            <button class="power-chip" type="button" data-power="prototype" aria-pressed="false" aria-controls="powerDetail"><span aria-hidden="true">✳</span> Prototyping</button>
+            <button class="power-chip" type="button" data-power="systems" aria-pressed="false" aria-controls="powerDetail"><span aria-hidden="true">↔</span> Systems Thinking</button>
+            <button class="power-chip" type="button" data-power="iterate" aria-pressed="false" aria-controls="powerDetail"><span aria-hidden="true">↻</span> Iteration</button>
+            <button class="power-chip" type="button" data-power="communicate" aria-pressed="false" aria-controls="powerDetail"><span aria-hidden="true">↗</span> Communication</button>
+            <button class="power-chip" type="button" data-power="research" aria-pressed="false" aria-controls="powerDetail">Research</button>
+            <button class="power-chip" type="button" data-power="ai" aria-pressed="false" aria-controls="powerDetail">AI Workflows</button>
+            <button class="power-chip" type="button" data-power="debug" aria-pressed="false" aria-controls="powerDetail">Debugging</button>
+            <button class="power-chip" type="button" data-power="connect" aria-pressed="false" aria-controls="powerDetail">Integration</button>
+            <button class="power-chip" type="button" data-power="feedback" aria-pressed="false" aria-controls="powerDetail">User Feedback</button>
+            <button class="power-chip" type="button" data-power="delivery" aria-pressed="false" aria-controls="powerDetail">Field Delivery</button>
+          </div>
+          <div class="power-detail-box"><span class="detail-marker" aria-hidden="true">↳</span><p id="powerDetail" aria-live="polite" aria-atomic="true">Get up to speed by asking precise questions, testing assumptions, and putting new knowledge to work.</p></div>
+        </section>
+      </div>
+
+      <section id="missions" class="mission-log" aria-labelledby="missionsTitle">
+        <span id="playbook" class="section-alias" aria-hidden="true"></span>
+        <div class="mission-heading">
+          <h2 id="missionsTitle">MISSION LOG</h2>
+          <p>A FIELD GUIDE TO HOW I WORK.</p>
+        </div>
+        <p class="mission-intro">Six working principles. Open a card to explore the approach.</p>
+        <div class="mission-grid">
+          <button class="playbook-card mission-card panel" type="button" data-step="0" aria-expanded="false" aria-controls="missionExtra0">
+            <span class="mission-code">M-01</span>
+            <span class="mission-title">LEARN THE UNKNOWN</span>
+            <span class="mission-summary">Step into an unfamiliar subject. Find the fundamentals, ask better questions, and put new knowledge to work.</span>
+            <span class="mission-tags"><span>Curiosity</span><span>Research</span><span>Practice</span></span>
+            <span id="missionExtra0" class="playbook-extra" hidden>Start with a concrete question. Read the primary sources, try a small example, and explain what you learned in plain language.</span>
+            <span class="mission-action"><span class="playbook-hint">EXPLORE THE APPROACH</span><span class="card-arrow" aria-hidden="true">↗</span></span>
+          </button>
+          <button class="playbook-card mission-card panel" type="button" data-step="1" aria-expanded="false" aria-controls="missionExtra1">
+            <span class="mission-code">M-02</span>
+            <span class="mission-title">FIND THE REAL PROBLEM</span>
+            <span class="mission-summary">Get close to the people and the workflow. Separate the request from the problem it is meant to solve.</span>
+            <span class="mission-tags"><span>Context</span><span>Questions</span><span>Clarity</span></span>
+            <span id="missionExtra1" class="playbook-extra" hidden>Trace what happens today, notice where the friction starts, and agree on what a useful outcome would look like before choosing a tool.</span>
+            <span class="mission-action"><span class="playbook-hint">EXPLORE THE APPROACH</span><span class="card-arrow" aria-hidden="true">↗</span></span>
+          </button>
+          <button class="playbook-card mission-card panel" type="button" data-step="2" aria-expanded="false" aria-controls="missionExtra2">
+            <span class="mission-code">M-03</span>
+            <span class="mission-title">BUILD THE FIRST VERSION</span>
+            <span class="mission-summary">Make the idea tangible. Build a small working version that gives assumptions something real to meet.</span>
+            <span class="mission-tags"><span>Prototype</span><span>Focus</span><span>Feedback</span></span>
+            <span id="missionExtra2" class="playbook-extra" hidden>Choose the smallest version that answers the most important question. Make it easy to try, inspect, and change.</span>
+            <span class="mission-action"><span class="playbook-hint">EXPLORE THE APPROACH</span><span class="card-arrow" aria-hidden="true">↗</span></span>
+          </button>
+          <button class="playbook-card mission-card panel" type="button" data-step="3" aria-expanded="false" aria-controls="missionExtra3">
+            <span class="mission-code">M-04</span>
+            <span class="mission-title">CONNECT THE SYSTEM</span>
+            <span class="mission-summary">Look beyond the individual feature. Understand the inputs, dependencies, and handoffs that make the whole thing work.</span>
+            <span class="mission-tags"><span>Systems</span><span>Integration</span><span>Tradeoffs</span></span>
+            <span id="missionExtra3" class="playbook-extra" hidden>Map the moving parts, check the boundaries, and make dependencies explicit. Prefer a clear connection over another layer of complexity.</span>
+            <span class="mission-action"><span class="playbook-hint">EXPLORE THE APPROACH</span><span class="card-arrow" aria-hidden="true">↗</span></span>
+          </button>
+          <button class="playbook-card mission-card panel" type="button" data-step="4" aria-expanded="false" aria-controls="missionExtra4">
+            <span class="mission-code">M-05</span>
+            <span class="mission-title">TEST IN THE FIELD</span>
+            <span class="mission-summary">Bring the work back to everyday use. Watch what holds up, where people hesitate, and what needs another pass.</span>
+            <span class="mission-tags"><span>Observation</span><span>Validation</span><span>Iteration</span></span>
+            <span id="missionExtra4" class="playbook-extra" hidden>Test the real workflow, including the awkward cases. Use the evidence to decide what to keep, improve, or remove.</span>
+            <span class="mission-action"><span class="playbook-hint">EXPLORE THE APPROACH</span><span class="card-arrow" aria-hidden="true">↗</span></span>
+          </button>
+          <button class="playbook-card mission-card panel" type="button" data-step="5" aria-expanded="false" aria-controls="missionExtra5">
+            <span class="mission-code">M-06</span>
+            <span class="mission-title">MAKE IT CLEAR</span>
+            <span class="mission-summary">Turn technical detail into shared understanding. Explain the decision, the tradeoff, and the next useful step.</span>
+            <span class="mission-tags"><span>Communication</span><span>Writing</span><span>Alignment</span></span>
+            <span id="missionExtra5" class="playbook-extra" hidden>Use concrete examples, state what is known and what still needs checking, and leave the next person with enough context to continue.</span>
+            <span class="mission-action"><span class="playbook-hint">EXPLORE THE APPROACH</span><span class="card-arrow" aria-hidden="true">↗</span></span>
+          </button>
+        </div>
+      </section>
+
+      <div id="field" class="field-dossier">
+        <section class="dossier-panel panel" aria-labelledby="approachTitle">
+          <h2 id="approachTitle" class="dossier-heading">FIELD APPROACH</h2>
+          <div class="dossier-content">
+            <div class="dossier-entry">
+              <h3>CLOSE TO THE PROBLEM</h3>
+              <p class="dossier-caption">CONTEXT BEFORE CODE</p>
+              <p>Understand the real setting: the people, the constraints, and the work already happening.</p>
+            </div>
+            <div class="dossier-entry">
+              <h3>USEFUL IN PRACTICE</h3>
+              <p class="dossier-caption">FROM IDEA TO EVERYDAY USE</p>
+              <p>Keep the outcome in view. Make the solution understandable, testable, and easier to use.</p>
+            </div>
+          </div>
+        </section>
+        <section class="dossier-panel learning-panel panel" aria-labelledby="learningTitle">
+          <h2 id="learningTitle" class="dossier-heading">LEARNING LOOP</h2>
+          <div class="dossier-content">
+            <div class="dossier-entry">
+              <h3>QUESTION. TRY. REFLECT.</h3>
+              <p class="dossier-caption">A REPEATABLE PRACTICE</p>
+              <p>Start with a question. Try something small. Compare what happened with what you expected.</p>
+            </div>
+            <div class="dossier-entry">
+              <h3>KEEP THE LESSON</h3>
+              <p class="dossier-caption">UNDERSTANDING THAT COMPOUNDS</p>
+              <p>Write down the insight, explain it simply, and carry it into the next unfamiliar problem.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section id="notes" class="signal-panel contact-signal panel" aria-labelledby="signalTitle">
+        <span id="comms" class="section-alias" aria-hidden="true"></span>
+        <div class="contact-grid">
+          <div class="contact-lead">
+            <p class="signal-kicker">DZZ UNIVERSE <span aria-hidden="true">//</span> LET’S TALK</p>
+            <h2 id="signalTitle">SEND THE SIGNAL</h2>
+            <p class="signal-subtitle">An idea to explore, a problem to untangle, or something worth building. Start with an email.</p>
+            <a class="contact-email" href="mailto:derek1126z@163.com">derek1126z@163.com <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="contact-card">
+            <p class="contact-card-caption">ONE MESSAGE. A NEW POSSIBILITY.</p>
+            <h3 class="contact-card-title">HAVE A MISSION IN MIND?</h3>
+            <p class="contact-card-copy">Tell me what you’re working on, what’s getting in the way, and what a useful next step could look like.</p>
+            <a class="contact-mail-button" href="mailto:derek1126z@163.com">SEND AN EMAIL <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="contact-secondary">
+          <div class="signal-field-note"><span class="signal-note-label">FROM THE FIELD NOTES</span><p id="fieldQuote" aria-live="polite" aria-atomic="true">“The best way to understand something is to try making it work.”</p></div>
+          <div class="contact-secondary-actions">
+            <button id="noteShuffle" class="contact-small-button" type="button">ANOTHER FIELD NOTE <span aria-hidden="true">↻</span></button>
+            <button id="replayUniverse" class="contact-small-button" type="button">REPLAY UNIVERSE <span aria-hidden="true">↗</span></button>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer"><p>DZZ UNIVERSE <span aria-hidden="true">//</span> EARTH-01</p><p>Curiosity doesn’t clock out.</p><button id="backTop" type="button">BACK TO ORIGIN <span aria-hidden="true">↑</span></button></footer>
+    </main>
+  </div>
+
+  <section id="universeIntro" class="universe-intro" hidden aria-label="Enter DZZ Universe" tabindex="-1">
+    <canvas id="universeCanvas" aria-hidden="true"></canvas>
+    <div class="portal-grid" aria-hidden="true"></div>
+    <div class="portal-city" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+    <p class="portal-earth">DZZ <span aria-hidden="true">//</span> EARTH-01</p>
+    <button id="introMotion" class="intro-motion" type="button" aria-pressed="false">MOTION ON</button>
+    <button id="introLanguage" class="language-toggle intro-language" type="button" aria-label="Switch to Chinese">中文</button>
+    <div class="portal-heading"><p class="portal-kicker">INTO THE</p><h2>DZZ UNIVERSE</h2><p class="portal-subtitle">A curious mind. A world of possibilities.</p><p class="portal-instruction">Find the yellow signal. Discover DZZ.</p></div>
+    <button id="enterUniverse" class="universe-node enter-node" type="button" aria-label="Enter DZZ universe"><span class="node-orbit" aria-hidden="true"></span><span class="node-circle" aria-hidden="true">✳</span><span class="node-label">DZZ <span aria-hidden="true">↗</span></span></button>
+    <button class="universe-node decoy-node decoy-one" type="button" data-label="STAY CURIOUS!" aria-label="Explore another signal"><span class="node-circle" aria-hidden="true">+</span><span class="node-label">IDEAS</span></button>
+    <button class="universe-node decoy-node decoy-two" type="button" data-label="KEEP EXPLORING!" aria-label="Explore the possibilities signal"><span class="node-circle" aria-hidden="true">+</span><span class="node-label">WHAT IF?</span></button>
+    <button class="universe-node decoy-node decoy-three" type="button" data-label="FOLLOW THE YELLOW!" aria-label="Explore the discovery signal"><span class="node-circle" aria-hidden="true">+</span><span class="node-label">DISCOVERY</span></button>
+    <p id="portalMessage" class="portal-message" aria-live="polite" aria-atomic="true">Every good story starts with a little curiosity.</p>
+    <button id="skipIntro" class="skip-intro" type="button">Skip intro <span aria-hidden="true">→</span></button>
+    <span class="portal-issue" aria-hidden="true">ISSUE 001 / AN OPEN MIND</span>
+  </section>
