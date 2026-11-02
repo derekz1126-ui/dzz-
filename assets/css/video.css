@@ -49,7 +49,7 @@ html[data-video-weather] #cloud-copy span{color:var(--bone-2);}
 .scene--define .union__glyph{animation:none;}
 .scene--define .u-feng{translate:calc((1 - var(--t,0)) * -6vw) 0;}.scene--define .u-yun{translate:calc((1 - var(--t,0)) * 6vw) 0;}
 html.js[data-video-weather]:not(.reading) .prologue__title{display:none;}
-.scene--define .ghost .glyph-fulwin{display:block;font:11px/2 var(--mono);letter-spacing:.38em;text-align:center;}
+.scene--define .ghost .glyph-fulwin{display:block;font:11px/2 var(--serif);letter-spacing:.38em;text-align:center;}
 .scene--outro .converge__cars{display:flex;align-items:flex-end;gap:0;position:relative;isolation:isolate;}
 .scene--outro .converge__cars::after{content:'';position:absolute;left:0;right:0;bottom:0;height:16%;z-index:-1;background:radial-gradient(ellipse,rgba(190,209,233,.14),transparent 70%);}
 .scene--outro .converge__cars img{width:33.333%;height:clamp(80px,18vw,230px);border:0;background:transparent;object-fit:contain;object-position:center bottom;filter:none;animation:none;}

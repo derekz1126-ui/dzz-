@@ -382,7 +382,7 @@
       "start": 0,
       "end": 0.24,
       "name": "风起",
-      "en": "WIND"
+      "en": "风"
     },
     {
       "id": "act02",
@@ -390,7 +390,7 @@
       "start": 0.24,
       "end": 0.59,
       "name": "云生",
-      "en": "CLOUDS"
+      "en": "云"
     },
     {
       "id": "act03",
@@ -398,7 +398,7 @@
       "start": 0.59,
       "end": 1,
       "name": "雷动",
-      "en": "STORM"
+      "en": "雷"
     },
     {
       "id": "act04",
@@ -406,7 +406,7 @@
       "start": 0,
       "end": 1,
       "name": "风云之名",
-      "en": "THE NAME"
+      "en": "之名"
     },
     {
       "id": "act05",
@@ -414,7 +414,7 @@
       "start": 0,
       "end": 1,
       "name": "品牌的感觉",
-      "en": "THE FEELING"
+      "en": "感觉"
     },
     {
       "id": "act06",
@@ -422,7 +422,7 @@
       "start": 0,
       "end": 1,
       "name": "飓风",
-      "en": "HURRICANE"
+      "en": "飓风"
     },
     {
       "id": "act07",
@@ -430,7 +430,7 @@
       "start": 0,
       "end": 1,
       "name": "云冕",
-      "en": "NIMBUS"
+      "en": "云冕"
     },
     {
       "id": "act08",
@@ -438,7 +438,7 @@
       "start": 0,
       "end": 1,
       "name": "奔雷",
-      "en": "THUNDER"
+      "en": "奔雷"
     },
     {
       "id": "act09",
@@ -446,7 +446,7 @@
       "start": 0,
       "end": 0.46,
       "name": "三车同台",
-      "en": "TOGETHER"
+      "en": "同台"
     },
     {
       "id": "act10",
@@ -454,7 +454,7 @@
       "start": 0.46,
       "end": 1,
       "name": "品牌终章",
-      "en": "FULWIN"
+      "en": "终章"
     }
   ],
   "opening": {
