@@ -1,12 +1,14 @@
 'use strict';
-const idols = [...(window.SHORTLIST || []), ...(window.IDOLS || [])].filter((item,index,list) => list.findIndex(other => other.id === item.id || (other.latin.toLowerCase() === item.latin.toLowerCase() && other.group.toLowerCase() === item.group.toLowerCase())) === index);
-const byId = new Map(idols.map(idol => [idol.id, idol]));
-const covers = window.COVERS?.length ? window.COVERS.slice(0, 3) : ['karina','wonyoung','yuqi'].map(id=>byId.get(id)).filter(Boolean);
+const idols = window.SHORTLIST;
+const covers = window.PHOTO_SETS;
+const byId = new Map([...window.PAST_MEMBERS, ...idols].map(idol => [idol.id, idol]));
+const photoSet = new Map(covers.map(set => [set.group,set]));
+let coverIndex = 0;
 const main = document.querySelector('#main');
 const modal = document.querySelector('#modal');
 const esc = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const icon = (key, cls = '') => '<svg aria-hidden="true" class="ic ' + cls + '"><use href="#i-' + key + '"/></svg>';
-const img = (item, eager = false) => '<img src="' + esc(item.image) + '" alt="' + esc(item.name) + '" ' + (eager ? '' : 'loading="lazy" ') + 'decoding="async">';
+const img = (item, eager = false) => item.image ? '<img src="' + esc(item.image) + '" alt="' + esc(item.name) + '" ' + (eager ? '' : 'loading="lazy" ') + 'decoding="async">' : '<span class="archive-name" aria-label="往期成员">'+esc(item.latin)+'</span>';
 const storageKey = 'pickbeat.topnine.v1';
 const groups = [...new Set(idols.map(i => i.group))];
 const ordered = (ids) => [...new Set(Array.isArray(ids) ? ids : [])].filter(id => byId.has(id));
@@ -44,7 +46,17 @@ function credit(item){
 }
 function detail(id){
   const item = byId.get(id);
-  if(item) showModal(item.name, '<img class="detail-img" src="'+esc(item.image)+'" alt="'+esc(item.name)+'"><div class="detail-group">'+esc(item.latin)+' · '+esc(item.group)+'</div><div class="detail-credit">'+credit(item)+'</div>');
+  if(!item) return;
+  const set=photoSet.get(item.group);
+  showModal(item.name, '<img class="detail-img" src="'+esc(item.image)+'" alt="'+esc(item.name)+'"><div class="detail-group">'+esc(item.latin)+' · '+esc(item.group)+'</div><div class="detail-credit">'+credit(item)+'</div>'+(set ? '<button class="outline group-open" data-action="group-photo" data-id="'+esc(set.group)+'">'+icon('image')+'查看完整团体写真</button>' : ''));
+}
+function groupPhoto(group){
+  const set=photoSet.get(group);
+  if(set) showModal(set.group+' 团体写真','<img class="group-full" src="'+esc(set.image)+'" alt="'+esc(set.group)+' 完整合照"><p class="detail-group">'+esc(set.name)+'</p><div class="detail-credit">'+credit(set)+'</div>');
+}
+function coverCard(){
+  const set=covers[coverIndex];
+  return '<div class="group-print"><button class="group-shot" data-action="group-photo" data-id="'+esc(set.group)+'" aria-label="放大 '+esc(set.group)+' 团体写真">'+img(set,true)+'</button><div class="print-caption"><div><b>'+esc(set.group)+'</b><span>'+esc(set.name)+'</span></div><div class="cover-nav"><button data-action="prev-cover" aria-label="上一组团体写真">'+icon('left')+'</button><span>'+(coverIndex+1)+' / '+covers.length+'</span><button data-action="next-cover" aria-label="下一组团体写真">'+icon('arrow')+'</button></div></div></div>';
 }
 function featured(){
   const picked = [];
@@ -63,9 +75,7 @@ function card(item, action='detail', {chosen=false,eager=false,index=null}={}){
   return '<'+tag+' class="idol-card'+(chosen?' chosen':'')+'"'+(interactive ? ' data-action="'+action+'" data-id="'+esc(item.id)+'"' : '')+pressed+'><div class="idol-face">'+img(item,eager)+rank+symbol+'</div><div class="card-info"><strong class="card-name">'+esc(item.name)+'</strong><span class="group">'+esc(item.group)+'</span></div></'+tag+'>';
 }
 function home(){
-  const line = ['one','two','three'];
-  const photos = covers.map((p,i) => '<figure class="polaroid photo-'+line[i]+'">'+img(p,true)+'<figcaption><span>'+esc(p.latin || p.name)+'</span>'+icon('heart')+'</figcaption></figure>').join('');
-  main.innerHTML = '<div class="wrap"><section class="hero"><div class="hero-copy"><div class="feature-line"><span class="feature-tag">'+icon('spark')+'本期主打</span><span class="eng">K-POP GIRL GROUPS</span></div><h1><span class="latin-hero">K-POP</span> 女团<br><span class="popword">心动九选</span></h1><p>哪一张脸，让你一眼心动？<br>翻开爱豆小卡，选出你的专属 TOP 9。</p><div class="hero-actions"><button class="primary" data-action="start">'+icon('heart')+(session.draft?'继续上次挑选':'开始心动挑战')+icon('arrow')+'</button></div></div><div class="hero-art"><div class="collage">'+photos+'<img aria-hidden="true" class="spark-art" src="assets/doodle.svg" alt=""><img aria-hidden="true" class="sticker top-sticker" src="assets/top-nine.svg" alt=""><img aria-hidden="true" class="sticker heart-art" src="assets/heart.svg" alt="">'+icon('spark','spark-small')+'</div></div></section><section class="preview-section"><div class="section-head"><div><div class="section-kicker" lang="en">IDOL ARCHIVE</div><h2>爱豆图鉴<span class="count-label">共 '+idols.length+' 位成员</span></h2></div><a class="small-link" href="#library">查看全部 '+icon('arrow')+'</a></div><div class="preview-grid">'+featured().map(item => card(item,'detail',{eager:true})).join('')+'</div></section></div>';
+  main.innerHTML = '<div class="wrap"><section class="hero"><div class="hero-copy"><div class="feature-line"><span class="feature-tag">'+icon('spark')+'团体写真特辑</span><span class="eng">K-POP GIRL GROUPS</span></div><h1><span class="latin-hero">K-POP</span> 女团<br><span class="popword">心动九选</span></h1><p>翻开女团写真集。<br>从成员小卡里，选出你的专属 TOP 9。</p><div class="hero-actions"><button class="primary" data-action="start">'+icon('heart')+(session.draft?'继续上次挑选':'开始心动挑战')+icon('arrow')+'</button></div></div><div class="editorial-art"><div id="cover-card">'+coverCard()+'</div></div></section><section class="preview-section"><div class="section-head"><div><div class="section-kicker" lang="en">IDOL ARCHIVE</div><h2>爱豆图鉴<span class="count-label">共 '+idols.length+' 位成员</span></h2></div><a class="small-link" href="#library">查看全部 '+icon('arrow')+'</a></div><div class="preview-grid">'+featured().map(item => card(item,'detail',{eager:true})).join('')+'</div></section></div>';
 }
 const backHome = '<a href="#home" class="back">'+icon('left')+'返回首页</a>';
 function library(){
@@ -116,7 +126,7 @@ async function makePoster(){
   showModal('保存结果图','<p role="status">正在排版九宫格…</p>');
   const portraits = board.ids.map(id=>byId.get(id));
   try {
-    const photos=await Promise.all(portraits.map(item=>new Promise((resolve,reject)=>{const photo=new Image();photo.onload=()=>resolve(photo);photo.onerror=reject;photo.src=item.image;})));
+    const photos=await Promise.all(portraits.map(item=>item.image ? new Promise((resolve,reject)=>{const photo=new Image();photo.onload=()=>resolve(photo);photo.onerror=reject;photo.src=item.image;}) : null));
     const canvas=document.createElement('canvas');
     canvas.width=1080;canvas.height=1450;
     const ctx=canvas.getContext('2d');
@@ -126,9 +136,14 @@ async function makePoster(){
     const size=316, gap=18;
     portraits.forEach((item,index)=>{
       const x=48+index%3*(size+gap),y=175+Math.floor(index/3)*379,photo=photos[index];
-      const crop=Math.min(photo.naturalWidth,photo.naturalHeight);
       ctx.fillStyle='#fff';ctx.fillRect(x,y,size,360);
-      ctx.drawImage(photo,(photo.naturalWidth-crop)/2,Math.max(0,(photo.naturalHeight-crop)*.3),crop,crop,x,y,size,size);
+      if(photo){
+        const crop=Math.min(photo.naturalWidth,photo.naturalHeight);
+        ctx.drawImage(photo,(photo.naturalWidth-crop)/2,Math.max(0,(photo.naturalHeight-crop)*.3),crop,crop,x,y,size,size);
+      } else {
+        ctx.fillStyle='#e7daef';ctx.fillRect(x,y,size,size);
+        ctx.fillStyle='#704c87';ctx.font='bold 35px Arial';ctx.textAlign='center';ctx.fillText(item.latin,x+size/2,y+size/2,size-28);ctx.textAlign='left';
+      }
       ctx.fillStyle=index===0?'#dcfa8c':'#372540';ctx.fillRect(x+9,y+9,50,40);
       ctx.fillStyle=index===0?'#30213d':'#fff';ctx.font='bold 25px Arial';ctx.fillText(String(index+1).padStart(2,'0'),x+19,y+38);
       ctx.fillStyle='#2a1e33';ctx.font='bold 22px "Microsoft YaHei",sans-serif';ctx.fillText(item.name,x+12,y+346,size*.59);
@@ -136,7 +151,7 @@ async function makePoster(){
     });
     ctx.fillStyle='#58496a';ctx.font='bold 22px "Microsoft YaHei",sans-serif';ctx.fillText('心动研究所  /  K-POP 女团心动九选',48,1335);
     ctx.font='15px "Microsoft YaHei",sans-serif';
-    portraits.forEach((item,i)=>{const x=48+(i%3)*334,y=1371+Math.floor(i/3)*23;ctx.fillText((i+1)+'. '+item.credit+' · '+item.license,x,y,312);});
+    portraits.forEach((item,i)=>{if(!item.image) return;const x=48+(i%3)*334,y=1371+Math.floor(i/3)*23;ctx.fillText((i+1)+'. '+item.credit+' · '+item.license,x,y,312);});
     if(posterURL.startsWith('blob:')) URL.revokeObjectURL(posterURL);
     posterURL = await new Promise((resolve,reject)=>canvas.toBlob(blob=>blob?resolve(URL.createObjectURL(blob)):reject(new Error('export')),'image/png'));
     if(!modal.open) return;
@@ -183,6 +198,12 @@ document.addEventListener('click',e=>{
   if(action==='close') modal.close();
   else if(action==='start') go('play');
   else if(action==='help') showHelp();
+  else if(action==='group-photo') groupPhoto(id);
+  else if(action==='prev-cover'||action==='next-cover'){
+    coverIndex=(coverIndex+(action==='next-cover'?1:-1)+covers.length)%covers.length;
+    document.querySelector('#cover-card').innerHTML=coverCard();
+    document.querySelector('#cover-card [data-action="'+action+'"]').focus({preventScroll:true});
+  }
   else if(action==='credits') {
     const all=[...idols,...covers].filter((p,i,a)=>a.findIndex(x=>x.source===p.source && x.image===p.image)===i);
     showModal('图片来源与许可','<p class="privacy">成员与封面照片均附原始文件和授权链接。站内小卡和结果图对照片做了裁切或缩放。</p><ol class="credits">'+all.map(p=>'<li><b>'+esc(p.name)+'</b><br>'+credit(p)+'</li>').join('')+'</ol>');
@@ -232,7 +253,7 @@ function newDraft(){
 function restoreDraft(raw){
   if(!raw || !Array.isArray(raw.deck) || !Array.isArray(raw.history)) return null;
   const deck=ordered(raw.deck);
-  if(deck.length<9 || deck.length!==raw.deck.length) return null;
+  if(deck.length<9 || deck.length!==raw.deck.length || deck.some(id=>!byId.get(id).image)) return null;
   const state=replay(deck,raw.history);
   const draft={deck,history:raw.history.slice(0,state.used),ids:[],stage:'match'};
   if(state.ranked.length===9){
