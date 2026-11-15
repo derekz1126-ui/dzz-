@@ -42,17 +42,22 @@ function link(url, label){
   return /^https?:\/\//i.test(url || '') ? '<a href="'+esc(url)+'" target="_blank" rel="noopener noreferrer">'+esc(label)+'</a>' : esc(label);
 }
 function credit(item){
-  return link(item.source, '原图') + ' · ' + esc(item.credit) + ' · ' + link(item.licenseUrl,item.license || '许可');
+  return [esc(item.credit), link(item.source, '发布来源'), link(item.original, '高清原图')].join(' · ');
+}
+function heatNote(set){
+  if(!set?.heat) return '';
+  const {platform, metric, choices, scope}=set.heat;
+  return '<details class="heat-note"><summary>为什么选这套写真？</summary><p>'+esc(platform)+' · '+esc(scope || '套图帖')+' · '+esc(metric)+'快照</p><ul>'+choices.map(c=>'<li>'+link(c.url,c.label)+'<b>'+esc(c.score.toLocaleString('zh-CN'))+'</b></li>').join('')+'</ul></details>';
 }
 function detail(id){
   const item = byId.get(id);
   if(!item) return;
   const set=photoSet.get(item.group);
-  showModal(item.name, '<img class="detail-img" src="'+esc(item.image)+'" alt="'+esc(item.name)+'"><div class="detail-group">'+esc(item.latin)+' · '+esc(item.group)+'</div><div class="detail-credit">'+credit(item)+'</div>'+(set ? '<button class="outline group-open" data-action="group-photo" data-id="'+esc(set.group)+'">'+icon('image')+'查看完整团体写真</button>' : ''));
+  showModal(item.name, '<img class="detail-img" src="'+esc(item.full || item.image)+'" alt="'+esc(item.name)+'"><div class="detail-group">'+esc(item.latin)+' · '+esc(item.group)+'</div><div class="detail-credit">'+esc(set?.name)+' · '+credit(item)+'</div>'+heatNote(set)+(set ? '<button class="outline group-open" data-action="group-photo" data-id="'+esc(set.group)+'">'+icon('image')+'查看完整团体写真</button>' : ''));
 }
 function groupPhoto(group){
   const set=photoSet.get(group);
-  if(set) showModal(set.group+' 团体写真','<img class="group-full" src="'+esc(set.image)+'" alt="'+esc(set.group)+' 完整合照"><p class="detail-group">'+esc(set.name)+'</p><div class="detail-credit">'+credit(set)+'</div>');
+  if(set) showModal(set.group+' 团体写真','<img class="group-full" src="'+esc(set.image)+'" alt="'+esc(set.group)+' 完整合照"><p class="detail-group">'+esc(set.name)+'</p><div class="detail-credit">'+credit(set)+'</div>'+heatNote(set));
 }
 function coverCard(){
   const set=covers[coverIndex];
@@ -151,7 +156,7 @@ async function makePoster(){
     });
     ctx.fillStyle='#58496a';ctx.font='bold 22px "Microsoft YaHei",sans-serif';ctx.fillText('心动研究所  /  K-POP 女团心动九选',48,1335);
     ctx.font='15px "Microsoft YaHei",sans-serif';
-    portraits.forEach((item,i)=>{if(!item.image) return;const x=48+(i%3)*334,y=1371+Math.floor(i/3)*23;ctx.fillText((i+1)+'. '+item.credit+' · '+item.license,x,y,312);});
+    portraits.forEach((item,i)=>{if(!item.image) return;const x=48+(i%3)*334,y=1371+Math.floor(i/3)*23;ctx.fillText((i+1)+'. '+item.credit,x,y,312);});
     if(posterURL.startsWith('blob:')) URL.revokeObjectURL(posterURL);
     posterURL = await new Promise((resolve,reject)=>canvas.toBlob(blob=>blob?resolve(URL.createObjectURL(blob)):reject(new Error('export')),'image/png'));
     if(!modal.open) return;
@@ -206,7 +211,7 @@ document.addEventListener('click',e=>{
   }
   else if(action==='credits') {
     const all=[...idols,...covers].filter((p,i,a)=>a.findIndex(x=>x.source===p.source && x.image===p.image)===i);
-    showModal('图片来源与许可','<p class="privacy">成员与封面照片均附原始文件和授权链接。站内小卡和结果图对照片做了裁切或缩放。</p><ol class="credits">'+all.map(p=>'<li><b>'+esc(p.name)+'</b><br>'+credit(p)+'</li>').join('')+'</ol>');
+    showModal('图片来源','<p class="privacy">封面使用组合合照，小卡取自成员单人写真。点击来源可查看发布记录，照片版权归各自权利人。</p><ol class="credits">'+all.map(p=>'<li><b>'+esc(p.name)+'</b><br>'+credit(p)+'</li>').join('')+'</ol>');
   } else if(action==='detail') detail(id);
   else if(action==='clear-filter'){query='';groupFilter='';library();}
   else if(action==='swap') swapSlot(id);
