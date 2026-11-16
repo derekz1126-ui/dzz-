@@ -38,3 +38,36 @@ dialog .detail-img{max-height:67dvh}
 .round-progress progress::-webkit-progress-bar{background:#e9e3ef;border-radius:6px}
 .round-progress progress::-webkit-progress-value{background:#8254c4;border-radius:6px}
 .photo-status:not(:empty){margin:10px 0;color:var(--muted);font-size:13px}
+.pool-bar {
+  display: flex;
+  padding-bottom: 12px;
+}
+.pool-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 3px;
+  border: 1px solid #e4dced;
+  border-radius: 24px;
+  background: #f5f1f8;
+}
+.pool-switch a {
+  display: grid;
+  place-items: center;
+  min-width: 77px;
+  min-height: 34px;
+  padding-inline: 15px;
+  border-radius: 20px;
+  color: #66576e;
+  font-size: 14px;
+  font-weight: 700;
+}
+.pool-switch a:hover { color: var(--purple); }
+.pool-switch a[aria-current="true"] {
+  background: #663ab6;
+  color: white;
+}
+@media (max-width: 700px) {
+  .pool-bar { padding-bottom: 9px; }
+  .pool-switch a { min-height: 39px; }
+}
