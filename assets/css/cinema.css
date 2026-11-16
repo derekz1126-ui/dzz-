@@ -28,7 +28,7 @@
 .cinema-intro{position:absolute;left:var(--pad);top:40%;opacity:var(--intro);color:var(--bone-2);}
 .cinema-intro>span{font:10px/1.6 var(--mono);letter-spacing:.32em;color:var(--ember);}.cinema-intro>p{font-size:clamp(24px,2.1vw,35px);font-weight:300;letter-spacing:.12em;margin-top:22px;}
 .scene--nimbus .cinema-intro{left:auto;right:var(--pad);text-align:right;}
-.car-cinema__credit{position:absolute;left:var(--car-x);bottom:16%;transform:translateX(-50%);font:8px/1.6 var(--mono);letter-spacing:.17em;color:var(--bone-4);white-space:nowrap;}
+.car-cinema__credit{position:absolute;left:var(--car-x);bottom:16%;transform:translateX(-50%);font:8px/1.6 var(--serif);letter-spacing:.17em;color:var(--bone-4);white-space:nowrap;}
 @media(max-width:1000px){
   .scene--cinematic .sticky{padding-top:100px;}
   .scene--cinematic .car-cinema{--car-x:50%;}

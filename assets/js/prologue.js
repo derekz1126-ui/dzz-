@@ -12,13 +12,13 @@
  const write=(key,value)=>{const s=Number(value).toFixed(5);if(cache[key]!==s){stage.style.setProperty(key,s);cache[key]=s;}};
  const spanP=span=>clamp((p-span[0])/(span[1]-span[0]));
  const cloudP=()=>reading?.85:spanP(opening.clouds),stormP=()=>spanP(opening.storm);
- const shotText={cloud:[['风，渐无界。','ACT 02 · 云生'],['轻雾穿行。','近与远，渐渐分开。'],['云层铺展。','柔和，自有分量。'],['云海初成。','万物，被温柔托住。']],storm:[['云层积势。','ACT 03 · 雷动'],['暗流，涌动。','力量，在深处汇聚。'],['电光，潜伏。','锋芒，未露。'],['蓄而后发。','让光显出力量。'],['雷后，无声。','力量，有分寸。']]};
+ const shotText={cloud:[['风，渐无界。','第二幕 · 云生'],['轻雾穿行。','近与远，渐渐分开。'],['云层铺展。','柔和，自有分量。'],['云海初成。','万物，被温柔托住。']],storm:[['云层积势。','第三幕 · 雷动'],['暗流，涌动。','力量，在深处汇聚。'],['电光，潜伏。','锋芒，未露。'],['蓄而后发。','让光显出力量。'],['雷后，无声。','力量，有分寸。']]};
  function caption(act,at){
   const videoAsset=act==='storm'&&window.FulwinVideoScenes?.hasStorm?window.FulwinCinematicAssets?.thunderstorm:null;
   const shots=videoAsset?.beats||window.FulwinWeatherFilm?.shots[act],el=document.getElementById(act+'-copy');if(!shots||!el?.querySelector)return;
   const i=Math.max(0,shots.findIndex(s=>at<=s.end)),start=i?shots[i-1].end:0,u=clamp((at-start)/(shots[i].end-start));
   const box=el.querySelector('.weather-caption');if(!box)return;
-  if(box.dataset.beat!==String(i)){box.dataset.beat=String(i);box.querySelector('p').textContent=videoAsset?shots[i].label:shotText[act][i][0];box.querySelector('span').textContent=videoAsset?'ACT 03 · 雷动':shotText[act][i][1];}
+  if(box.dataset.beat!==String(i)){box.dataset.beat=String(i);box.querySelector('p').textContent=videoAsset?shots[i].label:shotText[act][i][0];box.querySelector('span').textContent=videoAsset?'第三幕 · 雷动':shotText[act][i][1];}
   let alpha=(i? smooth(0,.14,u):1)*(i===shots.length-1?1:1-smooth(.84,1,u));
   if(videoAsset)alpha*=1-smooth(.47,.52,at)+smooth(.88,.94,at);
   else if(act==='storm')alpha*=1-smooth(.71,.755,at)+smooth(.812,.87,at);
