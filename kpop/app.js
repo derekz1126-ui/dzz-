@@ -8,7 +8,7 @@ const main = document.querySelector('#main');
 const modal = document.querySelector('#modal');
 const esc = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const icon = (key, cls = '') => '<svg aria-hidden="true" class="ic ' + cls + '"><use href="#i-' + key + '"/></svg>';
-const img = (item, eager = false) => item.image ? '<img src="' + esc(item.image) + '" alt="' + esc(item.name) + '" ' + (eager ? '' : 'loading="lazy" ') + 'decoding="async">' : '<span class="archive-name" aria-label="往期成员">'+esc(item.latin)+'</span>';
+const img = (item, eager = false) => item.image ? '<img src="' + esc(item.image) + '" alt="' + esc(item.latin || item.name) + '" ' + (eager ? '' : 'loading="lazy" ') + 'decoding="async">' : '<span class="archive-name" aria-label="往期成员">'+esc(item.latin)+'</span>';
 const storageKey = 'pickbeat.topnine.v1';
 const podiumOrder = [3,4,5,1,0,2,6,7,8];
 const groups = [...new Set(idols.map(i => i.group))];
@@ -54,7 +54,7 @@ function detail(id){
   const item = byId.get(id);
   if(!item) return;
   const set=photoSet.get(item.group);
-  showModal(item.name, '<img class="detail-img" src="'+esc(item.full || item.image)+'" alt="'+esc(item.name)+'"><div class="detail-group">'+esc(item.latin)+' · '+esc(item.group)+'</div><div class="detail-credit">'+esc(set?.name)+' · '+credit(item)+'</div>'+heatNote(set)+(set ? '<button class="outline group-open" data-action="group-photo" data-id="'+esc(set.group)+'">'+icon('image')+'查看完整团体写真</button>' : ''));
+  showModal(item.latin, '<img class="detail-img" src="'+esc(item.full || item.image)+'" alt="'+esc(item.latin)+'"><div class="detail-group">'+esc(item.group)+'</div><div class="detail-credit">'+esc(item.series || set?.name)+' · '+credit(item)+'</div>'+heatNote(item.series ? item : set)+(set ? '<button class="outline group-open" data-action="group-photo" data-id="'+esc(set.group)+'">'+icon('image')+'查看完整团体写真</button>' : ''));
 }
 function groupPhoto(group){
   const set=photoSet.get(group);
@@ -78,7 +78,7 @@ function card(item, action='detail', {chosen=false,eager=false,index=null}={}){
   const pressed = ['pick','swap','nominate'].includes(action) ? ' aria-pressed="'+chosen+'"' : '';
   const rank = index === null ? '' : '<b class="rank-pin">'+String(index+1).padStart(2,'0')+'</b>';
   const symbol = ['pick','nominate'].includes(action) ? '<span class="pick-toggle">'+icon(chosen ? 'check' : 'heart')+'</span>' : action === 'detail' ? '<span class="photo-icon">'+icon('up')+'</span>' : '';
-  return '<'+tag+' class="idol-card'+(chosen?' chosen':'')+'"'+(interactive ? ' data-action="'+action+'" data-id="'+esc(item.id)+'"' : '')+pressed+'><div class="idol-face">'+img(item,eager)+rank+symbol+'</div><div class="card-info"><strong class="card-name">'+esc(item.name)+'</strong><span class="group">'+esc(item.group)+'</span></div></'+tag+'>';
+  return '<'+tag+' class="idol-card'+(chosen?' chosen':'')+'"'+(interactive ? ' data-action="'+action+'" data-id="'+esc(item.id)+'"' : '')+pressed+'><div class="idol-face">'+img(item,eager)+rank+symbol+'</div><div class="card-info"><strong class="card-name">'+esc(item.latin)+'</strong><span class="group">'+esc(item.group)+'</span></div></'+tag+'>';
 }
 function home(){
   main.innerHTML = '<div class="wrap"><section class="hero"><div class="hero-copy"><div class="feature-line"><span class="feature-tag">'+icon('spark')+'团体写真特辑</span><span class="eng">K-POP GIRL GROUPS</span></div><h1><span class="latin-hero">K-POP</span> 女团<br><span class="popword">心动九选</span></h1><p>翻开女团写真集。<br>从成员小卡里，选出你的专属 TOP 9。</p><div class="hero-actions"><button class="primary" data-action="start">'+icon('heart')+(session.draft?.format===2?'继续上次挑选':session.draft?'继续旧版挑选':'开始心动挑战')+icon('arrow')+'</button>'+(session.draft && session.draft.format!==2?'<button class="outline" data-action="restart-ask">开始新版挑战</button>':'')+'</div></div><div class="editorial-art"><div id="cover-card">'+coverCard()+'</div></div></section><section class="preview-section"><div class="section-head"><div><div class="section-kicker" lang="en">IDOL ARCHIVE</div><h2>爱豆图鉴<span class="count-label">共 '+idols.length+' 位成员</span></h2></div><a class="small-link" href="#library">查看全部 '+icon('arrow')+'</a></div><div class="preview-grid">'+featured().map(item => card(item,'detail',{eager:true})).join('')+'</div></section></div>';
@@ -91,8 +91,9 @@ function library(){
   document.querySelector('#group-filter').addEventListener('change',e=>{groupFilter=e.target.value;filterCards();});
 }
 function filterCards(){
-  const normal = s => (s || '').toLowerCase().replace(/[\s\-_]/g,'');
-  const list = idols.filter(i => (!groupFilter || i.group === groupFilter) && [i.name,i.latin,i.group,i.aliases?.toString()].some(v=>normal(v).includes(normal(query))));
+  const normal = s => s.normalize('NFKD').replace(/\p{M}/gu,'').toLowerCase().replace(/[\s_-]/g,'');
+  const needle = normal(query);
+  const list = idols.filter(i => (!groupFilter || i.group === groupFilter) && [i.name,i.latin,i.group,...(i.aliases || [])].some(v=>normal(v).includes(needle)));
   document.querySelector('#lib-cards').innerHTML = list.length ? list.map(i=>card(i)).join('') : '<p>没有找到匹配的成员。<button class="plain" data-action="clear-filter">清除筛选</button></p>';
   document.querySelector('#found').textContent = list.length+' 位成员';
 }
@@ -110,7 +111,7 @@ function swapSlot(id){
 function sortView(){
   const draft = session.draft;
   if(!draft || !exactBoard(draft.ids)) return go('play');
-  main.innerHTML = '<div class="wrap page">'+backHome+'<div class="page-head"><div class="section-kicker">FINAL LINEUP</div><h1>排出你的心动顺位</h1><p>依次点两张小卡交换位置，左上角就是你的第一名。</p></div><div class="rank-prompt" role="status">'+(selectedSlot?'已选 '+esc(byId.get(selectedSlot).name)+'，点另一张交换位置。':'当前顺序从左到右、从上到下。')+'</div><div class="sort-grid">'+draft.ids.map((id,index)=>'<div class="sort-slot '+(selectedSlot===id?'selected':'')+'">'+card(byId.get(id),'swap',{index,chosen:selectedSlot===id})+'</div>').join('')+'</div><div class="actions"><button class="primary" data-action="finish">生成我的九宫格 '+icon('arrow')+'</button><button class="outline" data-action="revise">调整入选成员</button></div></div>';
+  main.innerHTML = '<div class="wrap page">'+backHome+'<div class="page-head"><div class="section-kicker">FINAL LINEUP</div><h1>排出你的心动顺位</h1><p>依次点两张小卡交换位置，左上角就是你的第一名。</p></div><div class="rank-prompt" role="status">'+(selectedSlot?'已选 '+esc(byId.get(selectedSlot).latin)+'，点另一张交换位置。':'当前顺序从左到右、从上到下。')+'</div><div class="sort-grid">'+draft.ids.map((id,index)=>'<div class="sort-slot '+(selectedSlot===id?'selected':'')+'">'+card(byId.get(id),'swap',{index,chosen:selectedSlot===id})+'</div>').join('')+'</div><div class="actions"><button class="primary" data-action="finish">生成我的九宫格 '+icon('arrow')+'</button><button class="outline" data-action="revise">调整入选成员</button></div></div>';
 }
 function finish(ids=session.draft?.ids){
   if(!session.draft || !exactBoard(ids)) return;
@@ -124,7 +125,7 @@ function results(board){
   main.innerHTML = '<div class="wrap page">'+backHome+'<div class="page-head"><div class="section-kicker">MY TOP NINE</div><h1>我的心动九宫格</h1><p>'+esc(date)+' · K-POP 女团心动九选</p></div><div class="result-layout"><div class="result-grid">'+podiumOrder.map(index=>'<div class="sort-slot">'+card(byId.get(board.ids[index]),'static',{index,eager:true})+'</div>').join('')+'</div><aside class="result-info"><h2>把心动存下来</h2><p>保存一张带名字的九宫格，发给朋友看看你们有几位同担。</p><div class="actions"><button class="primary" data-action="poster">'+icon('download')+'保存结果图</button><button class="outline" data-action="copy">复制榜单文字</button></div><a class="plain" href="#boards">查看我的榜单</a></aside></div></div>';
 }
 function boards(){
-  main.innerHTML = '<div class="wrap page">'+backHome+'<div class="page-head"><div class="section-kicker">MY COLLECTION</div><h1>我的榜单</h1><p>这台设备上完成的九宫格，都收在这里。</p></div>'+(session.boards.length?'<div class="board-list">'+session.boards.map(b=>'<article class="board-card"><a href="#result/'+esc(b.id)+'" aria-label="查看 '+esc(byId.get(b.ids[0]).name)+' 居首的榜单"><div class="board-mini">'+podiumOrder.map(index=>img(byId.get(b.ids[index]))).join('')+'</div><h3>'+esc(byId.get(b.ids[0]).name)+' 领衔的 TOP 9</h3></a><div class="status-text">'+esc(new Date(b.date).toLocaleString('zh-CN',{hour12:false}))+'</div><div class="actions"><a class="small-link" href="#result/'+esc(b.id)+'">查看榜单 '+icon('arrow')+'</a><button class="plain" data-action="delete-ask" data-id="'+esc(b.id)+'">删除</button></div></article>').join('')+'</div>':'<div class="empty">'+icon('grid','big')+'<p>这里还没有榜单。先挑出让你心动的九位成员吧。</p><button class="primary" data-action="start">开始挑选 '+icon('arrow')+'</button></div>')+'</div>';
+  main.innerHTML = '<div class="wrap page">'+backHome+'<div class="page-head"><div class="section-kicker">MY COLLECTION</div><h1>我的榜单</h1><p>这台设备上完成的九宫格，都收在这里。</p></div>'+(session.boards.length?'<div class="board-list">'+session.boards.map(b=>'<article class="board-card"><a href="#result/'+esc(b.id)+'" aria-label="查看 '+esc(byId.get(b.ids[0]).latin)+' 居首的榜单"><div class="board-mini">'+podiumOrder.map(index=>img(byId.get(b.ids[index]))).join('')+'</div><h3>'+esc(byId.get(b.ids[0]).latin)+' 领衔的 TOP 9</h3></a><div class="status-text">'+esc(new Date(b.date).toLocaleString('zh-CN',{hour12:false}))+'</div><div class="actions"><a class="small-link" href="#result/'+esc(b.id)+'">查看榜单 '+icon('arrow')+'</a><button class="plain" data-action="delete-ask" data-id="'+esc(b.id)+'">删除</button></div></article>').join('')+'</div>':'<div class="empty">'+icon('grid','big')+'<p>这里还没有榜单。先挑出让你心动的九位成员吧。</p><button class="primary" data-action="start">开始挑选 '+icon('arrow')+'</button></div>')+'</div>';
 }
 async function makePoster(){
   const board=currentBoard;
@@ -153,7 +154,7 @@ async function makePoster(){
       }
       ctx.fillStyle=index===0?'#dcfa8c':'#372540';ctx.fillRect(x+9,y+9,50,40);
       ctx.fillStyle=index===0?'#30213d':'#fff';ctx.font='bold 25px Arial';ctx.fillText(String(index+1).padStart(2,'0'),x+19,y+38);
-      ctx.fillStyle='#2a1e33';ctx.font='bold 22px "Microsoft YaHei",sans-serif';ctx.fillText(item.name,x+12,y+346,size*.59);
+      ctx.fillStyle='#2a1e33';ctx.font='bold 22px "Microsoft YaHei",sans-serif';ctx.fillText(item.latin,x+12,y+346,size*.59);
       ctx.textAlign='right';ctx.fillStyle='#71647d';ctx.font='bold 13px Arial';ctx.fillText(item.group,x+size-10,y+344,size*.34);ctx.textAlign='left';
     });
     ctx.fillStyle='#58496a';ctx.font='bold 22px "Microsoft YaHei",sans-serif';ctx.fillText('心动研究所  /  K-POP 女团心动九选',48,1335);
@@ -169,7 +170,7 @@ async function makePoster(){
 }
 async function copyBoard(){
   if(!currentBoard) return;
-  const message='我的 K-POP 女团心动 TOP 9\n'+currentBoard.ids.map((id,i)=>{const item=byId.get(id);return (i+1)+'. '+item.name+' · '+item.group;}).join('\n')+'\n来自「心动研究所」';
+  const message='我的 K-POP 女团心动 TOP 9\n'+currentBoard.ids.map((id,i)=>{const item=byId.get(id);return (i+1)+'. '+item.latin+' · '+item.group;}).join('\n')+'\n来自「心动研究所」';
   try {await navigator.clipboard.writeText(message);toast('榜单文字已复制');}
   catch {showModal('复制榜单文字','<textarea aria-label="榜单文字" readonly style="width:100%;height:260px">'+esc(message)+'</textarea>');modal.querySelector('textarea').select();}
 }
@@ -213,7 +214,7 @@ document.addEventListener('click',e=>{
   }
   else if(action==='credits') {
     const all=[...idols,...covers].filter((p,i,a)=>a.findIndex(x=>x.source===p.source && x.image===p.image)===i);
-    showModal('图片来源','<p class="privacy">封面使用组合合照，小卡取自成员单人写真。点击来源可查看发布记录，照片版权归各自权利人。</p><ol class="credits">'+all.map(p=>'<li><b>'+esc(p.name)+'</b><br>'+credit(p)+'</li>').join('')+'</ol>');
+    showModal('图片来源','<p class="privacy">封面使用组合合照，小卡取自成员单人写真。点击来源可查看发布记录，照片版权归各自权利人。</p><ol class="credits">'+all.map(p=>'<li><b>'+esc(p.latin || p.name)+'</b><br>'+credit(p)+'</li>').join('')+'</ol>');
   } else if(action==='detail') detail(id);
   else if(action==='clear-filter'){query='';groupFilter='';library();}
   else if(action==='swap') swapSlot(id);

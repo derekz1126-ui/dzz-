@@ -1,33 +1,33 @@
 window.PHOTO_SETS = [
   {
     "group": "aespa",
-    "name": "Girls 概念写真",
+    "name": "Better Things 概念写真",
     "credit": "SM Entertainment",
     "heat": {
       "platform": "Reddit · r/kpop",
-      "scope": "同专辑概念写真帖",
+      "scope": "Better Things 三次预告写真发帖。成员照来自并列第一的第二组，团照取自第一组",
       "metric": "帖文得分",
       "choices": [
         {
-          "label": "第三套",
-          "score": 1897,
-          "url": "https://www.reddit.com/r/kpop/comments/vss2o9/"
+          "label": "第二组 · 成员棚拍",
+          "score": 1871,
+          "url": "https://www.reddit.com/r/kpop/comments/15q16fl/"
         },
         {
-          "label": "第一套 · 团体图",
-          "score": 1601,
-          "url": "https://www.reddit.com/r/kpop/comments/voagj8/"
+          "label": "第三组 · 水晶造型",
+          "score": 1871,
+          "url": "https://www.reddit.com/r/kpop/comments/15rv6tm/"
         },
         {
-          "label": "第二套 · Real World",
-          "score": 1328,
-          "url": "https://www.reddit.com/r/kpop/comments/vrzw0q/"
+          "label": "第一组 · 团体合照",
+          "score": 1333,
+          "url": "https://www.reddit.com/r/kpop/comments/15newxk/"
         }
       ]
     },
-    "source": "https://dbkpop.com/2022/07/06/aespa-girls-mv-teaser-girls-teaser-photos-3-hd-hq/",
-    "original": "https://dbkpop.com/wp-content/uploads/2022/07/aespa_girls_Teaser_3_all_group.jpg",
-    "image": "assets/lookbook/group-aespa.webp"
+    "source": "https://x.com/aespa_official/status/1689652859191853056",
+    "original": "https://pbs.twimg.com/media/F3LaUDVbkAEe-DS.jpg?name=orig",
+    "image": "assets/lookbook/group-aespa.webp?v=2ea2e2316f"
   },
   {
     "group": "BLACKPINK",
@@ -60,7 +60,7 @@ window.PHOTO_SETS = [
     "heat": {
       "platform": "X · IVE 官方账号",
       "metric": "点赞",
-      "scope": "以张员瑛同专辑两组写真帖比较，成员小卡选自得分较高的 Either Way",
+      "scope": "《I’VE MINE》选片参考，比较 Wonyoung 在这张专辑的两组写真帖",
       "choices": [
         {
           "label": "Either Way",
@@ -226,48 +226,60 @@ window.PHOTO_SETS = [
 ];
 window.SHORTLIST = [
   {
-    "name": "柳智敏",
+    "name": "Karina",
     "latin": "Karina",
+    "aliases": [
+      "柳智敏"
+    ],
     "id": "karina",
     "group": "aespa",
     "credit": "SM Entertainment",
-    "source": "https://dbkpop.com/2022/07/06/aespa-girls-mv-teaser-girls-teaser-photos-3-hd-hq/",
-    "original": "https://dbkpop.com/wp-content/uploads/2022/07/aespa_girls_Teaser_3_Karina_2.jpg",
-    "image": "assets/lookbook/karina.webp",
-    "full": "assets/lookbook/karina-full.webp"
+    "source": "https://x.com/aespa_official/status/1690740199872176128",
+    "original": "https://pbs.twimg.com/media/F3a3P2Za4AA9SSO.jpg?name=orig",
+    "image": "assets/lookbook/karina.webp?v=e7e11b34a3",
+    "full": "assets/lookbook/karina-full.webp?v=2f5019313a"
   },
   {
-    "name": "金旼炡",
+    "name": "Winter",
     "latin": "Winter",
+    "aliases": [
+      "金旼炡"
+    ],
     "id": "winter",
     "group": "aespa",
     "credit": "SM Entertainment",
-    "source": "https://dbkpop.com/2022/07/06/aespa-girls-mv-teaser-girls-teaser-photos-3-hd-hq/",
-    "original": "https://dbkpop.com/wp-content/uploads/2022/07/aespa_girls_Teaser_3_Winter_2.jpg",
-    "image": "assets/lookbook/winter.webp",
-    "full": "assets/lookbook/winter-full.webp"
+    "source": "https://x.com/aespa_official/status/1690740051117031424",
+    "original": "https://pbs.twimg.com/media/F3a3HLMaUAAOKoD.jpg?name=orig",
+    "image": "assets/lookbook/winter.webp?v=f0c6380d3a",
+    "full": "assets/lookbook/winter-full.webp?v=5ca70514e9"
   },
   {
-    "name": "宁艺卓",
+    "name": "Ningning",
     "latin": "Ningning",
+    "aliases": [
+      "宁艺卓"
+    ],
     "id": "ningning",
     "group": "aespa",
     "credit": "SM Entertainment",
-    "source": "https://dbkpop.com/2022/07/06/aespa-girls-mv-teaser-girls-teaser-photos-3-hd-hq/",
-    "original": "https://dbkpop.com/wp-content/uploads/2022/07/aespa_girls_Teaser_3_Ningning_1.jpg",
-    "image": "assets/lookbook/ningning.webp",
-    "full": "assets/lookbook/ningning-full.webp"
+    "source": "https://x.com/aespa_official/status/1690740465824677888",
+    "original": "https://pbs.twimg.com/media/F3a3fU8a4AAkhWD.jpg?name=orig",
+    "image": "assets/lookbook/ningning.webp?v=22b6905c26",
+    "full": "assets/lookbook/ningning-full.webp?v=383f7b9a12"
   },
   {
-    "name": "内永枝利",
+    "name": "Giselle",
     "latin": "Giselle",
+    "aliases": [
+      "内永枝利"
+    ],
     "id": "giselle",
     "group": "aespa",
     "credit": "SM Entertainment",
-    "source": "https://dbkpop.com/2022/07/06/aespa-girls-mv-teaser-girls-teaser-photos-3-hd-hq/",
-    "original": "https://dbkpop.com/wp-content/uploads/2022/07/aespa_girls_Teaser_3_Giselle_1.jpg",
-    "image": "assets/lookbook/giselle.webp",
-    "full": "assets/lookbook/giselle-full.webp"
+    "source": "https://x.com/aespa_official/status/1690740323759316992",
+    "original": "https://pbs.twimg.com/media/F3a3XERb0AADbhm.jpg?name=orig",
+    "image": "assets/lookbook/giselle.webp?v=92b6d06dfc",
+    "full": "assets/lookbook/giselle-full.webp?v=dbfb4cd887"
   },
   {
     "name": "金智秀",
@@ -314,16 +326,53 @@ window.SHORTLIST = [
     "full": "assets/lookbook/lisa-full.webp"
   },
   {
-    "name": "张员瑛",
+    "name": "Wonyoung",
     "latin": "Wonyoung",
-    "likes": 142397,
+    "aliases": [
+      "张元英",
+      "张员瑛",
+      "张圆瑛",
+      "장원영",
+      "Jang Wonyoung",
+      "Jang Won-young"
+    ],
+    "likes": 108463,
+    "series": "《LOVE DIVE》概念写真",
+    "heat": {
+      "platform": "X · IVE 官方账号",
+      "metric": "点赞",
+      "scope": "Wonyoung 本次换图候选的四个个人写真帖，每帖含多张照片",
+      "choices": [
+        {
+          "label": "LOVE DIVE",
+          "score": 108463,
+          "url": "https://x.com/IVEstarship/status/1506631869739466754"
+        },
+        {
+          "label": "ELEVEN",
+          "score": 105975,
+          "url": "https://x.com/IVEstarship/status/1463145343554625544"
+        },
+        {
+          "label": "IVE SWITCH",
+          "score": 101797,
+          "url": "https://x.com/IVEstarship/status/1780959479376531879"
+        },
+        {
+          "label": "I’ve IVE",
+          "score": 84714,
+          "url": "https://x.com/IVEstarship/status/1643252102809161729"
+        }
+      ],
+      "checkedDate": "2026-11-16"
+    },
     "id": "wonyoung",
     "group": "IVE",
     "credit": "STARSHIP Entertainment",
-    "source": "https://x.com/IVEstarship/status/1705945976584933780",
-    "original": "https://pbs.twimg.com/media/F6y8qzAaIAAcXmD.jpg?name=orig",
-    "image": "assets/lookbook/wonyoung.webp",
-    "full": "assets/lookbook/wonyoung-full.webp"
+    "source": "https://x.com/IVEstarship/status/1506631869739466754",
+    "original": "https://pbs.twimg.com/media/FOiczssaMAUOVxn.jpg?name=orig",
+    "image": "assets/lookbook/wonyoung.webp?v=63f9b264a0",
+    "full": "assets/lookbook/wonyoung-full.webp?v=a7456fd22c"
   },
   {
     "name": "安宥真",
