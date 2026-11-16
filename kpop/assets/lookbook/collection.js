@@ -222,6 +222,36 @@ window.PHOTO_SETS = [
     "source": "https://www.sourcemusic.com/artist/discography/LE%20SSERAFIM/15",
     "original": "https://sourcemusic.com/resources/discography/e7f229dd-f12f-48bd-a8a8-41d1380fbe11.jpg",
     "image": "assets/lookbook/group-lesserafim.webp"
+  },
+  {
+    "group": "i-dle",
+    "name": "I feel · Queen 概念写真",
+    "credit": "CUBE Entertainment",
+    "heat": {
+      "platform": "Reddit · r/kpop",
+      "scope": "同一专辑三款概念写真帖",
+      "metric": "帖文得分",
+      "choices": [
+        {
+          "label": "Queen",
+          "score": 1940,
+          "url": "https://www.reddit.com/r/kpop/comments/131vszr/"
+        },
+        {
+          "label": "Butterfly",
+          "score": 1077,
+          "url": "https://www.reddit.com/r/kpop/comments/135o3y9/"
+        },
+        {
+          "label": "Cat",
+          "score": 763,
+          "url": "https://www.reddit.com/r/kpop/comments/137ota2/"
+        }
+      ]
+    },
+    "source": "https://dbkpop.com/2023/05/15/gi-dle-i-feel-concept-photos-uhd-hr-hq/",
+    "original": "https://dbkpop.com/wp-content/uploads/2023/05/GIDLE_I_Feel_Concept_all_group_4.jpg",
+    "image": "assets/lookbook/group-idle.webp"
   }
 ];
 window.SHORTLIST = [
@@ -702,21 +732,110 @@ window.SHORTLIST = [
     "original": "https://sourcemusic.com/resources/discography/a6927f30-a808-4f18-913b-9ab2d6cdcbbf.jpg",
     "image": "assets/lookbook/eunchae.webp",
     "full": "assets/lookbook/eunchae-full.webp"
+  },
+  {
+    "name": "Miyeon",
+    "latin": "Miyeon",
+    "aliases": [
+      "赵美延",
+      "趙美延",
+      "曹薇娟",
+      "Cho Miyeon",
+      "(G)I-DLE",
+      "GIDLE",
+      "女娃",
+      "娃"
+    ],
+    "id": "miyeon",
+    "group": "i-dle",
+    "credit": "CUBE Entertainment",
+    "source": "https://i-dle.cubeent.co.jp/news/1173/",
+    "original": "https://dbkpop.com/wp-content/uploads/2023/05/GIDLE_I_Feel_Concept_Miyeon_3.jpg",
+    "image": "assets/lookbook/miyeon.webp",
+    "full": "assets/lookbook/miyeon-full.webp"
+  },
+  {
+    "name": "Minnie",
+    "latin": "Minnie",
+    "aliases": [
+      "米妮",
+      "妮查·约塔拉里克",
+      "Nicha Yontararak",
+      "(G)I-DLE",
+      "GIDLE",
+      "女娃",
+      "娃"
+    ],
+    "id": "minnie",
+    "group": "i-dle",
+    "credit": "CUBE Entertainment",
+    "source": "https://i-dle.cubeent.co.jp/news/1173/",
+    "original": "https://dbkpop.com/wp-content/uploads/2023/05/GIDLE_I_Feel_Concept_Minnie_3.jpg",
+    "image": "assets/lookbook/minnie.webp",
+    "full": "assets/lookbook/minnie-full.webp"
+  },
+  {
+    "name": "Soyeon",
+    "latin": "Soyeon",
+    "aliases": [
+      "田小娟",
+      "全昭妍",
+      "田邵娟",
+      "Jeon Soyeon",
+      "(G)I-DLE",
+      "GIDLE",
+      "女娃",
+      "娃"
+    ],
+    "id": "soyeon",
+    "group": "i-dle",
+    "credit": "CUBE Entertainment",
+    "source": "https://i-dle.cubeent.co.jp/news/1173/",
+    "original": "https://dbkpop.com/wp-content/uploads/2023/05/GIDLE_I_Feel_Concept_Soyeon_3.jpg",
+    "image": "assets/lookbook/soyeon.webp",
+    "full": "assets/lookbook/soyeon-full.webp"
+  },
+  {
+    "name": "Yuqi",
+    "latin": "Yuqi",
+    "aliases": [
+      "宋雨琦",
+      "Song Yuqi",
+      "(G)I-DLE",
+      "GIDLE",
+      "女娃",
+      "娃"
+    ],
+    "id": "yuqi",
+    "group": "i-dle",
+    "credit": "CUBE Entertainment",
+    "source": "https://i-dle.cubeent.co.jp/news/1173/",
+    "original": "https://dbkpop.com/wp-content/uploads/2023/05/GIDLE_I_Feel_Concept_Yuqi_3.jpg",
+    "image": "assets/lookbook/yuqi.webp",
+    "full": "assets/lookbook/yuqi-full.webp"
+  },
+  {
+    "name": "Shuhua",
+    "latin": "Shuhua",
+    "aliases": [
+      "叶舒华",
+      "葉舒華",
+      "Yeh Shuhua",
+      "(G)I-DLE",
+      "GIDLE",
+      "女娃",
+      "娃"
+    ],
+    "id": "shuhua",
+    "group": "i-dle",
+    "credit": "CUBE Entertainment",
+    "source": "https://i-dle.cubeent.co.jp/news/1173/",
+    "original": "https://dbkpop.com/wp-content/uploads/2023/05/GIDLE_I_Feel_Concept_Shuhua_3.jpg",
+    "image": "assets/lookbook/shuhua.webp",
+    "full": "assets/lookbook/shuhua-full.webp"
   }
 ];
 window.PAST_MEMBERS = [
-  {
-    "id": "yuqi",
-    "name": "宋雨琦",
-    "latin": "Yuqi",
-    "group": "i-dle"
-  },
-  {
-    "id": "miyeon",
-    "name": "赵美延",
-    "latin": "Miyeon",
-    "group": "i-dle"
-  },
   {
     "id": "hyeri",
     "name": "李惠利",

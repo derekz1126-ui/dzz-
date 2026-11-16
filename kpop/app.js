@@ -15,7 +15,8 @@ const icon = (key, cls = '') => '<svg aria-hidden="true" class="ic ' + cls + '">
 const img = (item, eager = false) => item.image ? '<img src="' + esc(item.image) + '" alt="' + esc(item.latin || item.name) + '" ' + (eager ? '' : 'loading="lazy" ') + 'decoding="async">' : '<span class="archive-name" aria-label="往期成员">'+esc(item.latin)+'</span>';
 const storageKey = boys ? 'pickbeat.topnine.boys.v1' : 'pickbeat.topnine.v1';
 const podiumOrder = [3,4,5,1,0,2,6,7,8];
-const groups = [...new Set(idols.map(i => i.group))];
+const groups = [...new Set(covers.flatMap(set => set.family ? [set.family,set.group] : [set.group]))];
+const memberLabel = item => item.units ? item.units.join(' · ') : item.group;
 const ordered = (ids) => [...new Set(Array.isArray(ids) ? ids : [])].filter(id => byId.has(id));
 const exactBoard = ids => ordered(ids).length === 9;
 let session = {draft:null,boards:[]};
@@ -63,11 +64,16 @@ function heatNote(set){
   const {platform, metric, choices, scope}=set.heat;
   return '<details class="heat-note"><summary>为什么选这套写真？</summary><p>'+esc(platform)+' · '+esc(scope || '套图帖')+' · '+esc(metric)+'快照</p><ul>'+choices.map(c=>'<li>'+link(c.url,c.label)+'<b>'+esc(c.score.toLocaleString('zh-CN'))+'</b></li>').join('')+'</ul></details>';
 }
+function galleryPhoto(item){
+  const version = item.unitPhotos?.[groupFilter];
+  return version ? {...item,...version} : item;
+}
 function detail(id){
-  const item = byId.get(id);
-  if(!item) return;
+  const member = byId.get(id);
+  if(!member) return;
+  const item = location.hash.split('/')[0] === '#library' ? galleryPhoto(member) : member;
   const set=photoSet.get(item.group);
-  showModal(item.latin, '<img class="detail-img" src="'+esc(item.full || item.image)+'" alt="'+esc(item.latin)+'"><div class="detail-group">'+esc(item.group)+'</div><div class="detail-credit">'+esc(item.series || set?.name)+' · '+credit(item)+'</div>'+heatNote(item.series ? item : set)+(set ? '<button class="outline group-open" data-action="group-photo" data-id="'+esc(set.group)+'">'+icon('image')+'查看完整团体写真</button>' : ''));
+  showModal(item.latin, '<img class="detail-img" src="'+esc(item.full || item.image)+'" alt="'+esc(item.latin)+'"><div class="detail-group">'+esc(memberLabel(item))+'</div><div class="detail-credit">'+esc(item.series || set?.name)+' · '+credit(item)+'</div>'+heatNote(item.series ? item : set)+(set ? (item.units || [item.group]).map(group=>'<button class="outline group-open" data-action="group-photo" data-id="'+esc(group)+'">'+icon('image')+(item.units?.length>1 ? esc(group)+' 团照' : '查看完整团体写真')+'</button>').join('') : ''));
 }
 function groupPhoto(group){
   const set=photoSet.get(group);
@@ -79,7 +85,7 @@ function coverCard(){
 }
 function featured(){
   const picked = [];
-  const preferred = boys ? ['jung kook','felix','yeonjun','mingyu','wonbin','sunghoon'] : ['wonyoung','karina','jennie','sana','yuqi','yuna','sakura'];
+  const preferred = boys ? ['jung kook','jaemin','felix','yeonjun','mingyu','wonbin','sunghoon'] : ['wonyoung','karina','jennie','sana','yuqi','yuna','sakura'];
   const pool = [...preferred.map(name => idols.find(i => i.latin?.toLowerCase() === name)).filter(Boolean),...idols];
   for(const idol of pool) if(!picked.some(i => i.group === idol.group)) picked.push(idol);
   for(const idol of pool) if(!picked.includes(idol)) picked.push(idol);
@@ -91,23 +97,33 @@ function card(item, action='detail', {chosen=false,eager=false,index=null}={}){
   const pressed = ['pick','swap','nominate'].includes(action) ? ' aria-pressed="'+chosen+'"' : '';
   const rank = index === null ? '' : '<b class="rank-pin">'+String(index+1).padStart(2,'0')+'</b>';
   const symbol = ['pick','nominate'].includes(action) ? '<span class="pick-toggle">'+icon(chosen ? 'check' : 'heart')+'</span>' : action === 'detail' ? '<span class="photo-icon">'+icon('up')+'</span>' : '';
-  return '<'+tag+' class="idol-card'+(chosen?' chosen':'')+'"'+(interactive ? ' data-action="'+action+'" data-id="'+esc(item.id)+'"' : '')+pressed+'><div class="idol-face">'+img(item,eager)+rank+symbol+'</div><div class="card-info"><strong class="card-name">'+esc(item.latin)+'</strong><span class="group">'+esc(item.group)+'</span></div></'+tag+'>';
+  return '<'+tag+' class="idol-card'+(chosen?' chosen':'')+'"'+(interactive ? ' data-action="'+action+'" data-id="'+esc(item.id)+'"' : '')+pressed+'><div class="idol-face">'+img(item,eager)+rank+symbol+'</div><div class="card-info"><strong class="card-name">'+esc(item.latin)+'</strong><span class="group">'+esc(memberLabel(item))+'</span></div></'+tag+'>';
 }
 function home(){
   main.innerHTML = '<div class="wrap"><section class="hero"><div class="hero-copy"><div class="feature-line"><span class="feature-tag">'+icon('spark')+'团体写真特辑</span><span class="eng">K-POP '+(boys?'BOY GROUPS':'GIRL GROUPS')+'</span></div><h1><span class="latin-hero">K-POP</span> '+groupLabel+'<br><span class="popword">心动九选</span></h1><p>翻开'+groupLabel+'写真集。<br>从成员小卡里，选出你的专属 TOP 9。</p><div class="hero-actions"><button class="primary" data-action="start">'+icon('heart')+(session.draft?.format===2?'继续上次挑选':session.draft?'继续旧版挑选':'开始心动挑战')+icon('arrow')+'</button>'+(session.draft && session.draft.format!==2?'<button class="outline" data-action="restart-ask">开始新版挑战</button>':'')+'</div></div><div class="editorial-art"><div id="cover-card">'+coverCard()+'</div></div></section><section class="preview-section"><div class="section-head"><div><div class="section-kicker" lang="en">IDOL ARCHIVE</div><h2>'+groupLabel+'图鉴<span class="count-label">共 '+idols.length+' 位成员</span></h2></div><a class="small-link" href="#library">查看全部 '+icon('arrow')+'</a></div><div class="preview-grid">'+featured().map(item => card(item,'detail',{eager:true})).join('')+'</div></section></div>';
 }
 const backHome = '<a href="#home" class="back">'+icon('left')+'返回首页</a>';
 function library(){
-  main.innerHTML = '<div class="wrap page">'+backHome+'<div class="page-head"><div class="section-kicker">IDOL ARCHIVE</div><h1>'+groupLabel+'图鉴</h1><p>浏览 '+idols.length+' 位成员的小卡，点开照片查看详情。</p></div><div class="page-tools"><label class="searchbox">'+icon('search')+'<input id="search" type="search" value="'+esc(query)+'" aria-label="搜索成员或组合" placeholder="搜索成员或组合"></label><select aria-label="按组合筛选" id="group-filter"><option value="">全部组合</option>'+groups.map(g=>'<option '+(groupFilter===g?'selected ':'')+'value="'+esc(g)+'">'+esc(g)+'</option>').join('')+'</select><span class="status-text" id="found" aria-live="polite"></span></div><div id="lib-cards" class="library-grid"></div></div>';
+  main.innerHTML = '<div class="wrap page">'+backHome+'<div class="page-head"><div class="section-kicker">IDOL ARCHIVE</div><h1>'+groupLabel+'图鉴</h1><p>浏览 '+idols.length+' 位成员的小卡，点开照片查看详情。</p></div><div class="page-tools"><label class="searchbox">'+icon('search')+'<input id="search" type="search" value="'+esc(query)+'" aria-label="搜索成员或组合" placeholder="搜索成员或组合"></label><select aria-label="按组合筛选" id="group-filter"><option value="">全部组合</option>'+groups.map(g=>'<option '+(groupFilter===g?'selected ':'')+'value="'+esc(g)+'">'+esc(g==='NCT'?'NCT（全团）':g)+'</option>').join('')+'</select><span class="status-text" id="found" aria-live="polite"></span></div><div id="lib-cards" class="library-grid"></div></div>';
   filterCards();
   document.querySelector('#search').addEventListener('input', e=>{query=e.target.value;filterCards();saveFilters();});
-  document.querySelector('#group-filter').addEventListener('change',e=>{groupFilter=e.target.value;filterCards();saveFilters();});
+  document.querySelector('#group-filter').addEventListener('change',e=>{
+    groupFilter=e.target.value;
+    if(location.hash.startsWith('#library/')) history.replaceState(null,'','#library');
+    filterCards();saveFilters();
+  });
 }
 function filterCards(){
   const normal = s => s.normalize('NFKD').replace(/\p{M}/gu,'').toLowerCase().replace(/[\s_-]/g,'');
   const needle = normal(query);
-  const list = idols.filter(i => (!groupFilter || i.group === groupFilter) && [i.name,i.latin,i.group,...(i.aliases || [])].some(v=>normal(v).includes(needle)));
-  document.querySelector('#lib-cards').innerHTML = list.length ? list.map(i=>card(i)).join('') : '<p>没有找到匹配的成员。<button class="plain" data-action="clear-filter">清除筛选</button></p>';
+  const list = idols.filter(item => {
+    const memberships = item.units || [item.group];
+    const matchesGroup = !groupFilter || item.family === groupFilter || memberships.includes(groupFilter);
+    const terms = [item.name,item.latin,...memberships,...(item.aliases || [])];
+    if(item.family) terms.push(item.family);
+    return matchesGroup && terms.some(value=>normal(value).includes(needle));
+  });
+  document.querySelector('#lib-cards').innerHTML = list.length ? list.map(i=>card(galleryPhoto(i))).join('') : '<p>没有找到匹配的成员。<button class="plain" data-action="clear-filter">清除筛选</button></p>';
   document.querySelector('#found').textContent = list.length+' 位成员';
 }
 function swapSlot(id){
@@ -203,6 +219,7 @@ function routePage(){
     const target=new URL(location.href);
     target.searchParams.set('pool',link.dataset.pool);
     if(!current && view==='result') target.hash='boards';
+    if(!current && view==='library') target.hash='library';
     link.href=target.href;
     if(current) link.setAttribute('aria-current','true');
     else link.removeAttribute('aria-current');
@@ -210,7 +227,11 @@ function routePage(){
   currentBoard=null; selectedSlot=null;
   const nav = view==='result'?'boards':view==='play'?'home':view;
   document.querySelectorAll('[data-nav]').forEach(a=>{if(a.dataset.nav===nav)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
-  if(view==='library') library();
+  if(view==='library'){
+    const linked = id && groups.find(group=>encodeURIComponent(group)===id);
+    if(linked){groupFilter=linked;query='';saveFilters();}
+    library();
+  }
   else if(view==='boards') boards();
   else if(view==='result'){const b=session.boards.find(b=>b.id===id);if(b) results(b);else return go('boards');}
   else if(view==='play'){
@@ -239,7 +260,7 @@ document.addEventListener('click',e=>{
     const all=[...idols,...covers].filter((p,i,a)=>a.findIndex(x=>x.source===p.source && x.image===p.image)===i);
     showModal('图片来源','<p class="privacy">封面使用组合合照，小卡取自成员单人写真。点击来源可查看发布记录，照片版权归各自权利人。</p><ol class="credits">'+all.map(p=>'<li><b>'+esc(p.latin || p.name)+'</b><br>'+credit(p)+'</li>').join('')+'</ol>');
   } else if(action==='detail') detail(id);
-  else if(action==='clear-filter'){query='';groupFilter='';library();saveFilters();}
+  else if(action==='clear-filter'){query='';groupFilter='';history.replaceState(null,'','#library');library();saveFilters();}
   else if(action==='swap') swapSlot(id);
   else if(action==='finish') finish();
   else if(action==='poster') makePoster();
