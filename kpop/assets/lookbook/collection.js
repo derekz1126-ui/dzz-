@@ -252,6 +252,41 @@ window.PHOTO_SETS = [
     "source": "https://dbkpop.com/2023/05/15/gi-dle-i-feel-concept-photos-uhd-hr-hq/",
     "original": "https://dbkpop.com/wp-content/uploads/2023/05/GIDLE_I_Feel_Concept_all_group_4.jpg",
     "image": "assets/lookbook/group-idle.webp"
+  },
+  {
+    "group": "Apink",
+    "name": "RE : LOVE · MY 概念写真",
+    "credit": "Apink · With US Entertainment",
+    "heat": {
+      "platform": "Weverse · Apink 官方账号",
+      "metric": "应援数",
+      "scope": "《RE : LOVE》四组官方概念写真帖，2026-11-16 记录",
+      "choices": [
+        {
+          "label": "1 · MY",
+          "score": 598,
+          "url": "https://weverse.io/apink/media/3-216281252"
+        },
+        {
+          "label": "2 · MUSE",
+          "score": 532,
+          "url": "https://weverse.io/apink/media/4-216382141"
+        },
+        {
+          "label": "3 · MY",
+          "score": 518,
+          "url": "https://weverse.io/apink/media/2-168026825"
+        },
+        {
+          "label": "4 · MUSE",
+          "score": 512,
+          "url": "https://weverse.io/apink/media/0-168037704"
+        }
+      ]
+    },
+    "source": "https://x.com/Apink_2011/status/2001668954692161703",
+    "original": "https://phinf.wevpstatic.net/MjAyNTEyMThfMTc5/MDAxNzY2MDYxNDI2NjYy.TXWXsmmlU7dJYz7pUjDV_f7V_evf5HcFh-3HyRwUFpkg.zNFknjdMzaYhPC8hfgjIBg4ih60vV0WcyT5ZlHR9F4og.JPEG/4b0d02b2-154e-4dd0-8475-0159149c47de.jpeg",
+    "image": "assets/lookbook/group-apink.webp?v=635b06b680"
   }
 ];
 window.SHORTLIST = [
@@ -460,9 +495,9 @@ window.SHORTLIST = [
     "group": "IVE",
     "credit": "STARSHIP Entertainment",
     "source": "https://x.com/IVEstarship/status/1705945845139652683",
-    "original": "https://pbs.twimg.com/media/F6y8j58b0AEUACG.jpg?name=orig",
-    "image": "assets/lookbook/leeseo.webp",
-    "full": "assets/lookbook/leeseo-full.webp"
+    "original": "https://pbs.twimg.com/media/F6y8lQqboAAipxw.jpg?name=orig",
+    "image": "assets/lookbook/leeseo.webp?v=3d557313a5",
+    "full": "assets/lookbook/leeseo-full.webp?v=1806548c9a"
   },
   {
     "name": "林娜琏",
@@ -549,8 +584,8 @@ window.SHORTLIST = [
     "credit": "JYP Entertainment",
     "source": "https://twice.jype.com/notice/xmqk1lab?NoticeNumber=1089",
     "original": "https://d1meds70430yck.cloudfront.net/artist/bbs/b3b26097256b413f8ff8f6aa40b65c0f-8)%20%E1%84%8E%E1%85%A2%E1%84%8B%E1%85%A7%E1%86%BC.jpg",
-    "image": "assets/lookbook/chaeyoung.webp",
-    "full": "assets/lookbook/chaeyoung-full.webp"
+    "image": "assets/lookbook/chaeyoung.webp?v=8d8ed23b9f",
+    "full": "assets/lookbook/chaeyoung-full.webp?v=608e3f31c0"
   },
   {
     "name": "周子瑜",
@@ -669,14 +704,15 @@ window.SHORTLIST = [
   {
     "name": "申有娜",
     "latin": "Yuna",
-    "likes": 20401,
+    "likes": 17967,
+    "series": "GOLD · 第三套概念写真",
     "id": "yuna",
     "group": "ITZY",
     "credit": "JYP Entertainment",
-    "source": "https://twitter.com/ITZYofficial/status/1841132211833032733",
-    "original": "https://pbs.twimg.com/media/GYvPvWobQAE0pA5.jpg?name=orig",
-    "image": "assets/lookbook/yuna.webp",
-    "full": "assets/lookbook/yuna-full.webp"
+    "source": "https://itzy.jype.com/notice/iihdegal?NoticeNumber=1003",
+    "original": "https://pbs.twimg.com/media/GY5KZYSaoAAGgdH.jpg?name=orig",
+    "image": "assets/lookbook/yuna.webp?v=b59fc31538",
+    "full": "assets/lookbook/yuna-full.webp?v=34fdfbb9f4"
   },
   {
     "name": "金采源",
@@ -833,6 +869,46 @@ window.SHORTLIST = [
     "original": "https://dbkpop.com/wp-content/uploads/2023/05/GIDLE_I_Feel_Concept_Shuhua_3.jpg",
     "image": "assets/lookbook/shuhua.webp",
     "full": "assets/lookbook/shuhua-full.webp"
+  },
+  {
+    "name": "Chorong",
+    "latin": "Chorong",
+    "aliases": [
+      "朴初珑",
+      "朴初瓏",
+      "Park Chorong",
+      "Park Cho-rong",
+      "初珑",
+      "初瓏",
+      "阿粉"
+    ],
+    "id": "chorong",
+    "group": "Apink",
+    "credit": "Apink · With US Entertainment",
+    "source": "https://x.com/Apink_2011/status/2001668779709722798",
+    "original": "https://phinf.wevpstatic.net/MjAyNTEyMThfMTM4/MDAxNzY2MDYxNDI3OTc2.wnOGTLkQLFryE4OcdEeiYLoCNhazIXi31Mjyo7dWUjIg.y1HXji9bDMQ0vulJG64JxnYQDP3TMPMTstCYwMj8e28g.JPEG/cbe162b7-cd4a-41d9-a7ae-76ecca79f705.jpeg",
+    "image": "assets/lookbook/chorong.webp?v=a7d6f51ce9",
+    "full": "assets/lookbook/chorong-full.webp?v=db599212bc"
+  },
+  {
+    "name": "Eunji",
+    "latin": "Eunji",
+    "aliases": [
+      "郑恩地",
+      "鄭恩地",
+      "Jung Eunji",
+      "Jeong Eunji",
+      "Jung Eun-ji",
+      "恩地",
+      "阿粉"
+    ],
+    "id": "eunji",
+    "group": "Apink",
+    "credit": "Apink · With US Entertainment",
+    "source": "https://x.com/Apink_2011/status/2001668852002992556",
+    "original": "https://phinf.wevpstatic.net/MjAyNTEyMThfMjA4/MDAxNzY2MDYxNDIzODMy.AgMzUopiMI_tVrJoew2ynMitlUWBxRGFy7jA7CzbvaYg.SmcRXLcay4AlahfqST8kVQjBksBPfYNUSqsqyeoMDzIg.JPEG/0fb83707-e4bf-4274-8844-d637df1a3f1c.jpeg",
+    "image": "assets/lookbook/eunji.webp?v=5cbba2284e",
+    "full": "assets/lookbook/eunji-full.webp?v=808e9de083"
   }
 ];
 window.PAST_MEMBERS = [
