@@ -153,32 +153,6 @@ window.BOYS_PHOTO_SETS = [
     "image": "assets/boys/group-riize.webp?v=9107fbe336"
   },
   {
-    "group": "NCT 127",
-    "name": "Fact Check 概念写真（2023）",
-    "credit": "SM Entertainment",
-    "source": "https://nctzenbasic.com/2023/10/05/factcheck-group/",
-    "original": "https://i0.wp.com/nctzenbasic.com/wp-content/uploads/2023/09/group-palace-01.jpeg?fit=2000%2C1333&ssl=1",
-    "image": "assets/boys/group-nct127.webp?v=b8dcf1390b",
-    "heat": {
-      "platform": "Reddit · r/NCT",
-      "scope": "同专辑、同三位成员（Taeyong、Johnny、Jungwoo）的两版成员写真帖；仅作个人套图选片参考",
-      "metric": "帖文得分",
-      "choices": [
-        {
-          "label": "Exhibit & Storage",
-          "score": 378,
-          "url": "https://www.reddit.com/r/NCT/comments/16qzvti/"
-        },
-        {
-          "label": "Chandelier",
-          "score": 137,
-          "url": "https://www.reddit.com/r/NCT/comments/16lyr7t/"
-        }
-      ]
-    },
-    "family": "NCT"
-  },
-  {
     "group": "NCT DREAM",
     "name": "DREAM AFTER DREAM · The Sun 概念写真（2026）",
     "credit": "SM Entertainment",
@@ -201,60 +175,7 @@ window.BOYS_PHOTO_SETS = [
           "url": "https://x.com/NCTsmtown_DREAM/status/2115458856700842039"
         }
       ]
-    },
-    "family": "NCT"
-  },
-  {
-    "group": "WayV",
-    "name": "BIG BANDS · Image Teaser 2 概念写真（2025）",
-    "credit": "SM Entertainment",
-    "source": "https://x.com/WayV_official/status/1942916732185972806",
-    "original": "https://pbs.twimg.com/media/GvaVIhvacAEDDoX.jpg?name=orig",
-    "image": "assets/boys/group-wayv.webp?v=216c65b1fe",
-    "heat": {
-      "platform": "X · WayV 官方账号",
-      "metric": "点赞",
-      "scope": "《BIG BANDS》两组团体概念写真帖",
-      "choices": [
-        {
-          "label": "Image Teaser 2",
-          "score": 16599,
-          "url": "https://x.com/WayV_official/status/1942916732185972806"
-        },
-        {
-          "label": "Image Teaser 1",
-          "score": 8249,
-          "url": "https://x.com/WayV_official/status/1942554648776434060"
-        }
-      ]
-    },
-    "family": "NCT"
-  },
-  {
-    "group": "NCT WISH",
-    "name": "BOY MEETS GIRL 概念写真（2026）",
-    "credit": "SM Entertainment",
-    "source": "https://weverse.io/nctwish/media/3-232804198",
-    "original": "https://phinf.wevpstatic.net/MjAyNjA2MTNfMTE3/MDAxNzgxMzU5NzM4NDUy.PgePeDOFX6O3k35hLfiYe_OgTsykiLEIZgPlwDekAXMg.tBRnPxlVo6DYbSvkXJTnkZCObTMS6bsCcUIdf1Ht7Msg.JPEG/de922c65-dbb6-4730-b5c1-8918ddd4a4fb.jpeg",
-    "image": "assets/boys/group-nctwish.webp?v=fa373e724b",
-    "heat": {
-      "platform": "X · NCT WISH 官方账号",
-      "scope": "同一张双主打单曲的两组团体概念写真帖",
-      "metric": "点赞",
-      "choices": [
-        {
-          "label": "BOY MEETS GIRL",
-          "score": 23732,
-          "url": "https://x.com/nctwishofficial/status/2065811519347253296"
-        },
-        {
-          "label": "YO-I-DON!",
-          "score": 16494,
-          "url": "https://x.com/nctwishofficial/status/2071609660852093205"
-        }
-      ]
-    },
-    "family": "NCT"
+    }
   }
 ];
 window.BOYS_SHORTLIST = [
@@ -968,130 +889,43 @@ window.BOYS_SHORTLIST = [
     "full": "assets/boys/anton-full.webp?v=0432ab1ad0"
   },
   {
-    "id": "johnny",
-    "name": "Johnny",
-    "latin": "Johnny",
+    "id": "renjun",
+    "name": "Renjun",
+    "latin": "Renjun",
     "aliases": [
-      "徐英浩",
-      "徐英皓",
-      "Johnny Suh",
-      "Seo Youngho"
+      "黄仁俊",
+      "黃仁俊",
+      "Huang Renjun",
+      "NCT Dream",
+      "NCTDream",
+      "梦队",
+      "梦团"
     ],
-    "group": "NCT 127",
+    "group": "NCT DREAM",
     "credit": "SM Entertainment",
-    "source": "https://www.soompi.com/article/1609489wpp/watch-nct-127-announces-october-comeback-date-for-full-length-album-fact-check",
-    "original": "https://0.soompi.io/wp-content/uploads/2023/08/24083116/Johnny-4-1.jpeg",
-    "image": "assets/boys/johnny.webp?v=eb6f9111e1",
-    "full": "assets/boys/johnny-full.webp?v=e4aac4c1d2",
-    "family": "NCT",
-    "units": [
-      "NCT 127"
-    ]
+    "source": "https://weverse.io/nctdream/media/0-181046228",
+    "original": "https://phinf.wevpstatic.net/MjAyNjEwMThfOTIg/MDAxNzkyMzA1OTQ3NDQ2.ZPVxL1mBWCrJytvd_JXpw9n9p02EvcXlll0xTf2vOaMg.-brLo1uIPTiRzQwvrK5S-m4YsWKWLA0o5bzCPMNkvdwg.JPEG/02bbc0a5-69ea-4021-ad79-dd3ebb83bba6.jpeg",
+    "image": "assets/boys/renjun.webp?v=a17c8f79f9",
+    "full": "assets/boys/renjun-full.webp?v=0f7a25eaca"
   },
   {
-    "id": "taeyong",
-    "name": "Taeyong",
-    "latin": "Taeyong",
+    "id": "jeno",
+    "name": "Jeno",
+    "latin": "Jeno",
     "aliases": [
-      "李泰容",
-      "泰容",
-      "Lee Taeyong"
+      "李帝努",
+      "Lee Jeno",
+      "NCT Dream",
+      "NCTDream",
+      "梦队",
+      "梦团"
     ],
-    "group": "NCT 127",
+    "group": "NCT DREAM",
     "credit": "SM Entertainment",
-    "source": "https://www.soompi.com/article/1609489wpp/watch-nct-127-announces-october-comeback-date-for-full-length-album-fact-check",
-    "original": "https://0.soompi.io/wp-content/uploads/2023/08/24083031/Taeyong-4-2.jpeg",
-    "image": "assets/boys/taeyong.webp?v=d229f2f560",
-    "full": "assets/boys/taeyong-full.webp?v=bc698a8248",
-    "family": "NCT",
-    "units": [
-      "NCT 127"
-    ]
-  },
-  {
-    "id": "yuta",
-    "name": "Yuta",
-    "latin": "Yuta",
-    "aliases": [
-      "中本悠太",
-      "悠太",
-      "Nakamoto Yuta"
-    ],
-    "group": "NCT 127",
-    "credit": "SM Entertainment",
-    "source": "https://www.soompi.com/article/1609489wpp/watch-nct-127-announces-october-comeback-date-for-full-length-album-fact-check",
-    "original": "https://0.soompi.io/wp-content/uploads/2023/08/25083042/yuta-1-1.jpeg",
-    "image": "assets/boys/yuta.webp?v=aa4fa0ed6c",
-    "full": "assets/boys/yuta-full.webp?v=6c8869fb00",
-    "family": "NCT",
-    "units": [
-      "NCT 127"
-    ]
-  },
-  {
-    "id": "doyoung",
-    "name": "Doyoung",
-    "latin": "Doyoung",
-    "aliases": [
-      "金道英",
-      "金东营",
-      "道英",
-      "Kim Doyoung",
-      "Kim Dongyoung"
-    ],
-    "group": "NCT 127",
-    "credit": "SM Entertainment",
-    "source": "https://www.soompi.com/article/1609489wpp/watch-nct-127-announces-october-comeback-date-for-full-length-album-fact-check",
-    "original": "https://0.soompi.io/wp-content/uploads/2023/08/25083011/doyoung-12.jpeg",
-    "image": "assets/boys/doyoung.webp?v=9f138f2474",
-    "full": "assets/boys/doyoung-full.webp?v=748a1b4fe5",
-    "family": "NCT",
-    "units": [
-      "NCT 127"
-    ]
-  },
-  {
-    "id": "jaehyun",
-    "name": "Jaehyun",
-    "latin": "Jaehyun",
-    "aliases": [
-      "郑在玹",
-      "鄭在玹",
-      "郑闰伍",
-      "Jung Jaehyun",
-      "Jeong Yun-o"
-    ],
-    "group": "NCT 127",
-    "credit": "SM Entertainment",
-    "source": "https://www.soompi.com/article/1609489wpp/watch-nct-127-announces-october-comeback-date-for-full-length-album-fact-check",
-    "original": "https://0.soompi.io/wp-content/uploads/2023/08/26092157/jaehyun-15.jpeg",
-    "image": "assets/boys/jaehyun.webp?v=61a2f4b160",
-    "full": "assets/boys/jaehyun-full.webp?v=404296ca2d",
-    "family": "NCT",
-    "units": [
-      "NCT 127"
-    ]
-  },
-  {
-    "id": "jungwoo",
-    "name": "Jungwoo",
-    "latin": "Jungwoo",
-    "aliases": [
-      "金廷祐",
-      "金廷佑",
-      "廷祐",
-      "Kim Jungwoo"
-    ],
-    "group": "NCT 127",
-    "credit": "SM Entertainment",
-    "source": "https://www.soompi.com/article/1609489wpp/watch-nct-127-announces-october-comeback-date-for-full-length-album-fact-check",
-    "original": "https://0.soompi.io/wp-content/uploads/2023/08/24083147/Jungwoo-3-3.jpeg",
-    "image": "assets/boys/jungwoo.webp?v=ac79b3ac12",
-    "full": "assets/boys/jungwoo-full.webp?v=7aad768372",
-    "family": "NCT",
-    "units": [
-      "NCT 127"
-    ]
+    "source": "https://weverse.io/nctdream/media/1-181067126",
+    "original": "https://phinf.wevpstatic.net/MjAyNjEwMThfMjM0/MDAxNzkyMzA1NTcyMzMw.dO5UhiGHhE3_HUctP6ChC2rVZjL32dDKfjzyNbzJFaMg.OZurRZg04epv8gdWoqWF65mr6A_cLPWoPE_1lPIC5gIg.JPEG/cc0287ed-7020-4e5a-b32a-24b2402b959b.jpeg",
+    "image": "assets/boys/jeno.webp?v=91c46331c0",
+    "full": "assets/boys/jeno-full.webp?v=dca81c3d8b"
   },
   {
     "id": "haechan",
@@ -1101,69 +935,19 @@ window.BOYS_SHORTLIST = [
       "李楷灿",
       "楷灿",
       "李东赫",
+      "李東赫",
       "Lee Donghyuck",
-      "李東赫"
-    ],
-    "group": "NCT 127",
-    "credit": "SM Entertainment",
-    "source": "https://www.soompi.com/article/1609489wpp/watch-nct-127-announces-october-comeback-date-for-full-length-album-fact-check",
-    "original": "https://0.soompi.io/wp-content/uploads/2023/08/26092104/haechan-10.jpeg",
-    "image": "assets/boys/haechan.webp?v=4b00be00f5",
-    "full": "assets/boys/haechan-full.webp?v=3dee7a226c",
-    "family": "NCT",
-    "units": [
-      "NCT 127",
-      "NCT DREAM"
-    ],
-    "unitPhotos": {
-      "NCT DREAM": {
-        "group": "NCT DREAM",
-        "credit": "SM Entertainment",
-        "source": "https://weverse.io/nctdream/media/3-242804177",
-        "original": "https://phinf.wevpstatic.net/MjAyNjEwMThfMTM4/MDAxNzkyMzA1NzYyMTIy.6Ttfss4nBFcHW6KrS5-JKdrCiviyZpUBCJUzIuuEHgAg.SOh6rI1G1x_if007f5DLdMBAnfNrxp3_mOjqk5LOTWQg.JPEG/fc5de619-6336-404b-a39b-c0df9caa25db.jpeg",
-        "image": "assets/boys/haechan-nctdream.webp?v=1761e82aa5",
-        "full": "assets/boys/haechan-nctdream-full.webp?v=7c9c5a6109"
-      }
-    }
-  },
-  {
-    "id": "renjun",
-    "name": "Renjun",
-    "latin": "Renjun",
-    "aliases": [
-      "黄仁俊",
-      "黃仁俊",
-      "Huang Renjun"
+      "NCT Dream",
+      "NCTDream",
+      "梦队",
+      "梦团"
     ],
     "group": "NCT DREAM",
     "credit": "SM Entertainment",
-    "source": "https://weverse.io/nctdream/media/0-181046228",
-    "original": "https://phinf.wevpstatic.net/MjAyNjEwMThfOTIg/MDAxNzkyMzA1OTQ3NDQ2.ZPVxL1mBWCrJytvd_JXpw9n9p02EvcXlll0xTf2vOaMg.-brLo1uIPTiRzQwvrK5S-m4YsWKWLA0o5bzCPMNkvdwg.JPEG/02bbc0a5-69ea-4021-ad79-dd3ebb83bba6.jpeg",
-    "image": "assets/boys/renjun.webp?v=a17c8f79f9",
-    "full": "assets/boys/renjun-full.webp?v=0f7a25eaca",
-    "family": "NCT",
-    "units": [
-      "NCT DREAM"
-    ]
-  },
-  {
-    "id": "jeno",
-    "name": "Jeno",
-    "latin": "Jeno",
-    "aliases": [
-      "李帝努",
-      "Lee Jeno"
-    ],
-    "group": "NCT DREAM",
-    "credit": "SM Entertainment",
-    "source": "https://weverse.io/nctdream/media/1-181067126",
-    "original": "https://phinf.wevpstatic.net/MjAyNjEwMThfMjM0/MDAxNzkyMzA1NTcyMzMw.dO5UhiGHhE3_HUctP6ChC2rVZjL32dDKfjzyNbzJFaMg.OZurRZg04epv8gdWoqWF65mr6A_cLPWoPE_1lPIC5gIg.JPEG/cc0287ed-7020-4e5a-b32a-24b2402b959b.jpeg",
-    "image": "assets/boys/jeno.webp?v=91c46331c0",
-    "full": "assets/boys/jeno-full.webp?v=dca81c3d8b",
-    "family": "NCT",
-    "units": [
-      "NCT DREAM"
-    ]
+    "source": "https://weverse.io/nctdream/media/3-242804177",
+    "original": "https://phinf.wevpstatic.net/MjAyNjEwMThfMTM4/MDAxNzkyMzA1NzYyMTIy.6Ttfss4nBFcHW6KrS5-JKdrCiviyZpUBCJUzIuuEHgAg.SOh6rI1G1x_if007f5DLdMBAnfNrxp3_mOjqk5LOTWQg.JPEG/fc5de619-6336-404b-a39b-c0df9caa25db.jpeg",
+    "image": "assets/boys/haechan.webp?v=1761e82aa5",
+    "full": "assets/boys/haechan-full.webp?v=7c9c5a6109"
   },
   {
     "id": "jaemin",
@@ -1172,19 +956,21 @@ window.BOYS_SHORTLIST = [
     "aliases": [
       "罗渽民",
       "羅渽民",
+      "罗哉名",
+      "罗哉民",
       "罗娜娜",
-      "Na Jaemin"
+      "Na Jaemin",
+      "NCT Dream",
+      "NCTDream",
+      "梦队",
+      "梦团"
     ],
     "group": "NCT DREAM",
     "credit": "SM Entertainment",
     "source": "https://weverse.io/nctdream/media/3-242804270",
     "original": "https://phinf.wevpstatic.net/MjAyNjEwMThfMjA2/MDAxNzkyMzA1ODU2NDMz.kjjgzCG4AAYn8_3_-Stymklffaw41048F4afdH7xjNkg.MRr_mClXPsSGDVD9yrtX8iWlR_4E9moIVQABy9IOY28g.JPEG/1f6191e2-7f66-4c72-8fbc-24fa0f8aceb1.jpeg",
     "image": "assets/boys/jaemin.webp?v=69c19ca637",
-    "full": "assets/boys/jaemin-full.webp?v=1d9f6a69dc",
-    "family": "NCT",
-    "units": [
-      "NCT DREAM"
-    ]
+    "full": "assets/boys/jaemin-full.webp?v=1d9f6a69dc"
   },
   {
     "id": "chenle",
@@ -1193,18 +979,18 @@ window.BOYS_SHORTLIST = [
     "aliases": [
       "钟辰乐",
       "鍾辰樂",
-      "Zhong Chenle"
+      "Zhong Chenle",
+      "NCT Dream",
+      "NCTDream",
+      "梦队",
+      "梦团"
     ],
     "group": "NCT DREAM",
     "credit": "SM Entertainment",
     "source": "https://weverse.io/nctdream/media/4-242795979",
     "original": "https://phinf.wevpstatic.net/MjAyNjEwMThfMTQy/MDAxNzkyMzA2MDY2Mzk1.bgbQtFyG3-WyYYxkDAY-O9tErMgK7qPhpEDKuUIVn3wg.m8qjZklfXyTbTNboIhiRbRHdnmXImM-x2oqpGMmPJuIg.JPEG/5c065182-f2f9-47b0-9224-4794248d4cee.jpeg",
     "image": "assets/boys/chenle.webp?v=1e0ed8c390",
-    "full": "assets/boys/chenle-full.webp?v=faf7c91787",
-    "family": "NCT",
-    "units": [
-      "NCT DREAM"
-    ]
+    "full": "assets/boys/chenle-full.webp?v=faf7c91787"
   },
   {
     "id": "jisung",
@@ -1213,249 +999,104 @@ window.BOYS_SHORTLIST = [
     "aliases": [
       "朴志晟",
       "Park Jisung",
-      "Ji Sung"
+      "Ji Sung",
+      "NCT Dream",
+      "NCTDream",
+      "梦队",
+      "梦团"
     ],
     "group": "NCT DREAM",
     "credit": "SM Entertainment",
     "source": "https://weverse.io/nctdream/media/0-181046108",
     "original": "https://phinf.wevpstatic.net/MjAyNjEwMThfMjc3/MDAxNzkyMzA1NjgyNzA0.6RznQ6Mwt99N489xtViIiTLFMCL9ju2wGJoac13BnVAg.ivv9A7-j8XGLqZD4k2-hGepKyedVOwNZE4s-ylN0SLQg.JPEG/fe87f3e5-bc16-4e69-a1f7-649cd6c14dda.jpeg",
     "image": "assets/boys/jisung.webp?v=41b33e2be9",
-    "full": "assets/boys/jisung-full.webp?v=fb8647d1bc",
-    "family": "NCT",
-    "units": [
-      "NCT DREAM"
-    ]
+    "full": "assets/boys/jisung-full.webp?v=fb8647d1bc"
+  }
+];
+window.BOYS_PAST_MEMBERS = [
+  {
+    "id": "johnny",
+    "latin": "Johnny",
+    "group": "NCT 127"
+  },
+  {
+    "id": "taeyong",
+    "latin": "Taeyong",
+    "group": "NCT 127"
+  },
+  {
+    "id": "yuta",
+    "latin": "Yuta",
+    "group": "NCT 127"
+  },
+  {
+    "id": "doyoung",
+    "latin": "Doyoung",
+    "group": "NCT 127"
+  },
+  {
+    "id": "jaehyun",
+    "latin": "Jaehyun",
+    "group": "NCT 127"
+  },
+  {
+    "id": "jungwoo",
+    "latin": "Jungwoo",
+    "group": "NCT 127"
   },
   {
     "id": "kun",
-    "name": "Kun",
     "latin": "Kun",
-    "aliases": [
-      "钱锟",
-      "錢錕",
-      "锟",
-      "Qian Kun",
-      "威神V"
-    ],
-    "group": "WayV",
-    "credit": "SM Entertainment",
-    "source": "https://x.com/WayV_official/status/1942916812800405731",
-    "original": "https://pbs.twimg.com/media/GvaVTrKasAAjZKe.jpg?name=orig",
-    "image": "assets/boys/kun.webp?v=a519f1a1e2",
-    "full": "assets/boys/kun-full.webp?v=69652fd386",
-    "family": "NCT",
-    "units": [
-      "WayV"
-    ]
+    "group": "WayV"
   },
   {
     "id": "ten",
-    "name": "Ten",
     "latin": "Ten",
-    "aliases": [
-      "李永钦",
-      "李永欽",
-      "永钦",
-      "Chittaphon Leechaiyapornkul",
-      "威神V"
-    ],
-    "group": "WayV",
-    "credit": "SM Entertainment",
-    "source": "https://x.com/WayV_official/status/1942916910729007463",
-    "original": "https://pbs.twimg.com/media/GvaWJjxbUAAaN6Q.jpg?name=orig",
-    "image": "assets/boys/ten.webp?v=71307085d1",
-    "full": "assets/boys/ten-full.webp?v=355131b76a",
-    "family": "NCT",
-    "units": [
-      "WayV"
-    ]
+    "group": "WayV"
   },
   {
     "id": "xiaojun",
-    "name": "Xiaojun",
     "latin": "Xiaojun",
-    "aliases": [
-      "肖德俊",
-      "德俊",
-      "Xiao Dejun",
-      "威神V"
-    ],
-    "group": "WayV",
-    "credit": "SM Entertainment",
-    "source": "https://x.com/WayV_official/status/1942916972142096394",
-    "original": "https://pbs.twimg.com/media/GvaWRfmWEAEAbFV.jpg?name=orig",
-    "image": "assets/boys/xiaojun.webp?v=b3f081fedd",
-    "full": "assets/boys/xiaojun-full.webp?v=c1772d523d",
-    "family": "NCT",
-    "units": [
-      "WayV"
-    ]
+    "group": "WayV"
   },
   {
     "id": "hendery",
-    "name": "Hendery",
     "latin": "Hendery",
-    "aliases": [
-      "黄冠亨",
-      "黃冠亨",
-      "冠亨",
-      "Wong Kunhang",
-      "威神V"
-    ],
-    "group": "WayV",
-    "credit": "SM Entertainment",
-    "source": "https://x.com/WayV_official/status/1942917010226307348",
-    "original": "https://pbs.twimg.com/media/GvaWZMnXAAAhYXC.jpg?name=orig",
-    "image": "assets/boys/hendery.webp?v=18a94cda97",
-    "full": "assets/boys/hendery-full.webp?v=d8616f0778",
-    "family": "NCT",
-    "units": [
-      "WayV"
-    ]
+    "group": "WayV"
   },
   {
     "id": "yangyang",
-    "name": "YangYang",
     "latin": "YangYang",
-    "aliases": [
-      "刘扬扬",
-      "劉揚揚",
-      "扬扬",
-      "Liu Yangyang",
-      "威神V"
-    ],
-    "group": "WayV",
-    "credit": "SM Entertainment",
-    "source": "https://x.com/WayV_official/status/1942917138257186903",
-    "original": "https://pbs.twimg.com/media/GvaWeCtbcAAVP-9.jpg?name=orig",
-    "image": "assets/boys/yangyang.webp?v=756d4bec07",
-    "full": "assets/boys/yangyang-full.webp?v=7d3ca0c7a0",
-    "family": "NCT",
-    "units": [
-      "WayV"
-    ]
+    "group": "WayV"
   },
   {
     "id": "sion",
-    "name": "Sion",
     "latin": "Sion",
-    "aliases": [
-      "吴是温",
-      "吳是溫",
-      "是温",
-      "Oh Sion"
-    ],
-    "group": "NCT WISH",
-    "credit": "SM Entertainment",
-    "source": "https://weverse.io/nctwish/media/4-232544088",
-    "original": "https://phinf.wevpstatic.net/MjAyNjA2MTBfNjIg/MDAxNzgxMTAxNDU5NTY3.0ANZdeSzjiRU0lUvau_jjsd_A_wB2xfoLvdFTBvtwIYg.MCdN5FDIX3qz8KHAczHiNe8z94PcZXYO2N8IGnBwbhwg.JPEG/8592285c-7ff0-40a0-9870-4da197687a29.jpeg",
-    "image": "assets/boys/sion.webp?v=e7b5b53ce1",
-    "full": "assets/boys/sion-full.webp?v=37201f787e",
-    "family": "NCT",
-    "units": [
-      "NCT WISH"
-    ]
+    "group": "NCT WISH"
   },
   {
     "id": "riku",
-    "name": "Riku",
     "latin": "Riku",
-    "aliases": [
-      "前田陆",
-      "前田陸",
-      "Maeda Riku"
-    ],
-    "group": "NCT WISH",
-    "credit": "SM Entertainment",
-    "source": "https://weverse.io/nctwish/media/1-175941123",
-    "original": "https://phinf.wevpstatic.net/MjAyNjA2MTBfMTUy/MDAxNzgxMTAxNTg4NTY5.W0SYPnvR8Fi-NHzD2yilIv_MxePY3C0WLDcw8ruIHCsg.FuQkYwrfhpxs_zHrwOe3OyHW9fAeR652gRPUN3ByQNUg.JPEG/393f3259-1578-490d-8a90-3d89cd421f35.jpeg",
-    "image": "assets/boys/riku.webp?v=3fc6975674",
-    "full": "assets/boys/riku-full.webp?v=12f7515445",
-    "family": "NCT",
-    "units": [
-      "NCT WISH"
-    ]
+    "group": "NCT WISH"
   },
   {
     "id": "yushi",
-    "name": "Yushi",
     "latin": "Yushi",
-    "aliases": [
-      "得能勇志",
-      "勇志",
-      "Tokuno Yushi"
-    ],
-    "group": "NCT WISH",
-    "credit": "SM Entertainment",
-    "source": "https://weverse.io/nctwish/media/0-175965247",
-    "original": "https://phinf.wevpstatic.net/MjAyNjA2MTFfMTky/MDAxNzgxMTg4MTAxODQ2.OgQqUkV05HgXYe12ckH2Gwsi34NA1peJiCfQgocQKvkg.EuGo0yLgGutHsLkp2vQoRyFcrXN-m7siEYRfUnOhaMog.JPEG/d5a3fc2a-f316-47d6-a4b3-1dc4aa144107.jpeg",
-    "image": "assets/boys/yushi.webp?v=3e0e93953a",
-    "full": "assets/boys/yushi-full.webp?v=b281ed5057",
-    "family": "NCT",
-    "units": [
-      "NCT WISH"
-    ]
+    "group": "NCT WISH"
   },
   {
     "id": "jaehee",
-    "name": "Jaehee",
     "latin": "Jaehee",
-    "aliases": [
-      "金垈永",
-      "金栽禧",
-      "栽禧",
-      "Kim Daeyoung",
-      "Daeyoung"
-    ],
-    "group": "NCT WISH",
-    "credit": "SM Entertainment",
-    "source": "https://weverse.io/nctwish/media/4-232636703",
-    "original": "https://phinf.wevpstatic.net/MjAyNjA2MTFfNCAg/MDAxNzgxMTg4MjExNzc2.PyoWEv4zGZcwxG7N9fYHWUsBadjg4eIKxOsPuQk9nTkg.5lqG_jx53AfkXZs3fOKtotrhD_NblPp7uTeIPBwH2j4g.JPEG/3699b6e1-505b-488f-b48e-3b767536c08c.jpeg",
-    "image": "assets/boys/jaehee.webp?v=7824223219",
-    "full": "assets/boys/jaehee-full.webp?v=421dacbeee",
-    "family": "NCT",
-    "units": [
-      "NCT WISH"
-    ]
+    "group": "NCT WISH"
   },
   {
     "id": "ryo",
-    "name": "Ryo",
     "latin": "Ryo",
-    "aliases": [
-      "广濑辽",
-      "廣瀨遼",
-      "Hirose Ryo"
-    ],
-    "group": "NCT WISH",
-    "credit": "SM Entertainment",
-    "source": "https://weverse.io/nctwish/media/4-232699191",
-    "original": "https://phinf.wevpstatic.net/MjAyNjA2MTJfMTYz/MDAxNzgxMjc0MDc4NTU1.jJc9-9NQVojpbInH_0W7ON6fSbLkMGErwKtTMgI-_Y0g.IK_YF4qcaK3PHkn3rRnS84EV_bmamxfkcGb6yMyh3l0g.JPEG/61f7348a-1fd6-4ba6-9cbb-aa3ef6aef4e9.jpeg",
-    "image": "assets/boys/ryo.webp?v=6036151215",
-    "full": "assets/boys/ryo-full.webp?v=6474ecb855",
-    "family": "NCT",
-    "units": [
-      "NCT WISH"
-    ]
+    "group": "NCT WISH"
   },
   {
     "id": "sakuya",
-    "name": "Sakuya",
     "latin": "Sakuya",
-    "aliases": [
-      "藤永咲哉",
-      "咲哉",
-      "Fujinaga Sakuya"
-    ],
-    "group": "NCT WISH",
-    "credit": "SM Entertainment",
-    "source": "https://weverse.io/nctwish/media/1-176019323",
-    "original": "https://phinf.wevpstatic.net/MjAyNjA2MTJfODIg/MDAxNzgxMjc0MTkzOTc4.8vPsJlLiKVlAGEsaCnGbLn0z4_jZd86daYL-Wv3eRPwg.Mb3AH6HJWZI84b8ariqZ-K88265wWbExhCfFrUV5OEAg.JPEG/b89f1a3a-8569-496b-a63c-00362f506e9d.jpeg",
-    "image": "assets/boys/sakuya.webp?v=8a678bc258",
-    "full": "assets/boys/sakuya-full.webp?v=526b462a0c",
-    "family": "NCT",
-    "units": [
-      "NCT WISH"
-    ]
+    "group": "NCT WISH"
   }
 ];
